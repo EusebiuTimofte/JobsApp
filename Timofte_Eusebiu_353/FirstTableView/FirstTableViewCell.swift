@@ -17,7 +17,7 @@ class FirstTableViewCell: UITableViewCell {
         //job title
 //        cellTitle.frame = CGRect(x: self.frame.width / 10, y: self.frame.height / 15, width: self.frame.width * 8 / 10, height: self.frame.height / 5)
 //        cellTitle.numberOfLines = 1
-        cellTitle.backgroundColor = .red
+        cellTitle.backgroundColor = .blue
         
         //cell
         self.backgroundColor = .yellow
