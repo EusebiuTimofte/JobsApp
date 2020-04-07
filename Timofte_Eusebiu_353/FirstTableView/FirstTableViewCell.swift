@@ -15,11 +15,20 @@ class FirstTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
         //job title
-//        cellTitle.frame = CGRect(x: self.frame.width / 10, y: self.frame.height / 15, width: self.frame.width * 8 / 10, height: self.frame.height / 5)
-//        cellTitle.numberOfLines = 1
         cellTitle.backgroundColor = .blue
+//        let fontSize = CGFloat(50)
+//        cellTitle.font = UIFont(name: "Helvetica Neue", size: fontSize)
+//        while cellTitle.font.lineHeight > cellTitle.frame.size.height{
+//            fontSize -= CGFloat(0.1)
+//            cellTitle.font = UIFont(name: "Helvetica Neue", size: fontSize)
+//        }
+        //option 1
+//        let fontSizer = FontSizer()
+//        cellTitle.font = fontSizer.optimisedfindAdaptiveFontWithName(fontName: "Helvetica Neue", label: cellTitle, minSize: CGFloat(1), maxSize: CGFloat(300))
         
-        //cell
+        cellTitle.numberOfLines = 2
+//        cellTitle.minimumScaleFactor = 0.7   //you need
+//        cellTitle.adjustsFontSizeToFitWidth = true
         self.backgroundColor = .yellow
     }
 

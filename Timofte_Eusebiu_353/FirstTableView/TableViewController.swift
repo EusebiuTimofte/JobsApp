@@ -26,11 +26,13 @@ class TableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "JobOfferCell") as! FirstTableViewCell
-        cell.cellTitle.text = "Cell \(indexPath.row)"
+        cell.cellTitle.text = "Cell \(indexPath.row) sjfhsd sdkjfsdkjf lsdkjfsdfj lsdfjslkdjf lsfdkj lksjdflk jsdl jksdlkj sdlkfj  jlk jsdfkjsd"
         return cell
     }
     
-    
+//    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        print((tableView.cellForRow(at: indexPath) as! FirstTableViewCell).cellTitle.font)
+//    }
     
 
 

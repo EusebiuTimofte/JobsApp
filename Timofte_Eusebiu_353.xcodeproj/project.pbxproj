@@ -14,6 +14,7 @@
 		539A492C243BBA680011AEB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 539A492B243BBA680011AEB4 /* Assets.xcassets */; };
 		539A492F243BBA680011AEB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 539A492D243BBA680011AEB4 /* LaunchScreen.storyboard */; };
 		539A4938243BCE150011AEB4 /* FirstTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539A4937243BCE150011AEB4 /* FirstTableViewCell.swift */; };
+		53A79321243D44770084AD6F /* FontSizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A79320243D44770084AD6F /* FontSizer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		539A492E243BBA680011AEB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		539A4930243BBA680011AEB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		539A4937243BCE150011AEB4 /* FirstTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTableViewCell.swift; sourceTree = "<group>"; };
+		53A79320243D44770084AD6F /* FontSizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontSizer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		539A4921243BBA670011AEB4 /* Timofte_Eusebiu_353 */ = {
 			isa = PBXGroup;
 			children = (
+				53A7931F243D44380084AD6F /* Utils */,
 				539A4936243BCDCF0011AEB4 /* FirstTableView */,
 				539A4922243BBA670011AEB4 /* AppDelegate.swift */,
 				539A4924243BBA670011AEB4 /* SceneDelegate.swift */,
@@ -76,6 +79,14 @@
 				539A4937243BCE150011AEB4 /* FirstTableViewCell.swift */,
 			);
 			path = FirstTableView;
+			sourceTree = "<group>";
+		};
+		53A7931F243D44380084AD6F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				53A79320243D44770084AD6F /* FontSizer.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +162,7 @@
 			files = (
 				539A4927243BBA670011AEB4 /* TableViewController.swift in Sources */,
 				539A4938243BCE150011AEB4 /* FirstTableViewCell.swift in Sources */,
+				53A79321243D44770084AD6F /* FontSizer.swift in Sources */,
 				539A4923243BBA670011AEB4 /* AppDelegate.swift in Sources */,
 				539A4925243BBA670011AEB4 /* SceneDelegate.swift in Sources */,
 			);
