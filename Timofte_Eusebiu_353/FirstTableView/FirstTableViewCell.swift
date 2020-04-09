@@ -14,21 +14,7 @@ class FirstTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        //job title
         cellTitle.backgroundColor = .blue
-//        let fontSize = CGFloat(50)
-//        cellTitle.font = UIFont(name: "Helvetica Neue", size: fontSize)
-//        while cellTitle.font.lineHeight > cellTitle.frame.size.height{
-//            fontSize -= CGFloat(0.1)
-//            cellTitle.font = UIFont(name: "Helvetica Neue", size: fontSize)
-//        }
-        //option 1
-//        let fontSizer = FontSizer()
-//        cellTitle.font = fontSizer.optimisedfindAdaptiveFontWithName(fontName: "Helvetica Neue", label: cellTitle, minSize: CGFloat(1), maxSize: CGFloat(300))
-        
-        cellTitle.numberOfLines = 2
-//        cellTitle.minimumScaleFactor = 0.7   //you need
-//        cellTitle.adjustsFontSizeToFitWidth = true
         self.backgroundColor = .yellow
     }
 
