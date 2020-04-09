@@ -28,16 +28,27 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fNl-DY-2jN" customClass="FontHeightAdjustableLabel" customModule="Timofte_Eusebiu_353" customModuleProvider="target">
+                                            <rect key="frame" x="103.66666666666667" y="38.666666666666664" width="165.33333333333331" height="14"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="Z36-B6-tcH" firstAttribute="height" secondItem="99H-TU-Vs4" secondAttribute="height" multiplier="0.4" id="1oO-w4-nmI"/>
                                         <constraint firstItem="Z36-B6-tcH" firstAttribute="top" secondItem="99H-TU-Vs4" secondAttribute="centerY" multiplier="0.2" id="Fss-54-nst"/>
+                                        <constraint firstItem="fNl-DY-2jN" firstAttribute="leading" secondItem="99H-TU-Vs4" secondAttribute="centerX" multiplier="0.5" id="Hog-8W-Elb"/>
                                         <constraint firstItem="Z36-B6-tcH" firstAttribute="width" secondItem="99H-TU-Vs4" secondAttribute="width" multiplier="0.7" id="KQA-9q-SBa"/>
+                                        <constraint firstItem="fNl-DY-2jN" firstAttribute="width" secondItem="99H-TU-Vs4" secondAttribute="width" multiplier="0.4" id="S9A-lv-IJB"/>
+                                        <constraint firstItem="fNl-DY-2jN" firstAttribute="top" secondItem="99H-TU-Vs4" secondAttribute="centerY" multiplier="1.1" id="eFm-lW-S6v"/>
                                         <constraint firstItem="Z36-B6-tcH" firstAttribute="leading" secondItem="99H-TU-Vs4" secondAttribute="centerX" multiplier="0.5" id="hTW-06-DBI"/>
+                                        <constraint firstItem="fNl-DY-2jN" firstAttribute="height" secondItem="99H-TU-Vs4" secondAttribute="height" multiplier="0.2" id="hfa-tg-4hc"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="cellTitle" destination="Z36-B6-tcH" id="c6B-I9-C1T"/>
+                                    <outlet property="employer" destination="fNl-DY-2jN" id="gjR-tt-fpW"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

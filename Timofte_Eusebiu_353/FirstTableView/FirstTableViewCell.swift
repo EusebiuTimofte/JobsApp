@@ -11,10 +11,14 @@ import UIKit
 class FirstTableViewCell: UITableViewCell {
 
     @IBOutlet weak var cellTitle: UILabel!
+    
+    @IBOutlet weak var employer: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
         cellTitle.backgroundColor = .blue
+        employer.backgroundColor = .green
         self.backgroundColor = .yellow
     }
 

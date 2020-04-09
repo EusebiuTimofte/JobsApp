@@ -42,7 +42,7 @@ class FontHeightAdjustableLabel: UILabel {
                }
 
             if let labelText: NSString = text as NSString? {
-                let labelHeight = frame.size.height * CGFloat(0.45)
+                let labelHeight = frame.size.height / CGFloat(Double(self.numberOfLines) + 0.1)
 
                 let testStringHeight = labelText.size(
                     withAttributes: [NSAttributedString.Key.font: font.withSize(fontSizeAverage)]
