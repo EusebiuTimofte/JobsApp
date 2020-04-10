@@ -23,32 +23,66 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z36-B6-tcH" customClass="FontHeightAdjustableLabel" customModule="Timofte_Eusebiu_353" customModuleProvider="target">
-                                            <rect key="frame" x="103.66666666666666" y="7" width="289.66666666666674" height="28"/>
+                                            <rect key="frame" x="103.66666666666666" y="7" width="289.66666666666674" height="26"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
+                                            <color key="highlightedColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <size key="shadowOffset" width="1" height="-2"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fNl-DY-2jN" customClass="FontHeightAdjustableLabel" customModule="Timofte_Eusebiu_353" customModuleProvider="target">
-                                            <rect key="frame" x="103.66666666666667" y="38.666666666666664" width="165.33333333333331" height="14"/>
+                                            <rect key="frame" x="103.66666666666667" y="38.666666666666664" width="165.33333333333331" height="11.666666666666664"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G8j-Ns-iAw" customClass="FontHeightAdjustableLabel" customModule="Timofte_Eusebiu_353" customModuleProvider="target">
+                                            <rect key="frame" x="103.66666666666667" y="54.333333333333336" width="165.33333333333331" height="14.000000000000007"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="25L-c6-TiC">
+                                            <rect key="frame" x="10.333333333333336" y="7" width="82.666666666666657" height="49"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="25L-c6-TiC" secondAttribute="height" multiplier="1:1" id="04y-mM-50a"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vr4-lR-9nA" customClass="FontHeightAdjustableLabel" customModule="Timofte_Eusebiu_353" customModuleProvider="target">
+                                            <rect key="frame" x="11.333333333333336" y="56" width="83" height="12.666666666666671"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="Z36-B6-tcH" firstAttribute="height" secondItem="99H-TU-Vs4" secondAttribute="height" multiplier="0.4" id="1oO-w4-nmI"/>
+                                        <constraint firstItem="25L-c6-TiC" firstAttribute="height" relation="lessThanOrEqual" secondItem="99H-TU-Vs4" secondAttribute="height" multiplier="0.7" id="01A-N9-mOE"/>
+                                        <constraint firstItem="25L-c6-TiC" firstAttribute="leading" secondItem="99H-TU-Vs4" secondAttribute="centerX" multiplier="0.05" id="1fg-Of-fJq"/>
+                                        <constraint firstItem="Z36-B6-tcH" firstAttribute="height" secondItem="99H-TU-Vs4" secondAttribute="height" multiplier="0.37" id="1oO-w4-nmI"/>
+                                        <constraint firstItem="G8j-Ns-iAw" firstAttribute="width" secondItem="99H-TU-Vs4" secondAttribute="width" multiplier="0.4" id="2h9-u4-nib"/>
+                                        <constraint firstItem="Vr4-lR-9nA" firstAttribute="top" secondItem="99H-TU-Vs4" secondAttribute="centerY" multiplier="1.55" id="9dQ-8M-kf2"/>
+                                        <constraint firstItem="G8j-Ns-iAw" firstAttribute="top" secondItem="99H-TU-Vs4" secondAttribute="centerY" multiplier="1.55" id="A5n-5w-bGT"/>
+                                        <constraint firstItem="G8j-Ns-iAw" firstAttribute="height" secondItem="99H-TU-Vs4" secondAttribute="height" multiplier="0.2" id="EoF-ld-qTo"/>
                                         <constraint firstItem="Z36-B6-tcH" firstAttribute="top" secondItem="99H-TU-Vs4" secondAttribute="centerY" multiplier="0.2" id="Fss-54-nst"/>
+                                        <constraint firstItem="G8j-Ns-iAw" firstAttribute="leading" secondItem="99H-TU-Vs4" secondAttribute="centerX" multiplier="0.5" id="GRI-ge-Xgx"/>
                                         <constraint firstItem="fNl-DY-2jN" firstAttribute="leading" secondItem="99H-TU-Vs4" secondAttribute="centerX" multiplier="0.5" id="Hog-8W-Elb"/>
                                         <constraint firstItem="Z36-B6-tcH" firstAttribute="width" secondItem="99H-TU-Vs4" secondAttribute="width" multiplier="0.7" id="KQA-9q-SBa"/>
+                                        <constraint firstItem="25L-c6-TiC" firstAttribute="width" secondItem="99H-TU-Vs4" secondAttribute="width" multiplier="0.2" id="ReB-HM-IKu"/>
                                         <constraint firstItem="fNl-DY-2jN" firstAttribute="width" secondItem="99H-TU-Vs4" secondAttribute="width" multiplier="0.4" id="S9A-lv-IJB"/>
+                                        <constraint firstItem="Vr4-lR-9nA" firstAttribute="width" secondItem="99H-TU-Vs4" secondAttribute="width" multiplier="0.25" id="VRe-Ui-y0R"/>
                                         <constraint firstItem="fNl-DY-2jN" firstAttribute="top" secondItem="99H-TU-Vs4" secondAttribute="centerY" multiplier="1.1" id="eFm-lW-S6v"/>
                                         <constraint firstItem="Z36-B6-tcH" firstAttribute="leading" secondItem="99H-TU-Vs4" secondAttribute="centerX" multiplier="0.5" id="hTW-06-DBI"/>
-                                        <constraint firstItem="fNl-DY-2jN" firstAttribute="height" secondItem="99H-TU-Vs4" secondAttribute="height" multiplier="0.2" id="hfa-tg-4hc"/>
+                                        <constraint firstItem="25L-c6-TiC" firstAttribute="top" secondItem="99H-TU-Vs4" secondAttribute="centerY" multiplier="0.2" id="hXK-tl-J6u"/>
+                                        <constraint firstItem="fNl-DY-2jN" firstAttribute="height" secondItem="99H-TU-Vs4" secondAttribute="height" multiplier="0.17" id="hfa-tg-4hc"/>
+                                        <constraint firstItem="Vr4-lR-9nA" firstAttribute="height" secondItem="99H-TU-Vs4" secondAttribute="height" multiplier="0.17" id="jU0-8z-H4r"/>
+                                        <constraint firstItem="Vr4-lR-9nA" firstAttribute="leading" secondItem="99H-TU-Vs4" secondAttribute="centerX" multiplier="1.4" id="yU1-61-bY2"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="cellTitle" destination="Z36-B6-tcH" id="c6B-I9-C1T"/>
+                                    <outlet property="city" destination="G8j-Ns-iAw" id="ftJ-am-NHB"/>
                                     <outlet property="employer" destination="fNl-DY-2jN" id="gjR-tt-fpW"/>
+                                    <outlet property="employerImage" destination="25L-c6-TiC" id="qQ0-vd-1kk"/>
+                                    <outlet property="publishDate" destination="Vr4-lR-9nA" id="ZY9-oV-g1Z"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
