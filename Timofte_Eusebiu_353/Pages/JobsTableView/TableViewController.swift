@@ -16,10 +16,16 @@ class TableViewController: UITableViewController {
 //        self.tableView.separatorColor = UIColor(cgColor: CGColor(srgbRed: 0.0, green: 0.0, blue: 0.0, alpha: 1.0))
         tableView.separatorStyle = .none
         //self.tableView.separatorInset = .init(top: 1.0, left: 0.0, bottom: 1.0, right: 1.0)
-        tableView.safeAreaLayoutGuide
+        
     }
     
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let receiver = segue.destination as! JobDescriptionViewController
+        let senderLet = sender as! FirstTableViewCell
+        if let text = senderLet.cellTitle.text {
+            receiver.jobTitle = text
+        }
+    }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
@@ -52,10 +58,8 @@ class TableViewController: UITableViewController {
         return cell
     }
     
-    
-    
 //    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        print((tableView.cellForRow(at: indexPath) as! FirstTableViewCell).cellTitle.font)
+//
 //    }
     
 

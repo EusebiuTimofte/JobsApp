@@ -101,10 +101,10 @@
             </objects>
             <point key="canvasLocation" x="715.94202898550725" y="89.732142857142847"/>
         </scene>
-        <!--View Controller-->
+        <!--Job Description View Controller-->
         <scene sceneID="3u9-ay-xIv">
             <objects>
-                <viewController id="t8l-4a-RFH" sceneMemberID="viewController">
+                <viewController id="t8l-4a-RFH" customClass="JobDescriptionViewController" customModule="Timofte_Eusebiu_353" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GdA-4r-vG4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -113,17 +113,30 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="224"/>
                                 <color key="backgroundColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ji-Vs-cXY" customClass="FontHeightAdjustableLabel" customModule="Timofte_Eusebiu_353" customModuleProvider="target">
+                                <rect key="frame" x="10.333333333333343" y="332.66666666666669" width="414" height="89.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="2ji-Vs-cXY" firstAttribute="height" secondItem="GdA-4r-vG4" secondAttribute="height" multiplier="0.1" id="7HI-o7-J4W"/>
+                            <constraint firstItem="2ji-Vs-cXY" firstAttribute="width" secondItem="GdA-4r-vG4" secondAttribute="width" id="A1A-6b-8Zh"/>
                             <constraint firstItem="1bd-qO-Suh" firstAttribute="top" secondItem="bJu-f9-JlV" secondAttribute="top" id="CXh-fx-tAM"/>
                             <constraint firstItem="1bd-qO-Suh" firstAttribute="leading" secondItem="bJu-f9-JlV" secondAttribute="leading" id="H2u-ca-rD9"/>
+                            <constraint firstItem="2ji-Vs-cXY" firstAttribute="leading" secondItem="bJu-f9-JlV" secondAttribute="centerX" multiplier="0.05" id="OWy-iF-6dC"/>
+                            <constraint firstItem="2ji-Vs-cXY" firstAttribute="top" secondItem="bJu-f9-JlV" secondAttribute="centerY" multiplier="0.7" id="SPO-2l-hJb"/>
                             <constraint firstItem="1bd-qO-Suh" firstAttribute="height" secondItem="GdA-4r-vG4" secondAttribute="height" multiplier="0.25" id="erd-0g-EkI"/>
                             <constraint firstItem="1bd-qO-Suh" firstAttribute="width" secondItem="GdA-4r-vG4" secondAttribute="width" id="jIP-ka-WMy"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bJu-f9-JlV"/>
                     </view>
                     <navigationItem key="navigationItem" id="fKl-31-6YC"/>
+                    <connections>
+                        <outlet property="jobTitleLabel" destination="2ji-Vs-cXY" id="apF-Nb-OMw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E2n-KF-UNd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

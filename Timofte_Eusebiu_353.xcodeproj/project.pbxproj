@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		53117582243FD082005BB73D /* FontHeightAdjustableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53117581243FD082005BB73D /* FontHeightAdjustableLabel.swift */; };
 		53117585243FD35A005BB73D /* StrExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53117584243FD35A005BB73D /* StrExt.swift */; };
+		535F66B92442641600C33355 /* JobDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535F66B82442641600C33355 /* JobDescriptionViewController.swift */; };
 		539A4923243BBA670011AEB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539A4922243BBA670011AEB4 /* AppDelegate.swift */; };
 		539A4925243BBA670011AEB4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539A4924243BBA670011AEB4 /* SceneDelegate.swift */; };
 		539A4927243BBA670011AEB4 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539A4926243BBA670011AEB4 /* TableViewController.swift */; };
@@ -22,6 +23,7 @@
 /* Begin PBXFileReference section */
 		53117581243FD082005BB73D /* FontHeightAdjustableLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontHeightAdjustableLabel.swift; sourceTree = "<group>"; };
 		53117584243FD35A005BB73D /* StrExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrExt.swift; sourceTree = "<group>"; };
+		535F66B82442641600C33355 /* JobDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobDescriptionViewController.swift; sourceTree = "<group>"; };
 		539A491F243BBA670011AEB4 /* Timofte_Eusebiu_353.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Timofte_Eusebiu_353.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		539A4922243BBA670011AEB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		539A4924243BBA670011AEB4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +55,23 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		535F66B62442639A00C33355 /* JobDescriptionView */ = {
+			isa = PBXGroup;
+			children = (
+				535F66B82442641600C33355 /* JobDescriptionViewController.swift */,
+			);
+			path = JobDescriptionView;
+			sourceTree = "<group>";
+		};
+		535F66B7244263C000C33355 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				539A4936243BCDCF0011AEB4 /* JobsTableView */,
+				535F66B62442639A00C33355 /* JobDescriptionView */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
 		539A4916243BBA670011AEB4 = {
 			isa = PBXGroup;
 			children = (
@@ -72,9 +91,9 @@
 		539A4921243BBA670011AEB4 /* Timofte_Eusebiu_353 */ = {
 			isa = PBXGroup;
 			children = (
+				535F66B7244263C000C33355 /* Pages */,
 				53117583243FD345005BB73D /* Extensions */,
 				53A7931F243D44380084AD6F /* Utils */,
-				539A4936243BCDCF0011AEB4 /* FirstTableView */,
 				539A4922243BBA670011AEB4 /* AppDelegate.swift */,
 				539A4924243BBA670011AEB4 /* SceneDelegate.swift */,
 				539A4928243BBA670011AEB4 /* Main.storyboard */,
@@ -85,14 +104,14 @@
 			path = Timofte_Eusebiu_353;
 			sourceTree = "<group>";
 		};
-		539A4936243BCDCF0011AEB4 /* FirstTableView */ = {
+		539A4936243BCDCF0011AEB4 /* JobsTableView */ = {
 			isa = PBXGroup;
 			children = (
 				539A4926243BBA670011AEB4 /* TableViewController.swift */,
 				539A4937243BCE150011AEB4 /* FirstTableViewCell.swift */,
 				53117581243FD082005BB73D /* FontHeightAdjustableLabel.swift */,
 			);
-			path = FirstTableView;
+			path = JobsTableView;
 			sourceTree = "<group>";
 		};
 		53A7931F243D44380084AD6F /* Utils */ = {
@@ -181,6 +200,7 @@
 				53117582243FD082005BB73D /* FontHeightAdjustableLabel.swift in Sources */,
 				539A4923243BBA670011AEB4 /* AppDelegate.swift in Sources */,
 				539A4925243BBA670011AEB4 /* SceneDelegate.swift in Sources */,
+				535F66B92442641600C33355 /* JobDescriptionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
