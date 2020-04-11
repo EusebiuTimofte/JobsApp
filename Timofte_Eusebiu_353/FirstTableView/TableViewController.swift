@@ -14,8 +14,9 @@ class TableViewController: UITableViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
 //        self.tableView.separatorColor = UIColor(cgColor: CGColor(srgbRed: 0.0, green: 0.0, blue: 0.0, alpha: 1.0))
-        self.tableView.separatorStyle = .none
+        tableView.separatorStyle = .none
         //self.tableView.separatorInset = .init(top: 1.0, left: 0.0, bottom: 1.0, right: 1.0)
+        tableView.safeAreaLayoutGuide
     }
     
     
