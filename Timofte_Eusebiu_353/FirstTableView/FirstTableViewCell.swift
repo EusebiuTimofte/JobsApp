@@ -26,9 +26,24 @@ class FirstTableViewCell: UITableViewCell {
 //        publishDate.backgroundColor = .gray
         //self.backgroundColor = .yellow
         employerImage.image = UIImage(named: "no-logo")
+        
         self.accessoryType = .disclosureIndicator
+        let chevronImageView = UIImageView(image:UIImage(named: "disclosureIndicatorImage"))
+        chevronImageView.image = chevronImageView.image?.withRenderingMode(.alwaysTemplate)
+        chevronImageView.tintColor = .orange
+        chevronImageView.frame = CGRect(x: 0, y: 0, width: self.frame.height / CGFloat(3), height: self.frame.height / CGFloat(3))
+        self.accessoryView = chevronImageView
+        
+        self.layer.borderWidth = self.frame.height / CGFloat(10)
+        self.layer.borderColor = CGColor(srgbRed: 0.8, green: 0.8, blue: 0.8, alpha: 1.0)
 
     }
+    
+//    override func layoutSubviews() {
+//        super.layoutSubviews()
+//
+//        contentView.frame = contentView.frame.inset(by: UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10))
+//    }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)

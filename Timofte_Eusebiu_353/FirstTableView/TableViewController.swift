@@ -13,7 +13,8 @@ class TableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        self.tableView.separatorColor = UIColor(cgColor: CGColor(srgbRed: 0.0, green: 0.0, blue: 0.0, alpha: 1.0))
+//        self.tableView.separatorColor = UIColor(cgColor: CGColor(srgbRed: 0.0, green: 0.0, blue: 0.0, alpha: 1.0))
+        self.tableView.separatorStyle = .none
         //self.tableView.separatorInset = .init(top: 1.0, left: 0.0, bottom: 1.0, right: 1.0)
     }
     
@@ -28,8 +29,10 @@ class TableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        cell.accessoryView?.backgroundColor = .orange
-        cell.accessoryView?.backgroundColor?.withAlphaComponent(1)
+        cell.tintColor = .red
+//        cell.accessoryView?.backgroundColor = .orange
+//        cell.accessoryView?.backgroundColor?.withAlphaComponent(1)
+        
 //        cell.layoutMargins = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
 //        cell.contentView.layoutMargins = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
 //        cell.contentView.backgroundColor = .green
