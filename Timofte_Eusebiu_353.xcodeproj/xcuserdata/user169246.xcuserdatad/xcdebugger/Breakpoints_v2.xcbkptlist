@@ -48,8 +48,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "31"
             endingLineNumber = "31"
-            landmarkName = "font(named:toFit:noSmallerThan:noLargerThan:)"
-            landmarkType = "7">
+            landmarkName = "String"
+            landmarkType = "21">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -64,8 +64,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "30"
             endingLineNumber = "30"
-            landmarkName = "font(named:toFit:noSmallerThan:noLargerThan:)"
-            landmarkType = "7">
+            landmarkName = "String"
+            landmarkType = "21">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -112,6 +112,22 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "20"
             endingLineNumber = "20"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "ED627771-9EBD-4CA3-A6DC-5FED9F91DD9C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Timofte_Eusebiu_353/Pages/JobDescriptionView/JobDescriptionViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>

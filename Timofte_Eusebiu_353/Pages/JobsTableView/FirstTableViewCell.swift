@@ -26,7 +26,6 @@ class FirstTableViewCell: UITableViewCell {
 //        publishDate.backgroundColor = .gray
         //self.backgroundColor = .yellow
         employerImage.image = UIImage(named: "no-logo")
-        
         self.accessoryType = .disclosureIndicator
         let chevronImageView = UIImageView(image:UIImage(named: "disclosureIndicatorImage"))
         chevronImageView.image = chevronImageView.image?.withRenderingMode(.alwaysTemplate)

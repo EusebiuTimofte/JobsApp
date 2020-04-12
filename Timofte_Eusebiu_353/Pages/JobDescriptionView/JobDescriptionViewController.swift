@@ -13,6 +13,7 @@ class JobDescriptionViewController : UIViewController {
     
     var jobTitle: String?
     
+    @IBOutlet weak var scrollViewContent: UIView!
     @IBOutlet weak var jobTitleLabel: UILabel!
     
     override func viewDidLoad() {
@@ -20,6 +21,11 @@ class JobDescriptionViewController : UIViewController {
         if let jobTitleText = jobTitle {
             jobTitleLabel.text = jobTitleText
         }
+        var labelFontSizeMultiplier: CGFloat = 30
+        if UIScreen.main.bounds.width > 500 {
+            labelFontSizeMultiplier = 20
+        }
+        jobTitleLabel.font = jobTitleLabel.fontToFitHeight(height: scrollViewContent.frame.height / labelFontSizeMultiplier)
     }
     
     
