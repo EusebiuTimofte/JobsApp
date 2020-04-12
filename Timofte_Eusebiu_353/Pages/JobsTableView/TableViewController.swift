@@ -23,8 +23,17 @@ class TableViewController: UITableViewController {
         let receiver = segue.destination as! JobDescriptionViewController
         let senderLet = sender as! FirstTableViewCell
         if let text = senderLet.cellTitle.text {
-            receiver.jobTitle = text
+            receiver.jobTitleReceived = text
         }
+        
+        if let imageViewImage = senderLet.employerImage.image {
+            receiver.employerImageReceived = imageViewImage
+        }
+        
+        if let employerLet = senderLet.employer.text {
+            receiver.employerReceived = employerLet
+        }
+        
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

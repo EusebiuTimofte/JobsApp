@@ -115,8 +115,32 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Okf-Fa-AUu">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
                                         <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Job" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="suL-bP-vda">
+                                                <rect key="frame" x="4.0000000000000018" y="178.66666666666669" width="28.666666666666671" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PmT-lk-T8g">
+                                                <rect key="frame" x="129.66666666666669" y="7.6666666666666714" width="154.66666666666669" height="155"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="PmT-lk-T8g" secondAttribute="height" multiplier="1:1" id="dkg-a0-jzt"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Angajator" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5i3-io-81R">
+                                                <rect key="frame" x="8" y="305" width="74" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6zK-io-cUX">
+                                                <rect key="frame" x="4" y="348" width="42" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ji-Vs-cXY">
-                                                <rect key="frame" x="-275" y="139" width="414" height="89.333333333333314"/>
+                                                <rect key="frame" x="-8" y="237" width="414" height="89.333333333333314"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -124,8 +148,18 @@
                                         </subviews>
                                         <constraints>
                                             <constraint firstItem="2ji-Vs-cXY" firstAttribute="width" secondItem="Okf-Fa-AUu" secondAttribute="width" multiplier="0.9" id="1W7-5U-FHw"/>
-                                            <constraint firstItem="2ji-Vs-cXY" firstAttribute="top" secondItem="Okf-Fa-AUu" secondAttribute="top" constant="5" id="Uhv-EO-7PS"/>
+                                            <constraint firstItem="5i3-io-81R" firstAttribute="top" secondItem="2ji-Vs-cXY" secondAttribute="bottom" multiplier="1.05" id="2rC-81-T5P"/>
+                                            <constraint firstItem="2ji-Vs-cXY" firstAttribute="top" secondItem="suL-bP-vda" secondAttribute="bottom" multiplier="1.04" id="4w8-2B-k3I"/>
+                                            <constraint firstItem="6zK-io-cUX" firstAttribute="centerX" secondItem="Okf-Fa-AUu" secondAttribute="centerX" id="GLb-FO-qki"/>
+                                            <constraint firstItem="suL-bP-vda" firstAttribute="top" secondItem="PmT-lk-T8g" secondAttribute="bottom" multiplier="1.1" id="JtU-tG-F9d"/>
+                                            <constraint firstItem="PmT-lk-T8g" firstAttribute="top" secondItem="Okf-Fa-AUu" secondAttribute="centerY" multiplier="0.02" id="Ocj-Cg-czS"/>
+                                            <constraint firstItem="PmT-lk-T8g" firstAttribute="centerX" secondItem="Okf-Fa-AUu" secondAttribute="centerX" id="PGZ-RF-AxT"/>
+                                            <constraint firstItem="6zK-io-cUX" firstAttribute="width" secondItem="Okf-Fa-AUu" secondAttribute="width" multiplier="0.9" id="cUM-5b-Jy3"/>
+                                            <constraint firstItem="5i3-io-81R" firstAttribute="leading" secondItem="Okf-Fa-AUu" secondAttribute="centerX" multiplier="0.02" id="dvR-Bn-leX"/>
                                             <constraint firstItem="2ji-Vs-cXY" firstAttribute="centerX" secondItem="Okf-Fa-AUu" secondAttribute="centerX" id="lPN-ot-Oje"/>
+                                            <constraint firstItem="PmT-lk-T8g" firstAttribute="height" secondItem="Okf-Fa-AUu" secondAttribute="height" multiplier="0.2" id="nNx-1g-kcB"/>
+                                            <constraint firstItem="suL-bP-vda" firstAttribute="leading" secondItem="Okf-Fa-AUu" secondAttribute="centerX" multiplier="0.02" id="x2t-d3-TuQ"/>
+                                            <constraint firstItem="6zK-io-cUX" firstAttribute="top" secondItem="5i3-io-81R" secondAttribute="bottom" multiplier="1.04" id="zVe-r7-OHs"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -151,6 +185,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="fKl-31-6YC"/>
                     <connections>
+                        <outlet property="employer" destination="6zK-io-cUX" id="dky-Ai-3Lm"/>
+                        <outlet property="employerImage" destination="PmT-lk-T8g" id="mCl-uj-WGt"/>
+                        <outlet property="employerLabel" destination="5i3-io-81R" id="7sj-bC-1Qk"/>
+                        <outlet property="jobTitle" destination="suL-bP-vda" id="ums-on-Uzv"/>
                         <outlet property="jobTitleLabel" destination="2ji-Vs-cXY" id="apF-Nb-OMw"/>
                         <outlet property="scrollViewContent" destination="Okf-Fa-AUu" id="OOF-u8-tVC"/>
                     </connections>
