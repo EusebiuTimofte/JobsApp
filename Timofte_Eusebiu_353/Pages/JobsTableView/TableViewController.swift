@@ -34,6 +34,14 @@ class TableViewController: UITableViewController {
             receiver.employerReceived = employerLet
         }
         
+        if let locationLet = senderLet.city.text {
+            receiver.locationReceived = locationLet
+        }
+        
+        if let publishDateLet = senderLet.publishDate.text {
+            receiver.publishDateReceived = publishDateLet
+        }
+        
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
