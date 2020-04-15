@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Jobs-->
         <scene sceneID="UGf-2T-CRU">
             <objects>
-                <tableViewController id="kcv-wJ-5C9" customClass="TableViewController" customModule="Timofte_Eusebiu_353" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Jobs" id="kcv-wJ-5C9" customClass="TableViewController" customModule="Timofte_Eusebiu_353" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" contentInsetAdjustmentBehavior="always" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="yCC-Ov-l0d">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -95,16 +95,16 @@
                             <outlet property="delegate" destination="kcv-wJ-5C9" id="lSO-ZP-z9J"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="A1a-UY-OSE"/>
+                    <navigationItem key="navigationItem" title="Jobs" id="A1a-UY-OSE"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D0Y-hu-JAQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="715.94202898550725" y="89.732142857142847"/>
         </scene>
-        <!--Job Description View Controller-->
+        <!--Job Description-->
         <scene sceneID="3u9-ay-xIv">
             <objects>
-                <viewController id="t8l-4a-RFH" customClass="JobDescriptionViewController" customModule="Timofte_Eusebiu_353" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Job Description" id="t8l-4a-RFH" customClass="JobDescriptionViewController" customModule="Timofte_Eusebiu_353" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GdA-4r-vG4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -249,7 +249,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bJu-f9-JlV"/>
                     </view>
-                    <navigationItem key="navigationItem" id="fKl-31-6YC"/>
+                    <navigationItem key="navigationItem" title="Job Description" id="fKl-31-6YC"/>
                     <connections>
                         <outlet property="apply" destination="msE-Gm-DlT" id="gm4-wC-7qj"/>
                         <outlet property="descriptionLabel" destination="bgx-Mu-9BQ" id="PiO-xK-tgH"/>
@@ -274,7 +274,7 @@
         <!--Navigation Controller-->
         <scene sceneID="0Q3-8y-c7h">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zeJ-wk-N4V" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zeJ-wk-N4V" customClass="NavigationController" customModule="Timofte_Eusebiu_353" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oiu-IQ-QC2">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>

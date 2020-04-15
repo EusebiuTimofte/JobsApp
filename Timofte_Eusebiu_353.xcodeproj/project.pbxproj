@@ -19,6 +19,7 @@
 		539A4938243BCE150011AEB4 /* FirstTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539A4937243BCE150011AEB4 /* FirstTableViewCell.swift */; };
 		53A79321243D44770084AD6F /* FontSizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A79320243D44770084AD6F /* FontSizer.swift */; };
 		53C205B224432D8800C368AB /* UILabelExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C205B124432D8800C368AB /* UILabelExt.swift */; };
+		610F21E024479B11002F6C40 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610F21DF24479B11002F6C40 /* NavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		539A4937243BCE150011AEB4 /* FirstTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTableViewCell.swift; sourceTree = "<group>"; };
 		53A79320243D44770084AD6F /* FontSizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontSizer.swift; sourceTree = "<group>"; };
 		53C205B124432D8800C368AB /* UILabelExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExt.swift; sourceTree = "<group>"; };
+		610F21DF24479B11002F6C40 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 		535F66B7244263C000C33355 /* Pages */ = {
 			isa = PBXGroup;
 			children = (
+				610F21DE24479AE0002F6C40 /* Navigation */,
 				539A4936243BCDCF0011AEB4 /* JobsTableView */,
 				535F66B62442639A00C33355 /* JobDescriptionView */,
 			);
@@ -123,6 +126,14 @@
 				53A79320243D44770084AD6F /* FontSizer.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		610F21DE24479AE0002F6C40 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				610F21DF24479B11002F6C40 /* NavigationController.swift */,
+			);
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,6 +214,7 @@
 				53117582243FD082005BB73D /* FontHeightAdjustableLabel.swift in Sources */,
 				53C205B224432D8800C368AB /* UILabelExt.swift in Sources */,
 				539A4923243BBA670011AEB4 /* AppDelegate.swift in Sources */,
+				610F21E024479B11002F6C40 /* NavigationController.swift in Sources */,
 				539A4925243BBA670011AEB4 /* SceneDelegate.swift in Sources */,
 				535F66B92442641600C33355 /* JobDescriptionViewController.swift in Sources */,
 			);
