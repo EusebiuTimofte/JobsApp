@@ -124,7 +124,6 @@
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PmT-lk-T8g">
                                                 <rect key="frame" x="129.66666666666666" y="6" width="154.99999999999997" height="155"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="155" id="HRy-3s-f3c"/>
                                                     <constraint firstAttribute="width" secondItem="PmT-lk-T8g" secondAttribute="height" multiplier="1:1" id="dkg-a0-jzt"/>
                                                 </constraints>
                                             </imageView>
@@ -192,6 +191,7 @@
                                             <constraint firstItem="2ji-Vs-cXY" firstAttribute="width" secondItem="Okf-Fa-AUu" secondAttribute="width" multiplier="0.9" id="1W7-5U-FHw"/>
                                             <constraint firstItem="CsS-fI-Fx4" firstAttribute="leading" secondItem="Okf-Fa-AUu" secondAttribute="centerX" multiplier="0.02" id="2eD-AJ-ZrR"/>
                                             <constraint firstItem="5i3-io-81R" firstAttribute="top" secondItem="2ji-Vs-cXY" secondAttribute="bottom" multiplier="1.05" id="2rC-81-T5P"/>
+                                            <constraint firstItem="PmT-lk-T8g" firstAttribute="width" secondItem="Okf-Fa-AUu" secondAttribute="width" multiplier="0.374396" id="3UC-Ga-455"/>
                                             <constraint firstItem="5TF-vB-zbZ" firstAttribute="top" secondItem="CsS-fI-Fx4" secondAttribute="bottom" multiplier="1.04" id="45K-Ls-dAo"/>
                                             <constraint firstItem="2ji-Vs-cXY" firstAttribute="top" secondItem="suL-bP-vda" secondAttribute="bottom" multiplier="1.04" id="4w8-2B-k3I"/>
                                             <constraint firstItem="CsS-fI-Fx4" firstAttribute="top" secondItem="6zK-io-cUX" secondAttribute="bottom" multiplier="1.05" id="6ho-Wj-tlu"/>
