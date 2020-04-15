@@ -59,30 +59,34 @@ class JobDescriptionViewController : UIViewController {
         
         descriptionValue.text = "Description aslkda kalsdkasp lkpal dkasdplk aspldk pl kplkplkplkasd p askdplk aspldk aspdl kplad kpasldkpaslkpasdlk pasdlk plask lpaskd pasdk pk pak pask paskd pk p kaspdk aspdkaspk kdk apsdkp askasdpkas pk pk apsk paskdpask asp kpak paskdpkasaskask k apskdaskdpak apsdk apskpakapskdpasdkaspdkp padkaskdpapskdaspdaslpdaslpdaslpdlpasdlpasdpaskaspdaspdpasdpasda pakspdapdask"
         
-        var labelFontSizeMultiplier: CGFloat = 30
-        if UIScreen.main.bounds.width > 500 {
-            labelFontSizeMultiplier = 18
-        }
+        descriptionValue.sizeToFit()
+        scrollViewContent.layoutIfNeeded()
+        scrollViewElement.contentSize = scrollViewContent.frame.size
         
-        jobTitleLabel.font = jobTitleLabel.fontToFitHeight(height: scrollViewContent.frame.height / labelFontSizeMultiplier)
-        
-        jobTitle.font = jobTitle.fontToFitHeight(height: scrollViewContent.frame.height / (labelFontSizeMultiplier - CGFloat(5)))
-        
-        employerLabel.font = employerLabel.fontToFitHeight(height: scrollViewContent.frame.height / (labelFontSizeMultiplier - CGFloat(5)))
-        
-        employer.font = employer.fontToFitHeight(height: scrollViewContent.frame.height / labelFontSizeMultiplier)
-        
-        locationLabel.font = locationLabel.fontToFitHeight(height: scrollViewContent.frame.height / (labelFontSizeMultiplier - CGFloat(5)))
-        
-        location.font = location.fontToFitHeight(height: scrollViewContent.frame.height / labelFontSizeMultiplier)
-        
-        publishDateLabel.font = publishDateLabel.fontToFitHeight(height: scrollViewContent.frame.height / (labelFontSizeMultiplier - CGFloat(5)))
-        
-        publishDate.font = publishDate.fontToFitHeight(height: scrollViewContent.frame.height / labelFontSizeMultiplier)
-        
-        descriptionLabel.font = descriptionLabel.fontToFitHeight(height: scrollViewContent.frame.height / (labelFontSizeMultiplier - CGFloat(5)))
-        
-        descriptionValue.font = descriptionValue.fontToFitHeight(height: scrollViewContent.frame.height / labelFontSizeMultiplier)
+//        var labelFontSizeMultiplier: CGFloat = 30
+//        if UIScreen.main.bounds.width > 500 {
+//            labelFontSizeMultiplier = 18
+//        }
+//
+//        jobTitleLabel.font = jobTitleLabel.fontToFitHeight(height: scrollViewContent.frame.height / labelFontSizeMultiplier)
+//
+//        jobTitle.font = jobTitle.fontToFitHeight(height: scrollViewContent.frame.height / (labelFontSizeMultiplier - CGFloat(5)))
+//
+//        employerLabel.font = employerLabel.fontToFitHeight(height: scrollViewContent.frame.height / (labelFontSizeMultiplier - CGFloat(5)))
+//
+//        employer.font = employer.fontToFitHeight(height: scrollViewContent.frame.height / labelFontSizeMultiplier)
+//
+//        locationLabel.font = locationLabel.fontToFitHeight(height: scrollViewContent.frame.height / (labelFontSizeMultiplier - CGFloat(5)))
+//
+//        location.font = location.fontToFitHeight(height: scrollViewContent.frame.height / labelFontSizeMultiplier)
+//
+//        publishDateLabel.font = publishDateLabel.fontToFitHeight(height: scrollViewContent.frame.height / (labelFontSizeMultiplier - CGFloat(5)))
+//
+//        publishDate.font = publishDate.fontToFitHeight(height: scrollViewContent.frame.height / labelFontSizeMultiplier)
+//
+//        descriptionLabel.font = descriptionLabel.fontToFitHeight(height: scrollViewContent.frame.height / (labelFontSizeMultiplier - CGFloat(5)))
+//
+//        descriptionValue.font = descriptionValue.fontToFitHeight(height: scrollViewContent.frame.height / labelFontSizeMultiplier)
         
         
     }
