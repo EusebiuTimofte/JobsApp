@@ -113,7 +113,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <subviews>
                                     <view contentMode="TopLeft" translatesAutoresizingMaskIntoConstraints="NO" id="Okf-Fa-AUu">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="609.66666666666663"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="628.66666666666663"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Job" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="suL-bP-vda">
                                                 <rect key="frame" x="4.0000000000000018" y="177.33333333333331" width="28.666666666666671" height="21"/>
@@ -122,7 +122,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PmT-lk-T8g">
-                                                <rect key="frame" x="129.66666666666666" y="6" width="154.99999999999997" height="155"/>
+                                                <rect key="frame" x="129.66666666666666" y="6.3333333333333286" width="154.99999999999997" height="155"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="PmT-lk-T8g" secondAttribute="height" multiplier="1:1" id="dkg-a0-jzt"/>
                                                 </constraints>
@@ -181,9 +181,15 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="msE-Gm-DlT">
-                                                <rect key="frame" x="184" y="669" width="46" height="30"/>
-                                                <state key="normal" title="Aplica"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="msE-Gm-DlT">
+                                                <rect key="frame" x="129.66666666666669" y="539" width="154.66666666666669" height="77.333333333333371"/>
+                                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="msE-Gm-DlT" secondAttribute="height" multiplier="2:1" id="1X1-QP-GvG"/>
+                                                </constraints>
+                                                <state key="normal" title="Aplica">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.60594880579999999" green="0.11350636930000001" blue="0.1245979592" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -196,7 +202,7 @@
                                             <constraint firstItem="2ji-Vs-cXY" firstAttribute="top" secondItem="suL-bP-vda" secondAttribute="bottom" multiplier="1.04" id="4w8-2B-k3I"/>
                                             <constraint firstItem="CsS-fI-Fx4" firstAttribute="top" secondItem="6zK-io-cUX" secondAttribute="bottom" multiplier="1.05" id="6ho-Wj-tlu"/>
                                             <constraint firstItem="2oD-lC-FGo" firstAttribute="width" secondItem="Okf-Fa-AUu" secondAttribute="width" multiplier="0.9" id="8Kz-0w-SJB"/>
-                                            <constraint firstAttribute="bottom" secondItem="msE-Gm-DlT" secondAttribute="bottom" constant="10" id="9EK-e5-crF"/>
+                                            <constraint firstAttribute="bottom" secondItem="msE-Gm-DlT" secondAttribute="bottom" multiplier="1.02" id="9EK-e5-crF"/>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="10" id="9NR-Z4-EYx"/>
                                             <constraint firstItem="bgx-Mu-9BQ" firstAttribute="top" secondItem="2oD-lC-FGo" secondAttribute="bottom" multiplier="1.05" id="CPR-6n-lgn"/>
                                             <constraint firstItem="236-f4-MNC" firstAttribute="top" secondItem="5TF-vB-zbZ" secondAttribute="bottom" multiplier="1.05" id="FxT-ta-L0T"/>
@@ -214,7 +220,7 @@
                                             <constraint firstItem="2oD-lC-FGo" firstAttribute="top" secondItem="236-f4-MNC" secondAttribute="bottom" multiplier="1.04" id="d7o-9j-ftr"/>
                                             <constraint firstItem="5i3-io-81R" firstAttribute="leading" secondItem="Okf-Fa-AUu" secondAttribute="centerX" multiplier="0.02" id="dvR-Bn-leX"/>
                                             <constraint firstItem="2ji-Vs-cXY" firstAttribute="centerX" secondItem="Okf-Fa-AUu" secondAttribute="centerX" id="lPN-ot-Oje"/>
-                                            <constraint firstItem="msE-Gm-DlT" firstAttribute="top" secondItem="0hz-pg-7wn" secondAttribute="bottom" multiplier="1.1" id="o7j-4I-nrj"/>
+                                            <constraint firstItem="msE-Gm-DlT" firstAttribute="top" secondItem="0hz-pg-7wn" secondAttribute="bottom" multiplier="1.04" id="o7j-4I-nrj"/>
                                             <constraint firstItem="bgx-Mu-9BQ" firstAttribute="leading" secondItem="Okf-Fa-AUu" secondAttribute="centerX" multiplier="0.02" id="oVp-Tn-nJT"/>
                                             <constraint firstItem="0hz-pg-7wn" firstAttribute="top" secondItem="bgx-Mu-9BQ" secondAttribute="bottom" multiplier="1.04" id="reN-qM-2kx"/>
                                             <constraint firstItem="suL-bP-vda" firstAttribute="leading" secondItem="Okf-Fa-AUu" secondAttribute="centerX" multiplier="0.02" id="x2t-d3-TuQ"/>
@@ -226,6 +232,7 @@
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="Okf-Fa-AUu" firstAttribute="width" secondItem="oHA-xa-6K0" secondAttribute="width" id="EsM-nt-RFR"/>
+                                    <constraint firstItem="msE-Gm-DlT" firstAttribute="height" secondItem="oHA-xa-6K0" secondAttribute="height" multiplier="0.1" id="F9f-hD-TdT"/>
                                     <constraint firstItem="Okf-Fa-AUu" firstAttribute="leading" secondItem="oHA-xa-6K0" secondAttribute="leading" id="LFL-KP-Q8A"/>
                                     <constraint firstItem="Okf-Fa-AUu" firstAttribute="top" secondItem="oHA-xa-6K0" secondAttribute="top" id="qqR-6d-Vua"/>
                                 </constraints>

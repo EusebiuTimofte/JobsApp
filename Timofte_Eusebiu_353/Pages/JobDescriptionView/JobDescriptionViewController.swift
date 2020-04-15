@@ -86,6 +86,8 @@ class JobDescriptionViewController : UIViewController {
 
         descriptionValue.font = descriptionValue.fontToFitHeight(height: scrollViewElement.frame.height / labelFontSizeMultiplier)
         
+        apply.titleLabel?.font = apply.titleLabel?.fontToFitHeight(height: apply.frame.height * CGFloat(2.0/3.0))
+        
         jobTitleLabel.sizeToFit()
         jobTitle.sizeToFit()
         employerLabel.sizeToFit()
