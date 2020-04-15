@@ -25,6 +25,7 @@ class FirstTableViewCell: UITableViewCell {
 //        city.backgroundColor = .systemPink
 //        publishDate.backgroundColor = .gray
         //self.backgroundColor = .yellow
+        
         employerImage.image = UIImage(named: "no-logo")
         self.accessoryType = .disclosureIndicator
         let chevronImageView = UIImageView(image:UIImage(named: "disclosureIndicatorImage"))
@@ -33,8 +34,10 @@ class FirstTableViewCell: UITableViewCell {
         chevronImageView.frame = CGRect(x: 0, y: 0, width: self.frame.height / CGFloat(3), height: self.frame.height / CGFloat(3))
         self.accessoryView = chevronImageView
         
+        self.layer.cornerRadius = CGFloat(20)
         self.layer.borderWidth = self.frame.height / CGFloat(10)
         self.layer.borderColor = CGColor(srgbRed: 0.8, green: 0.8, blue: 0.8, alpha: 1.0)
+//        self.layer.borderColor = CGColor(srgbRed: CGFloat(255.0/255.0), green: CGFloat(155.0/255.0), blue: CGFloat(0.0/255.0), alpha: 1.0)
 
     }
     
