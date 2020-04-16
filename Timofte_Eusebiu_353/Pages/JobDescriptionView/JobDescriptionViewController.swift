@@ -57,7 +57,10 @@ class JobDescriptionViewController : UIViewController {
             publishDate.text = publishDateReceivedLet
         }
         
-        descriptionValue.text = "Description aslkda kalsdkasp lkpal dkasdplk aspldk pl kplkplkplkasd p askdplk aspldk aspdl kplad kpasldkpaslkpasdlk pasdlk plask lpaskd pasdk pk pak pask paskd pk p kaspdk aspdkaspk kdk apsdkp askasdpkas pk pk apsk paskdpask asp kpak paskdpkasaskask k apskdaskdpak apsdk apskpakapskdpasdkaspdkp padkaskdpapskdaspdaslpdaslpdaslpdlpasdlpasdpaskaspdaspdpasdpasda pakspdapdask"
+        if let descriptionValueReceivedLet = descriptionValueReceived {
+            descriptionValue.text = descriptionValueReceivedLet
+        }
+        
         
        
         

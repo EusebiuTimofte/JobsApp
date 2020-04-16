@@ -17,6 +17,9 @@ class FirstTableViewCell: UITableViewCell {
     @IBOutlet weak var publishDate: UILabel!
     @IBOutlet weak var employerImage: UIImageView!
     @IBOutlet weak var city: UILabel!
+    
+    var descriptionValue: String = ""
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

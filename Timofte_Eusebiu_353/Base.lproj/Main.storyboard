@@ -71,13 +71,13 @@
                                         <constraint firstItem="Z36-B6-tcH" firstAttribute="width" secondItem="99H-TU-Vs4" secondAttribute="width" multiplier="0.7" id="KQA-9q-SBa"/>
                                         <constraint firstItem="25L-c6-TiC" firstAttribute="width" secondItem="99H-TU-Vs4" secondAttribute="width" multiplier="0.2" id="ReB-HM-IKu"/>
                                         <constraint firstItem="fNl-DY-2jN" firstAttribute="width" secondItem="99H-TU-Vs4" secondAttribute="width" multiplier="0.4" id="S9A-lv-IJB"/>
-                                        <constraint firstItem="Vr4-lR-9nA" firstAttribute="width" secondItem="99H-TU-Vs4" secondAttribute="width" multiplier="0.25" id="VRe-Ui-y0R"/>
+                                        <constraint firstItem="Vr4-lR-9nA" firstAttribute="width" secondItem="99H-TU-Vs4" secondAttribute="width" multiplier="0.4" id="VRe-Ui-y0R"/>
                                         <constraint firstItem="fNl-DY-2jN" firstAttribute="top" secondItem="99H-TU-Vs4" secondAttribute="centerY" multiplier="1.1" id="eFm-lW-S6v"/>
                                         <constraint firstItem="Z36-B6-tcH" firstAttribute="leading" secondItem="99H-TU-Vs4" secondAttribute="centerX" multiplier="0.5" id="hTW-06-DBI"/>
                                         <constraint firstItem="25L-c6-TiC" firstAttribute="top" secondItem="99H-TU-Vs4" secondAttribute="centerY" multiplier="0.2" id="hXK-tl-J6u"/>
                                         <constraint firstItem="fNl-DY-2jN" firstAttribute="height" secondItem="99H-TU-Vs4" secondAttribute="height" multiplier="0.17" id="hfa-tg-4hc"/>
                                         <constraint firstItem="Vr4-lR-9nA" firstAttribute="height" secondItem="99H-TU-Vs4" secondAttribute="height" multiplier="0.17" id="jU0-8z-H4r"/>
-                                        <constraint firstItem="Vr4-lR-9nA" firstAttribute="leading" secondItem="99H-TU-Vs4" secondAttribute="centerX" multiplier="1.4" id="yU1-61-bY2"/>
+                                        <constraint firstItem="Vr4-lR-9nA" firstAttribute="leading" secondItem="99H-TU-Vs4" secondAttribute="centerX" multiplier="1.3" id="yU1-61-bY2"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
