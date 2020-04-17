@@ -399,16 +399,16 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <subviews>
                                     <view contentMode="TopLeft" translatesAutoresizingMaskIntoConstraints="NO" id="lpd-z2-1hx">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="569"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Job" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bi1-0P-fhP">
-                                                <rect key="frame" x="4.0000000000000018" y="176.66666666666669" width="28.666666666666671" height="21"/>
+                                                <rect key="frame" x="4.0000000000000018" y="179" width="28.666666666666671" height="144.66666666666663"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RhZ-ER-XjP">
-                                                <rect key="frame" x="129.66666666666666" y="5.6666666666666714" width="154.99999999999997" height="155"/>
+                                                <rect key="frame" x="129.66666666666666" y="7.6666666666666714" width="154.99999999999997" height="155"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="RhZ-ER-XjP" secondAttribute="height" multiplier="1:1" id="cLu-eY-5yW"/>
                                                 </constraints>
@@ -499,7 +499,6 @@
                                             <constraint firstItem="8Qh-xQ-oSu" firstAttribute="width" secondItem="lpd-z2-1hx" secondAttribute="width" multiplier="0.9" id="pfm-6t-ZR3"/>
                                             <constraint firstItem="vWH-nM-P4x" firstAttribute="top" secondItem="pAI-by-lx8" secondAttribute="bottom" multiplier="1.04" id="py6-ip-mI5"/>
                                             <constraint firstItem="Bi1-0P-fhP" firstAttribute="leading" secondItem="lpd-z2-1hx" secondAttribute="centerX" multiplier="0.02" id="wbw-Ja-vmY"/>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="10" id="ymK-0u-AxP"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -517,6 +516,7 @@
                         <constraints>
                             <constraint firstItem="rec-2e-hwo" firstAttribute="bottom" secondItem="ppy-7t-zk6" secondAttribute="bottom" id="0Np-fv-hAw"/>
                             <constraint firstItem="rec-2e-hwo" firstAttribute="trailing" secondItem="ppy-7t-zk6" secondAttribute="trailing" id="3p6-WF-qya"/>
+                            <constraint firstItem="lpd-z2-1hx" firstAttribute="height" relation="greaterThanOrEqual" secondItem="rec-2e-hwo" secondAttribute="height" id="I1S-4p-v1A"/>
                             <constraint firstItem="ppy-7t-zk6" firstAttribute="leading" secondItem="rec-2e-hwo" secondAttribute="leading" id="L4d-V7-eNP"/>
                             <constraint firstItem="ppy-7t-zk6" firstAttribute="top" secondItem="rec-2e-hwo" secondAttribute="top" id="Os2-3F-OhY"/>
                         </constraints>
