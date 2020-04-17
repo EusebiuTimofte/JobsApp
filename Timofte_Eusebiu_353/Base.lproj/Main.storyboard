@@ -399,16 +399,16 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <subviews>
                                     <view contentMode="TopLeft" translatesAutoresizingMaskIntoConstraints="NO" id="lpd-z2-1hx">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="628.66666666666663"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="569"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Job" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bi1-0P-fhP">
-                                                <rect key="frame" x="4.0000000000000018" y="177.33333333333331" width="28.666666666666671" height="21"/>
+                                                <rect key="frame" x="4.0000000000000018" y="176.66666666666669" width="28.666666666666671" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RhZ-ER-XjP">
-                                                <rect key="frame" x="129.66666666666666" y="6.3333333333333286" width="154.99999999999997" height="155"/>
+                                                <rect key="frame" x="129.66666666666666" y="5.6666666666666714" width="154.99999999999997" height="155"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="RhZ-ER-XjP" secondAttribute="height" multiplier="1:1" id="cLu-eY-5yW"/>
                                                 </constraints>
@@ -467,26 +467,16 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tcs-ta-h3t">
-                                                <rect key="frame" x="129.66666666666669" y="539" width="154.66666666666669" height="77.333333333333371"/>
-                                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="Tcs-ta-h3t" secondAttribute="height" multiplier="2:1" id="maC-xv-KZd"/>
-                                                </constraints>
-                                                <state key="normal" title="Aplica">
-                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="02m-Vw-9bc" secondAttribute="bottom" multiplier="1.1" id="0JW-8z-D3d"/>
                                             <constraint firstItem="pAI-by-lx8" firstAttribute="top" secondItem="8Qh-xQ-oSu" secondAttribute="bottom" multiplier="1.05" id="1cA-LJ-twx"/>
                                             <constraint firstItem="ZA0-CS-a7Y" firstAttribute="centerX" secondItem="lpd-z2-1hx" secondAttribute="centerX" id="7CV-fW-PlV"/>
                                             <constraint firstItem="vHe-hd-M2a" firstAttribute="top" secondItem="0hc-dL-qZT" secondAttribute="bottom" multiplier="1.04" id="7Qf-j4-e5o"/>
                                             <constraint firstItem="vWH-nM-P4x" firstAttribute="width" secondItem="lpd-z2-1hx" secondAttribute="width" multiplier="0.9" id="D9U-FL-j1h"/>
                                             <constraint firstItem="vHe-hd-M2a" firstAttribute="centerX" secondItem="lpd-z2-1hx" secondAttribute="centerX" id="FT9-II-mGa"/>
                                             <constraint firstItem="dp4-Jg-Pvf" firstAttribute="top" secondItem="ZA0-CS-a7Y" secondAttribute="bottom" multiplier="1.05" id="HsZ-Ic-OVM"/>
-                                            <constraint firstItem="Tcs-ta-h3t" firstAttribute="centerX" secondItem="lpd-z2-1hx" secondAttribute="centerX" id="LIh-c6-9xR"/>
                                             <constraint firstItem="ZA0-CS-a7Y" firstAttribute="top" secondItem="Bi1-0P-fhP" secondAttribute="bottom" multiplier="1.04" id="OyL-ka-JlJ"/>
                                             <constraint firstItem="RhZ-ER-XjP" firstAttribute="width" secondItem="lpd-z2-1hx" secondAttribute="width" multiplier="0.374396" id="PrQ-3U-nda"/>
                                             <constraint firstItem="8Qh-xQ-oSu" firstAttribute="centerX" secondItem="lpd-z2-1hx" secondAttribute="centerX" id="QPO-SE-W8J"/>
@@ -498,7 +488,6 @@
                                             <constraint firstItem="buj-Cz-tTd" firstAttribute="top" secondItem="vHe-hd-M2a" secondAttribute="bottom" multiplier="1.05" id="aXP-Ek-dMX"/>
                                             <constraint firstItem="RhZ-ER-XjP" firstAttribute="centerX" secondItem="lpd-z2-1hx" secondAttribute="centerX" id="aXi-cY-QfZ"/>
                                             <constraint firstItem="0hc-dL-qZT" firstAttribute="top" secondItem="vWH-nM-P4x" secondAttribute="bottom" multiplier="1.05" id="b4i-1G-FCv"/>
-                                            <constraint firstAttribute="bottom" secondItem="Tcs-ta-h3t" secondAttribute="bottom" multiplier="1.02" id="bMr-iV-aYY"/>
                                             <constraint firstItem="ZA0-CS-a7Y" firstAttribute="width" secondItem="lpd-z2-1hx" secondAttribute="width" multiplier="0.9" id="ceP-qB-Dnu"/>
                                             <constraint firstItem="vHe-hd-M2a" firstAttribute="width" secondItem="lpd-z2-1hx" secondAttribute="width" multiplier="0.9" id="hVx-WB-tVE"/>
                                             <constraint firstItem="8Qh-xQ-oSu" firstAttribute="top" secondItem="dp4-Jg-Pvf" secondAttribute="bottom" multiplier="1.04" id="ihF-5g-Bev"/>
@@ -509,7 +498,6 @@
                                             <constraint firstItem="RhZ-ER-XjP" firstAttribute="top" secondItem="lpd-z2-1hx" secondAttribute="centerY" multiplier="0.02" id="pId-Xm-kes"/>
                                             <constraint firstItem="8Qh-xQ-oSu" firstAttribute="width" secondItem="lpd-z2-1hx" secondAttribute="width" multiplier="0.9" id="pfm-6t-ZR3"/>
                                             <constraint firstItem="vWH-nM-P4x" firstAttribute="top" secondItem="pAI-by-lx8" secondAttribute="bottom" multiplier="1.04" id="py6-ip-mI5"/>
-                                            <constraint firstItem="Tcs-ta-h3t" firstAttribute="top" secondItem="02m-Vw-9bc" secondAttribute="bottom" multiplier="1.04" id="r91-8i-Y6y"/>
                                             <constraint firstItem="Bi1-0P-fhP" firstAttribute="leading" secondItem="lpd-z2-1hx" secondAttribute="centerX" multiplier="0.02" id="wbw-Ja-vmY"/>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="10" id="ymK-0u-AxP"/>
                                         </constraints>
@@ -519,7 +507,6 @@
                                 <constraints>
                                     <constraint firstItem="lpd-z2-1hx" firstAttribute="width" secondItem="ppy-7t-zk6" secondAttribute="width" id="N5E-0y-tyf"/>
                                     <constraint firstItem="lpd-z2-1hx" firstAttribute="leading" secondItem="ppy-7t-zk6" secondAttribute="leading" id="SVQ-dN-e6F"/>
-                                    <constraint firstItem="Tcs-ta-h3t" firstAttribute="height" secondItem="ppy-7t-zk6" secondAttribute="height" multiplier="0.1" id="sr5-Cp-MBk"/>
                                     <constraint firstItem="lpd-z2-1hx" firstAttribute="top" secondItem="ppy-7t-zk6" secondAttribute="top" id="ufk-6I-A3h"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="J7j-Uo-8p0"/>
