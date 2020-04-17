@@ -40,10 +40,18 @@ class JobDescriptionViewController : UIViewController {
         if id != nil {
             DataBase.appliances.append(id!)
         }
+        performSegue(withIdentifier: "apply", sender: self)
+        var viewControllersVar = navigationController?.viewControllers
+        var indexToRemove = viewControllersVar!.count - 2
+        viewControllersVar?.remove(at: indexToRemove)
+        indexToRemove = viewControllersVar!.count - 2
+        viewControllersVar?.remove(at: indexToRemove)
+        navigationController?.viewControllers = viewControllersVar!
         
-        
-        let tableViewController = storyboard?.instantiateViewController(withIdentifier: "jobs") as! TableViewController
-        navigationController?.pushViewController(tableViewController, animated: true)
+
+//        let tableViewController = storyboard?.instantiateViewController(withIdentifier: "jobs") as! TableViewController
+//
+//        navigationController?.pushViewController(tableViewController, animated: true)
     }
     
     
