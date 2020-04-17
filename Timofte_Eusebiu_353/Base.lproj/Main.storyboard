@@ -275,11 +275,11 @@
             </objects>
             <point key="canvasLocation" x="2442.0289855072465" y="89.732142857142847"/>
         </scene>
-        <!--Item-->
+        <!--Jobs-->
         <scene sceneID="0Q3-8y-c7h">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zeJ-wk-N4V" customClass="NavigationController" customModule="Timofte_Eusebiu_353" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="s0F-CE-vyF"/>
+                    <tabBarItem key="tabBarItem" title="Jobs" image="rectangle.grid.1x2" catalog="system" id="s0F-CE-vyF"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oiu-IQ-QC2">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -386,7 +386,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xfx-QL-EAJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1623.1884057971015" y="902.67857142857133"/>
+            <point key="canvasLocation" x="1962" y="903"/>
         </scene>
         <!--Job Description Applied-->
         <scene sceneID="4oV-YJ-e7W">
@@ -542,13 +542,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qos-DY-oVz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2442.0289855072465" y="902.67857142857133"/>
+            <point key="canvasLocation" x="2659" y="903"/>
         </scene>
         <!--AppliedNav-->
         <scene sceneID="hMW-PP-nTR">
             <objects>
                 <navigationController title="AppliedNav" automaticallyAdjustsScrollViewInsets="NO" id="pn7-Su-YQh" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="rOD-Kz-zoM"/>
+                    <tabBarItem key="tabBarItem" title="Applied" image="archivebox" catalog="system" id="rOD-Kz-zoM"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9nd-ae-QHt">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -568,9 +568,9 @@
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="JgB-36-OEu" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" itemPositioning="fill" id="vya-3y-PnZ">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vya-3y-PnZ">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="selectedImageTintColor" cocoaTouchSystemColor="darkTextColor"/>
                     </tabBar>
                     <connections>
@@ -586,4 +586,8 @@
     <inferredMetricsTieBreakers>
         <segue reference="Yss-i0-PRI"/>
     </inferredMetricsTieBreakers>
+    <resources>
+        <image name="archivebox" catalog="system" width="128" height="106"/>
+        <image name="rectangle.grid.1x2" catalog="system" width="128" height="101"/>
+    </resources>
 </document>
