@@ -19,6 +19,7 @@ class FirstTableViewCell: UITableViewCell {
     @IBOutlet weak var city: UILabel!
     
     var descriptionValue: String = ""
+    var id: Int = 0
     
     override func awakeFromNib() {
         super.awakeFromNib()

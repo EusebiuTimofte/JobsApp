@@ -17,6 +17,7 @@ class JobDescriptionViewController : UIViewController {
     var locationReceived: String?
     var publishDateReceived: String?
     var descriptionValueReceived: String?
+    var idReceived: Int?
     
     
     @IBOutlet weak var scrollViewElement: UIScrollView!
@@ -33,6 +34,17 @@ class JobDescriptionViewController : UIViewController {
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var descriptionValue: UILabel!
     @IBOutlet weak var apply: UIButton!
+    var id: Int?
+    
+    @IBAction func applyAction(_ sender: UIButton) {
+        if id != nil {
+            DataBase.appliances.append(id!)
+        }
+        
+        
+        let tableViewController = storyboard?.instantiateViewController(withIdentifier: "jobs") as! TableViewController
+        navigationController?.pushViewController(tableViewController, animated: true)
+    }
     
     
     override func viewDidLoad() {
@@ -59,6 +71,10 @@ class JobDescriptionViewController : UIViewController {
         
         if let descriptionValueReceivedLet = descriptionValueReceived {
             descriptionValue.text = descriptionValueReceivedLet
+        }
+        
+        if let receivedIdLet = idReceived {
+            id = receivedIdLet
         }
         
         
