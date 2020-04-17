@@ -87,5 +87,10 @@ class AppliedTableViewController: UITableViewController {
     //    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     //
     //    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        jobs = DataBase.getJobsWithAppliance()
+        tableView.reloadData()
+    }
 
 }
