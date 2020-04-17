@@ -10,10 +10,11 @@ import UIKit
 
 class AppliedTableViewController: UITableViewController {
 
-    var jobs: [Job] = DataBase.getJobsWithAppliance()
+    var jobs: [Job] = []
         
         override func viewDidLoad() {
             super.viewDidLoad()
+            jobs = DataBase.getJobsWithAppliance()
             // Do any additional setup after loading the view.
     //        self.tableView.separatorColor = UIColor(cgColor: CGColor(srgbRed: 0.0, green: 0.0, blue: 0.0, alpha: 1.0))
             tableView.separatorStyle = .none
