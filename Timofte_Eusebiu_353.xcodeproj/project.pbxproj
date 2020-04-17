@@ -20,6 +20,8 @@
 		53A79321243D44770084AD6F /* FontSizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A79320243D44770084AD6F /* FontSizer.swift */; };
 		53C205B224432D8800C368AB /* UILabelExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C205B124432D8800C368AB /* UILabelExt.swift */; };
 		6065FFD22449A80E00892644 /* DataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6065FFD12449A80E00892644 /* DataBase.swift */; };
+		60E3DC432449F692006A750A /* AppliedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E3DC422449F692006A750A /* AppliedTableViewController.swift */; };
+		60E3DC462449F717006A750A /* AppliedJobDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E3DC452449F717006A750A /* AppliedJobDescriptionView.swift */; };
 		610F21E024479B11002F6C40 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610F21DF24479B11002F6C40 /* NavigationController.swift */; };
 		6134F9592448FBD3004E4B1A /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6134F9582448FBD3004E4B1A /* Job.swift */; };
 /* End PBXBuildFile section */
@@ -40,6 +42,8 @@
 		53A79320243D44770084AD6F /* FontSizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontSizer.swift; sourceTree = "<group>"; };
 		53C205B124432D8800C368AB /* UILabelExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExt.swift; sourceTree = "<group>"; };
 		6065FFD12449A80E00892644 /* DataBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBase.swift; sourceTree = "<group>"; };
+		60E3DC422449F692006A750A /* AppliedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppliedTableViewController.swift; sourceTree = "<group>"; };
+		60E3DC452449F717006A750A /* AppliedJobDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppliedJobDescriptionView.swift; sourceTree = "<group>"; };
 		610F21DF24479B11002F6C40 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		6134F9582448FBD3004E4B1A /* Job.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -75,6 +79,8 @@
 		535F66B7244263C000C33355 /* Pages */ = {
 			isa = PBXGroup;
 			children = (
+				60E3DC442449F6DB006A750A /* AppliedJobDescriptionView */,
+				60E3DC412449F654006A750A /* AppliedJobsTableView */,
 				610F21DE24479AE0002F6C40 /* Navigation */,
 				539A4936243BCDCF0011AEB4 /* JobsTableView */,
 				535F66B62442639A00C33355 /* JobDescriptionView */,
@@ -132,6 +138,22 @@
 				6065FFD12449A80E00892644 /* DataBase.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		60E3DC412449F654006A750A /* AppliedJobsTableView */ = {
+			isa = PBXGroup;
+			children = (
+				60E3DC422449F692006A750A /* AppliedTableViewController.swift */,
+			);
+			path = AppliedJobsTableView;
+			sourceTree = "<group>";
+		};
+		60E3DC442449F6DB006A750A /* AppliedJobDescriptionView */ = {
+			isa = PBXGroup;
+			children = (
+				60E3DC452449F717006A750A /* AppliedJobDescriptionView.swift */,
+			);
+			path = AppliedJobDescriptionView;
 			sourceTree = "<group>";
 		};
 		610F21DE24479AE0002F6C40 /* Navigation */ = {
@@ -213,6 +235,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60E3DC432449F692006A750A /* AppliedTableViewController.swift in Sources */,
+				60E3DC462449F717006A750A /* AppliedJobDescriptionView.swift in Sources */,
 				539A4927243BBA670011AEB4 /* TableViewController.swift in Sources */,
 				53117585243FD35A005BB73D /* StrExt.swift in Sources */,
 				539A4938243BCE150011AEB4 /* FirstTableViewCell.swift in Sources */,
