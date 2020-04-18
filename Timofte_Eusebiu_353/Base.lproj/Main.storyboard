@@ -632,6 +632,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EhT-gQ-9zq">
                                 <rect key="frame" x="352" y="304" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="firstKeywordDelete:" destination="IT5-sb-4UW" eventType="touchUpInside" id="WCL-KO-INO"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="second keyword" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JpJ-SR-pWl">
                                 <rect key="frame" x="20.666666666666657" y="356.33333333333331" width="290" height="21"/>
@@ -642,6 +645,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dbo-XG-v4J">
                                 <rect key="frame" x="352" y="351.66666666666669" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="secondKeywordDelete:" destination="IT5-sb-4UW" eventType="touchUpInside" id="XHb-gz-cMl"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="third keyword" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Dt-jE-sjH">
                                 <rect key="frame" x="20.666666666666657" y="403.66666666666669" width="290" height="21"/>
@@ -652,6 +658,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aL8-Lt-Pc2">
                                 <rect key="frame" x="352" y="399.33333333333331" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="thirdKeywordDelete:" destination="IT5-sb-4UW" eventType="touchUpInside" id="9z5-Be-gme"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="forth keyword" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tBM-p9-Fng">
                                 <rect key="frame" x="20.666666666666657" y="451.33333333333331" width="290" height="21"/>
@@ -662,6 +671,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eiE-Wx-5BX">
                                 <rect key="frame" x="352" y="446.66666666666669" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="fourthKeywordDelete:" destination="IT5-sb-4UW" eventType="touchUpInside" id="T2L-Sm-I59"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -726,6 +738,10 @@
                         <outletCollection property="keywordLabels" destination="JpJ-SR-pWl" collectionClass="NSMutableArray" id="UUe-1c-I2h"/>
                         <outletCollection property="keywordLabels" destination="5Dt-jE-sjH" collectionClass="NSMutableArray" id="J1j-Ug-JsA"/>
                         <outletCollection property="keywordLabels" destination="tBM-p9-Fng" collectionClass="NSMutableArray" id="C4j-V0-uWz"/>
+                        <outletCollection property="deleteKeyword" destination="EhT-gQ-9zq" collectionClass="NSMutableArray" id="RJW-Bf-0vi"/>
+                        <outletCollection property="deleteKeyword" destination="Dbo-XG-v4J" collectionClass="NSMutableArray" id="F7K-lI-yHL"/>
+                        <outletCollection property="deleteKeyword" destination="aL8-Lt-Pc2" collectionClass="NSMutableArray" id="jto-sK-dh2"/>
+                        <outletCollection property="deleteKeyword" destination="eiE-Wx-5BX" collectionClass="NSMutableArray" id="nU0-uK-5Ze"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZXR-al-DDF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

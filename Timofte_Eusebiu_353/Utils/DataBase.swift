@@ -40,6 +40,30 @@ class DataBase {
         return localjobs
     }
     
+    static var users: [User] = [
+        User(id: 1, username: "employee1", password: "employee1pass", mail: "employee1@gmail.com", keywords: ["it", "relax", "team"], cv: 1, userType: .employee)
+    ]
+    
+    static var loggedUserId = 1
+    
+    private static func getLoggedUserIndex() -> Int {
+        for i in 0..<users.count {
+            if users[i].id == loggedUserId {
+                return i
+            }
+        }
+        return -1
+    }
+    
+    static func getLoggedUserKeywords() -> [String] {
+        return users[getLoggedUserIndex()].keywords
+    }
+    
+    static func removeLoggedUserKeyword(at index: Int){
+        users[getLoggedUserIndex()].keywords.remove(at: index)
+        
+    }
+    
     private init(){
         
     }

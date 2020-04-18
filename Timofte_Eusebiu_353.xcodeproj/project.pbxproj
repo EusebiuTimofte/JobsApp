@@ -19,6 +19,7 @@
 		539A4938243BCE150011AEB4 /* FirstTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539A4937243BCE150011AEB4 /* FirstTableViewCell.swift */; };
 		53A79321243D44770084AD6F /* FontSizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A79320243D44770084AD6F /* FontSizer.swift */; };
 		53C205B224432D8800C368AB /* UILabelExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C205B124432D8800C368AB /* UILabelExt.swift */; };
+		602EA7E1244B3D6900CA591E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602EA7E0244B3D6900CA591E /* User.swift */; };
 		6065FFD22449A80E00892644 /* DataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6065FFD12449A80E00892644 /* DataBase.swift */; };
 		606BFF9A244B11F600963DC0 /* EmployeeProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606BFF99244B11F600963DC0 /* EmployeeProfileViewController.swift */; };
 		60E3DC432449F692006A750A /* AppliedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E3DC422449F692006A750A /* AppliedTableViewController.swift */; };
@@ -42,6 +43,7 @@
 		539A4937243BCE150011AEB4 /* FirstTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTableViewCell.swift; sourceTree = "<group>"; };
 		53A79320243D44770084AD6F /* FontSizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontSizer.swift; sourceTree = "<group>"; };
 		53C205B124432D8800C368AB /* UILabelExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExt.swift; sourceTree = "<group>"; };
+		602EA7E0244B3D6900CA591E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		6065FFD12449A80E00892644 /* DataBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBase.swift; sourceTree = "<group>"; };
 		606BFF99244B11F600963DC0 /* EmployeeProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeProfileViewController.swift; sourceTree = "<group>"; };
 		60E3DC422449F692006A750A /* AppliedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppliedTableViewController.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 				53A79320243D44770084AD6F /* FontSizer.swift */,
 				6134F9582448FBD3004E4B1A /* Job.swift */,
 				6065FFD12449A80E00892644 /* DataBase.swift */,
+				602EA7E0244B3D6900CA591E /* User.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 				60E3DC462449F717006A750A /* AppliedJobDescriptionView.swift in Sources */,
 				539A4927243BBA670011AEB4 /* TableViewController.swift in Sources */,
 				53117585243FD35A005BB73D /* StrExt.swift in Sources */,
+				602EA7E1244B3D6900CA591E /* User.swift in Sources */,
 				539A4938243BCE150011AEB4 /* FirstTableViewCell.swift in Sources */,
 				53A79321243D44770084AD6F /* FontSizer.swift in Sources */,
 				53117582243FD082005BB73D /* FontHeightAdjustableLabel.swift in Sources */,

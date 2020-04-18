@@ -10,10 +10,28 @@ import UIKit
 
 class EmployeeProfileViewController: UIViewController {
 
+    @IBOutlet var deleteKeyword: [UIButton]!
     @IBOutlet var keywordLabels: [UILabel]!
-    let userKeywords: [String] = ["it", "teamwork", "salary"]
+    var userKeywords: [String] = DataBase.getLoggedUserKeywords()
     @IBOutlet var rootView: UIView!
     @IBOutlet weak var keywords: UILabel!
+    
+    
+    @IBAction func firstKeywordDelete(_ sender: UIButton) {
+        userKeywords.remove(at: 0)
+    }
+    
+    @IBAction func secondKeywordDelete(_ sender: UIButton) {
+        userKeywords.remove(at: 1)
+    }
+    @IBAction func thirdKeywordDelete(_ sender: UIButton) {
+        userKeywords.remove(at: 2)
+    }
+    
+    @IBAction func fourthKeywordDelete(_ sender: UIButton) {
+        userKeywords.remove(at: 3)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,6 +42,7 @@ class EmployeeProfileViewController: UIViewController {
         
         for i in userKeywords.count..<keywordLabels.count {
             keywordLabels[i].isHidden = true
+            deleteKeyword[i].isHidden = true
         }
         
         
