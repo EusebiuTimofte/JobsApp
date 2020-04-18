@@ -21,6 +21,21 @@ class CahngePasswordViewController: UIViewController {
     
     
     @IBAction func changePassword(_ sender: UIButton) {
+        
+        if oldPasswordTextField.text! != DataBase.getLoggedUser().password {
+            warningLabel.text = "Parola gresita!"
+            warningLabel.isHidden = false
+        }else {
+            if newPasswordTextField.text == "" || newPasswordTextField.text != repeatNewPasswordTextField.text {
+                warningLabel.text = "Noua parola nu a fost confirmata!"
+                warningLabel.isHidden = false
+            } else {
+                DataBase.setLoggedUserPassword(newPassword: newPasswordTextField.text!)
+                let pc = (storyboard!.instantiateViewController(withIdentifier: "YourTableViewController") as? EmployeeProfileViewController)!
+                self.navigationController!.pushViewController( pc, animated: true)
+            }
+        }
+        
     }
     
     
@@ -29,8 +44,8 @@ class CahngePasswordViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-//        changePasswordButton.titleLabel!.font = changePasswordButton.titleLabel?.fontToFitHeight(height: changePasswordButton.frame.height * CGFloat(2.0/3.0))
-//        changePasswordButton.layoutIfNeeded()
+        changeButton.titleLabel!.font = changeButton.titleLabel?.fontToFitHeight(height: changeButton.frame.height * CGFloat(2.5/3.0))
+        changeButton.layoutIfNeeded()
     }
     
 

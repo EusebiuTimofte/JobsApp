@@ -55,6 +55,14 @@ class DataBase {
         return -1
     }
     
+    static func setLoggedUserPassword(newPassword: String) {
+        users[getLoggedUserIndex()].password = newPassword
+    }
+    
+    static func getLoggedUser() -> User {
+        return users[getLoggedUserIndex()]
+    }
+    
     static func getLoggedUserKeywords() -> [String] {
         return users[getLoggedUserIndex()].keywords
     }
