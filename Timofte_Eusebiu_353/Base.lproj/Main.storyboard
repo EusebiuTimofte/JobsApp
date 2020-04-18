@@ -722,6 +722,10 @@
                     <connections>
                         <outlet property="keywords" destination="tVh-YA-yBp" id="mql-Hc-97a"/>
                         <outlet property="rootView" destination="VlE-y0-lyH" id="LNg-0r-qjd"/>
+                        <outletCollection property="keywordLabels" destination="BZv-Cg-UPp" collectionClass="NSMutableArray" id="L0D-ce-J2q"/>
+                        <outletCollection property="keywordLabels" destination="JpJ-SR-pWl" collectionClass="NSMutableArray" id="UUe-1c-I2h"/>
+                        <outletCollection property="keywordLabels" destination="5Dt-jE-sjH" collectionClass="NSMutableArray" id="J1j-Ug-JsA"/>
+                        <outletCollection property="keywordLabels" destination="tBM-p9-Fng" collectionClass="NSMutableArray" id="C4j-V0-uWz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZXR-al-DDF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

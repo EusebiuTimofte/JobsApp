@@ -10,16 +10,22 @@ import UIKit
 
 class EmployeeProfileViewController: UIViewController {
 
-    let userKeywords: [String] = ["it", "pharma", "teamwork", "salary"]
+    @IBOutlet var keywordLabels: [UILabel]!
+    let userKeywords: [String] = ["it", "teamwork", "salary"]
     @IBOutlet var rootView: UIView!
     @IBOutlet weak var keywords: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
         
-        let label0 = UILabel()
-        label0.text = userKeywords[0]
+        // Do any additional setup after loading the view.
+        for i in 0..<min(userKeywords.count, keywordLabels.count) {
+            keywordLabels[i].text = userKeywords[i]
+        }
+        
+        for i in userKeywords.count..<keywordLabels.count {
+            keywordLabels[i].isHidden = true
+        }
+        
         
         
     }
