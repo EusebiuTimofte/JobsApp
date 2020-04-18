@@ -632,9 +632,9 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EhT-gQ-9zq">
-                                <rect key="frame" x="352" y="304" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EhT-gQ-9zq">
+                                <rect key="frame" x="352" y="308" width="21" height="22"/>
+                                <state key="normal" image="xmark.octagon.fill" catalog="system"/>
                                 <connections>
                                     <action selector="firstKeywordDelete:" destination="IT5-sb-4UW" eventType="touchUpInside" id="WCL-KO-INO"/>
                                 </connections>
@@ -645,9 +645,9 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dbo-XG-v4J">
-                                <rect key="frame" x="352" y="351.66666666666669" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dbo-XG-v4J">
+                                <rect key="frame" x="352" y="355.66666666666669" width="21" height="22"/>
+                                <state key="normal" image="xmark.octagon.fill" catalog="system"/>
                                 <connections>
                                     <action selector="secondKeywordDelete:" destination="IT5-sb-4UW" eventType="touchUpInside" id="XHb-gz-cMl"/>
                                 </connections>
@@ -658,9 +658,9 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aL8-Lt-Pc2">
-                                <rect key="frame" x="352" y="399.33333333333331" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aL8-Lt-Pc2">
+                                <rect key="frame" x="352" y="403.33333333333331" width="21" height="22"/>
+                                <state key="normal" image="xmark.octagon.fill" catalog="system"/>
                                 <connections>
                                     <action selector="thirdKeywordDelete:" destination="IT5-sb-4UW" eventType="touchUpInside" id="9z5-Be-gme"/>
                                 </connections>
@@ -671,9 +671,9 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eiE-Wx-5BX">
-                                <rect key="frame" x="352" y="446.66666666666669" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eiE-Wx-5BX">
+                                <rect key="frame" x="352" y="450.66666666666669" width="21" height="22"/>
+                                <state key="normal" image="xmark.octagon.fill" catalog="system"/>
                                 <connections>
                                     <action selector="fourthKeywordDelete:" destination="IT5-sb-4UW" eventType="touchUpInside" id="T2L-Sm-I59"/>
                                 </connections>
@@ -796,5 +796,6 @@
     <resources>
         <image name="archivebox" catalog="system" width="128" height="106"/>
         <image name="rectangle.grid.1x2" catalog="system" width="128" height="101"/>
+        <image name="xmark.octagon.fill" catalog="system" width="128" height="112"/>
     </resources>
 </document>
