@@ -782,7 +782,7 @@
         <!--Change Password-->
         <scene sceneID="Ezn-bW-wCX">
             <objects>
-                <viewController title="Change Password" id="NpY-Th-s1L" sceneMemberID="viewController">
+                <viewController title="Change Password" id="NpY-Th-s1L" customClass="CahngePasswordViewController" customModule="Timofte_Eusebiu_353" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xgx-cW-R4I">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -800,6 +800,9 @@
                                         <rect key="frame" x="41.333333333333343" y="135.33333333333334" width="331.33333333333326" height="54.333333333333343"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                        <connections>
+                                            <action selector="oldPasswordTextField:" destination="B8E-RK-q4C" eventType="editingDidEnd" id="PeJ-eh-V2B"/>
+                                        </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vsi-cN-3aH" customClass="FontHeightAdjustableLabel" customModule="Timofte_Eusebiu_353" customModuleProvider="target">
                                         <rect key="frame" x="41.333333333333343" y="271" width="331.33333333333326" height="54"/>
@@ -811,6 +814,9 @@
                                         <rect key="frame" x="41.333333333333343" y="348.33333333333331" width="331.33333333333326" height="54"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="new-password"/>
+                                        <connections>
+                                            <action selector="newPasswordTextField:" destination="B8E-RK-q4C" eventType="editingDidEnd" id="uAu-on-9BG"/>
+                                        </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Repeat new password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rnd-Jd-2Wa" customClass="FontHeightAdjustableLabel" customModule="Timofte_Eusebiu_353" customModuleProvider="target">
                                         <rect key="frame" x="41.333333333333343" y="483.66666666666663" width="331.33333333333326" height="54.333333333333371"/>
@@ -824,6 +830,9 @@
                                             <constraint firstAttribute="width" secondItem="SUR-Wi-6RD" secondAttribute="height" multiplier="3:1" id="vgc-n3-VVF"/>
                                         </constraints>
                                         <state key="normal" title="Change"/>
+                                        <connections>
+                                            <action selector="changePassword:" destination="NpY-Th-s1L" eventType="touchUpInside" id="OjC-Ak-bDd"/>
+                                        </connections>
                                     </button>
                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="warning" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CdJ-aS-BTb" customClass="FontHeightAdjustableLabel" customModule="Timofte_Eusebiu_353" customModuleProvider="target">
                                         <rect key="frame" x="176.66666666666666" y="735.33333333333337" width="61" height="23.333333333333371"/>
@@ -835,6 +844,9 @@
                                         <rect key="frame" x="41.333333333333343" y="561" width="331.33333333333326" height="54.333333333333371"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        <connections>
+                                            <action selector="repeatNewPasswordTextField:" destination="B8E-RK-q4C" eventType="editingDidEnd" id="atq-Le-JHW"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -884,8 +896,16 @@
                         <viewLayoutGuide key="safeArea" id="qke-dY-VSb"/>
                     </view>
                     <navigationItem key="navigationItem" id="nTh-8E-rMR"/>
+                    <connections>
+                        <outlet property="changeButton" destination="SUR-Wi-6RD" id="mIy-Cd-Yq8"/>
+                        <outlet property="newPasswordTextField" destination="WFj-xw-AHp" id="sTZ-Za-dvD"/>
+                        <outlet property="oldPasswordTextField" destination="8V5-n2-Xv2" id="Nkp-Ub-ZYy"/>
+                        <outlet property="repeatNewPasswordTextField" destination="g0Q-Rl-Z1C" id="5ui-Ov-V3c"/>
+                        <outlet property="warningLabel" destination="CdJ-aS-BTb" id="o5f-GY-4Ni"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0HQ-hP-jlg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="B8E-RK-q4C" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2658" y="1616"/>
         </scene>
