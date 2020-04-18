@@ -90,6 +90,10 @@ class EmployeeProfileViewController: UIViewController {
             emailValue.sizeToFit()
             keywords.font = keywords.fontToFitHeight(height: screenHeight/multiplier)
             keywords.sizeToFit()
+            
+            newKeywordButton.titleLabel?.font = newKeywordButton.titleLabel?.fontToFitHeight(height: newKeywordButton.frame.height)
+            
+            
             for i in 0..<keywordLabels.count {
                 keywordLabels[i].font = keywordLabels[i].fontToFitHeight(height: screenHeight/multiplier)
                 keywordLabels[i].sizeToFit()

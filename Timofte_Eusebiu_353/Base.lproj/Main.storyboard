@@ -627,7 +627,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H5M-df-eTO">
-                                <rect key="frame" x="130.33333333333334" y="256.66666666666669" width="34" height="30"/>
+                                <rect key="frame" x="130.33333333333334" y="240.66666666666663" width="34" height="62"/>
                                 <state key="normal" title="NEW"/>
                                 <connections>
                                     <action selector="addNewKeyword:" destination="IT5-sb-4UW" eventType="touchUpInside" id="i8s-eB-UzS"/>
@@ -713,6 +713,7 @@
                             <constraint firstItem="tVh-YA-yBp" firstAttribute="width" secondItem="hzK-QV-X4h" secondAttribute="width" multiplier="0.25" id="Mfr-Tc-pGa"/>
                             <constraint firstItem="LoW-gH-RF1" firstAttribute="top" secondItem="N7A-kS-T0S" secondAttribute="top" id="NYH-2f-YOR"/>
                             <constraint firstItem="tBM-p9-Fng" firstAttribute="width" secondItem="hzK-QV-X4h" secondAttribute="width" multiplier="0.7" id="Nq3-6E-v4F"/>
+                            <constraint firstItem="H5M-df-eTO" firstAttribute="height" secondItem="hzK-QV-X4h" secondAttribute="height" multiplier="0.08" id="Prw-aP-U6V"/>
                             <constraint firstItem="Dbo-XG-v4J" firstAttribute="leading" secondItem="hzK-QV-X4h" secondAttribute="centerX" multiplier="1.7" id="Qbj-uC-bqB"/>
                             <constraint firstItem="59K-Ik-1fS" firstAttribute="width" secondItem="hzK-QV-X4h" secondAttribute="width" multiplier="0.67" id="R2O-cv-UWO"/>
                             <constraint firstItem="aL8-Lt-Pc2" firstAttribute="centerY" secondItem="5Dt-jE-sjH" secondAttribute="centerY" id="S3R-e4-ARc"/>
