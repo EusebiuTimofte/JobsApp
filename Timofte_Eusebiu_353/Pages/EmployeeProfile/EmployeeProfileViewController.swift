@@ -18,18 +18,19 @@ class EmployeeProfileViewController: UIViewController {
     
     
     @IBAction func firstKeywordDelete(_ sender: UIButton) {
-        userKeywords.remove(at: 0)
+        DataBase.removeLoggedUserKeyword(at: 0)
+        rootView.layoutIfNeeded()
     }
     
     @IBAction func secondKeywordDelete(_ sender: UIButton) {
-        userKeywords.remove(at: 1)
+        DataBase.removeLoggedUserKeyword(at: 1)
     }
     @IBAction func thirdKeywordDelete(_ sender: UIButton) {
-        userKeywords.remove(at: 2)
+        DataBase.removeLoggedUserKeyword(at: 2)
     }
     
     @IBAction func fourthKeywordDelete(_ sender: UIButton) {
-        userKeywords.remove(at: 3)
+        DataBase.removeLoggedUserKeyword(at: 3)
     }
     
     override func viewDidLoad() {
