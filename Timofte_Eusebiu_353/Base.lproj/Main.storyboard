@@ -616,8 +616,11 @@
                                 <state key="normal" title="schimbare parola"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rHi-7u-TYE">
-                                <rect key="frame" x="185" y="783.66666666666663" width="44" height="30"/>
-                                <state key="normal" title="logout"/>
+                                <rect key="frame" x="145" y="783.66666666666663" width="124" height="41.333333333333371"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="rHi-7u-TYE" secondAttribute="height" multiplier="3:1" id="c8O-Bj-Jl8"/>
+                                </constraints>
+                                <state key="normal" title="Logout"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H5M-df-eTO">
                                 <rect key="frame" x="130.33333333333334" y="256.66666666666669" width="34" height="30"/>
@@ -628,6 +631,7 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="first keyword" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BZv-Cg-UPp">
                                 <rect key="frame" x="20.666666666666657" y="308.66666666666669" width="290" height="20.333333333333314"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -641,6 +645,7 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="second keyword" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JpJ-SR-pWl">
                                 <rect key="frame" x="20.666666666666657" y="356.33333333333331" width="290" height="21"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -654,6 +659,7 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="third keyword" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Dt-jE-sjH">
                                 <rect key="frame" x="20.666666666666657" y="403.66666666666669" width="290" height="21"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -667,6 +673,7 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="forth keyword" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tBM-p9-Fng">
                                 <rect key="frame" x="20.666666666666657" y="451.33333333333331" width="290" height="21"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -683,7 +690,7 @@
                         <constraints>
                             <constraint firstItem="tVh-YA-yBp" firstAttribute="top" secondItem="hzK-QV-X4h" secondAttribute="centerY" multiplier="0.55" id="0HM-20-AhF"/>
                             <constraint firstItem="Dbo-XG-v4J" firstAttribute="centerY" secondItem="JpJ-SR-pWl" secondAttribute="centerY" id="0Z5-Pv-dT6"/>
-                            <constraint firstItem="rHi-7u-TYE" firstAttribute="width" secondItem="hzK-QV-X4h" secondAttribute="width" multiplier="0.10628" id="4Ot-b4-PID"/>
+                            <constraint firstItem="rHi-7u-TYE" firstAttribute="width" secondItem="hzK-QV-X4h" secondAttribute="width" multiplier="0.3" id="4Ot-b4-PID"/>
                             <constraint firstItem="LoW-gH-RF1" firstAttribute="width" secondItem="hzK-QV-X4h" secondAttribute="width" multiplier="0.67" id="4yG-8B-OcN"/>
                             <constraint firstItem="DZ2-OF-CYq" firstAttribute="leading" secondItem="hzK-QV-X4h" secondAttribute="centerX" multiplier="0.05" id="5m6-Fe-mfL"/>
                             <constraint firstItem="rHi-7u-TYE" firstAttribute="top" secondItem="hzK-QV-X4h" secondAttribute="centerY" multiplier="1.65" id="6Xk-pQ-IKt"/>
