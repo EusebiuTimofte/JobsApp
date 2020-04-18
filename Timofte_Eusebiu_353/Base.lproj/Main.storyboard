@@ -825,6 +825,12 @@
                                         </constraints>
                                         <state key="normal" title="Change"/>
                                     </button>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="warning" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CdJ-aS-BTb" customClass="FontHeightAdjustableLabel" customModule="Timofte_Eusebiu_353" customModuleProvider="target">
+                                        <rect key="frame" x="176.66666666666666" y="735.33333333333337" width="61" height="23.333333333333371"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g0Q-Rl-Z1C">
                                         <rect key="frame" x="41.333333333333343" y="561" width="331.33333333333326" height="54.333333333333371"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -839,6 +845,7 @@
                                     <constraint firstItem="Rnd-Jd-2Wa" firstAttribute="centerX" secondItem="sap-ZN-KKo" secondAttribute="centerX" id="DKL-p0-5ls"/>
                                     <constraint firstItem="8Q3-ea-pqJ" firstAttribute="top" secondItem="sap-ZN-KKo" secondAttribute="centerY" multiplier="0.15" id="EjC-vb-gUX"/>
                                     <constraint firstItem="Rnd-Jd-2Wa" firstAttribute="top" secondItem="sap-ZN-KKo" secondAttribute="centerY" multiplier="1.25" id="JEu-vh-NWK"/>
+                                    <constraint firstItem="CdJ-aS-BTb" firstAttribute="centerX" secondItem="sap-ZN-KKo" secondAttribute="centerX" id="KbJ-8O-6n3"/>
                                     <constraint firstItem="WFj-xw-AHp" firstAttribute="width" secondItem="sap-ZN-KKo" secondAttribute="width" multiplier="0.8" id="NFs-6I-pYY"/>
                                     <constraint firstItem="Vsi-cN-3aH" firstAttribute="height" secondItem="sap-ZN-KKo" secondAttribute="height" multiplier="0.07" id="OBo-rk-wSs"/>
                                     <constraint firstItem="8V5-n2-Xv2" firstAttribute="height" secondItem="sap-ZN-KKo" secondAttribute="height" multiplier="0.07" id="PpA-6s-rgY"/>
@@ -846,6 +853,7 @@
                                     <constraint firstItem="WFj-xw-AHp" firstAttribute="top" secondItem="sap-ZN-KKo" secondAttribute="centerY" multiplier="0.9" id="Svj-s2-tAd"/>
                                     <constraint firstItem="WFj-xw-AHp" firstAttribute="height" secondItem="sap-ZN-KKo" secondAttribute="height" multiplier="0.07" id="Ycj-vm-47y"/>
                                     <constraint firstItem="8V5-n2-Xv2" firstAttribute="width" secondItem="sap-ZN-KKo" secondAttribute="width" multiplier="0.8" id="ZBU-Ua-uNW"/>
+                                    <constraint firstItem="CdJ-aS-BTb" firstAttribute="height" secondItem="sap-ZN-KKo" secondAttribute="height" multiplier="0.03" id="ZOv-e7-uRH"/>
                                     <constraint firstItem="8V5-n2-Xv2" firstAttribute="top" secondItem="sap-ZN-KKo" secondAttribute="centerY" multiplier="0.35" id="aO3-ZW-I93"/>
                                     <constraint firstItem="g0Q-Rl-Z1C" firstAttribute="centerX" secondItem="sap-ZN-KKo" secondAttribute="centerX" id="bgb-uf-gFm"/>
                                     <constraint firstItem="SUR-Wi-6RD" firstAttribute="top" secondItem="sap-ZN-KKo" secondAttribute="centerY" multiplier="1.75" id="g1B-Xn-40h"/>
@@ -855,9 +863,11 @@
                                     <constraint firstItem="Vsi-cN-3aH" firstAttribute="width" secondItem="sap-ZN-KKo" secondAttribute="width" multiplier="0.8" id="jaP-BP-3eC"/>
                                     <constraint firstItem="WFj-xw-AHp" firstAttribute="centerX" secondItem="sap-ZN-KKo" secondAttribute="centerX" id="k5Y-fy-02q"/>
                                     <constraint firstItem="g0Q-Rl-Z1C" firstAttribute="height" secondItem="sap-ZN-KKo" secondAttribute="height" multiplier="0.07" id="lyJ-L2-W6y"/>
+                                    <constraint firstItem="CdJ-aS-BTb" firstAttribute="top" secondItem="sap-ZN-KKo" secondAttribute="centerY" multiplier="1.9" id="ooU-oF-pJ2"/>
                                     <constraint firstItem="8V5-n2-Xv2" firstAttribute="centerX" secondItem="sap-ZN-KKo" secondAttribute="centerX" id="qfO-6R-d1c"/>
                                     <constraint firstItem="Vsi-cN-3aH" firstAttribute="centerX" secondItem="sap-ZN-KKo" secondAttribute="centerX" id="qzo-JL-u4x"/>
                                     <constraint firstItem="SUR-Wi-6RD" firstAttribute="centerX" secondItem="sap-ZN-KKo" secondAttribute="centerX" id="sRR-l0-eVB"/>
+                                    <constraint firstItem="CdJ-aS-BTb" firstAttribute="width" relation="lessThanOrEqual" secondItem="sap-ZN-KKo" secondAttribute="width" multiplier="0.9" id="saf-kV-r6A"/>
                                     <constraint firstItem="8Q3-ea-pqJ" firstAttribute="width" secondItem="sap-ZN-KKo" secondAttribute="width" multiplier="0.8" id="tuN-OJ-7kb"/>
                                     <constraint firstItem="Rnd-Jd-2Wa" firstAttribute="height" secondItem="sap-ZN-KKo" secondAttribute="height" multiplier="0.07" id="yWX-5O-4rE"/>
                                 </constraints>
