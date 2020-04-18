@@ -612,11 +612,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L4v-NP-qNF">
-                                <rect key="frame" x="54" y="543" width="118" height="30"/>
+                                <rect key="frame" x="10.333333333333329" y="617.66666666666663" width="165.66666666666669" height="30"/>
                                 <state key="normal" title="schimbare parola"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rHi-7u-TYE">
-                                <rect key="frame" x="90" y="656" width="44" height="30"/>
+                                <rect key="frame" x="185" y="783.66666666666663" width="44" height="30"/>
                                 <state key="normal" title="logout"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H5M-df-eTO">
@@ -630,19 +630,19 @@
                             <constraint firstItem="rHi-7u-TYE" firstAttribute="width" secondItem="hzK-QV-X4h" secondAttribute="width" multiplier="0.10628" id="4Ot-b4-PID"/>
                             <constraint firstItem="LoW-gH-RF1" firstAttribute="width" secondItem="hzK-QV-X4h" secondAttribute="width" multiplier="0.67" id="4yG-8B-OcN"/>
                             <constraint firstItem="DZ2-OF-CYq" firstAttribute="leading" secondItem="hzK-QV-X4h" secondAttribute="centerX" multiplier="0.05" id="5m6-Fe-mfL"/>
-                            <constraint firstItem="rHi-7u-TYE" firstAttribute="top" secondItem="hzK-QV-X4h" secondAttribute="top" constant="568" id="6Xk-pQ-IKt"/>
-                            <constraint firstItem="rHi-7u-TYE" firstAttribute="leading" secondItem="hzK-QV-X4h" secondAttribute="leading" constant="90" id="9lK-xY-BPS"/>
+                            <constraint firstItem="rHi-7u-TYE" firstAttribute="top" secondItem="hzK-QV-X4h" secondAttribute="centerY" multiplier="1.65" id="6Xk-pQ-IKt"/>
                             <constraint firstItem="XWC-qL-dck" firstAttribute="top" secondItem="Vqh-3C-HJD" secondAttribute="top" id="BSU-U9-YKJ"/>
                             <constraint firstItem="DZ2-OF-CYq" firstAttribute="top" secondItem="hzK-QV-X4h" secondAttribute="centerY" id="BSW-6L-JGc"/>
                             <constraint firstItem="N7A-kS-T0S" firstAttribute="top" secondItem="hzK-QV-X4h" secondAttribute="centerY" multiplier="0.4" id="Cp2-hD-RAX"/>
                             <constraint firstItem="Vqh-3C-HJD" firstAttribute="top" secondItem="hzK-QV-X4h" secondAttribute="centerY" multiplier="0.25" id="HKj-kR-IdG"/>
                             <constraint firstItem="tVh-YA-yBp" firstAttribute="leading" secondItem="hzK-QV-X4h" secondAttribute="centerX" multiplier="0.05" id="I9E-az-pzo"/>
-                            <constraint firstItem="L4v-NP-qNF" firstAttribute="top" secondItem="hzK-QV-X4h" secondAttribute="top" constant="455" id="JiR-aF-DlT"/>
+                            <constraint firstItem="L4v-NP-qNF" firstAttribute="top" secondItem="hzK-QV-X4h" secondAttribute="centerY" multiplier="1.3" id="JiR-aF-DlT"/>
+                            <constraint firstItem="rHi-7u-TYE" firstAttribute="centerX" secondItem="hzK-QV-X4h" secondAttribute="centerX" id="MDn-GV-YNZ"/>
                             <constraint firstItem="tVh-YA-yBp" firstAttribute="width" secondItem="hzK-QV-X4h" secondAttribute="width" multiplier="0.25" id="Mfr-Tc-pGa"/>
                             <constraint firstItem="LoW-gH-RF1" firstAttribute="top" secondItem="N7A-kS-T0S" secondAttribute="top" id="NYH-2f-YOR"/>
                             <constraint firstItem="59K-Ik-1fS" firstAttribute="width" secondItem="hzK-QV-X4h" secondAttribute="width" multiplier="0.67" id="R2O-cv-UWO"/>
                             <constraint firstItem="N7A-kS-T0S" firstAttribute="width" secondItem="hzK-QV-X4h" secondAttribute="width" multiplier="0.25" id="TK9-Pd-jiQ"/>
-                            <constraint firstItem="L4v-NP-qNF" firstAttribute="width" secondItem="hzK-QV-X4h" secondAttribute="width" multiplier="0.285024" id="XfT-sY-Qkj"/>
+                            <constraint firstItem="L4v-NP-qNF" firstAttribute="width" secondItem="hzK-QV-X4h" secondAttribute="width" multiplier="0.4" id="XfT-sY-Qkj"/>
                             <constraint firstItem="H5M-df-eTO" firstAttribute="top" secondItem="tVh-YA-yBp" secondAttribute="top" id="Y0r-Z5-psp"/>
                             <constraint firstItem="N7A-kS-T0S" firstAttribute="leading" secondItem="hzK-QV-X4h" secondAttribute="centerX" multiplier="0.05" id="Y8F-ju-tqo"/>
                             <constraint firstItem="Vqh-3C-HJD" firstAttribute="width" secondItem="hzK-QV-X4h" secondAttribute="width" multiplier="0.25" id="ccK-o7-ep7"/>
@@ -650,7 +650,7 @@
                             <constraint firstItem="59K-Ik-1fS" firstAttribute="top" secondItem="DZ2-OF-CYq" secondAttribute="top" id="fxu-Tb-T6I"/>
                             <constraint firstItem="59K-Ik-1fS" firstAttribute="leading" secondItem="hzK-QV-X4h" secondAttribute="centerX" multiplier="0.63" id="hDt-Jz-RRx"/>
                             <constraint firstItem="H5M-df-eTO" firstAttribute="leading" secondItem="hzK-QV-X4h" secondAttribute="centerX" multiplier="0.63" id="jlk-CD-7vI"/>
-                            <constraint firstItem="L4v-NP-qNF" firstAttribute="leading" secondItem="hzK-QV-X4h" secondAttribute="leading" constant="54" id="lfj-OB-Ign"/>
+                            <constraint firstItem="L4v-NP-qNF" firstAttribute="leading" secondItem="hzK-QV-X4h" secondAttribute="centerX" multiplier="0.05" id="lfj-OB-Ign"/>
                             <constraint firstItem="DZ2-OF-CYq" firstAttribute="width" secondItem="hzK-QV-X4h" secondAttribute="width" multiplier="0.2" id="mNx-hn-P9S"/>
                             <constraint firstItem="Vqh-3C-HJD" firstAttribute="leading" secondItem="hzK-QV-X4h" secondAttribute="centerX" multiplier="0.05" id="sEL-3B-9ag"/>
                             <constraint firstItem="XWC-qL-dck" firstAttribute="leading" secondItem="hzK-QV-X4h" secondAttribute="centerX" multiplier="0.63" id="tpA-tF-deP"/>
