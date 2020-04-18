@@ -12,39 +12,35 @@ class EmployeeProfileViewController: UIViewController {
 
     @IBOutlet var deleteKeyword: [UIButton]!
     @IBOutlet var keywordLabels: [UILabel]!
-    var userKeywords: [String] = DataBase.getLoggedUserKeywords()
+    var userKeywords: [String] = []
     @IBOutlet var rootView: UIView!
     @IBOutlet weak var keywords: UILabel!
     
     
     @IBAction func firstKeywordDelete(_ sender: UIButton) {
         DataBase.removeLoggedUserKeyword(at: 0)
-        rootView.layoutIfNeeded()
+        viewWillAppear(true)
     }
     
     @IBAction func secondKeywordDelete(_ sender: UIButton) {
         DataBase.removeLoggedUserKeyword(at: 1)
+        viewWillAppear(true)
     }
     @IBAction func thirdKeywordDelete(_ sender: UIButton) {
         DataBase.removeLoggedUserKeyword(at: 2)
+        viewWillAppear(true)
     }
     
     @IBAction func fourthKeywordDelete(_ sender: UIButton) {
         DataBase.removeLoggedUserKeyword(at: 3)
+        viewWillAppear(true)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-        for i in 0..<min(userKeywords.count, keywordLabels.count) {
-            keywordLabels[i].text = userKeywords[i]
-        }
         
-        for i in userKeywords.count..<keywordLabels.count {
-            keywordLabels[i].isHidden = true
-            deleteKeyword[i].isHidden = true
-        }
         
         
         
@@ -60,5 +56,17 @@ class EmployeeProfileViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    override func viewWillAppear(_ animated: Bool) {
+        userKeywords = DataBase.getLoggedUserKeywords()
+        for i in 0..<min(userKeywords.count, keywordLabels.count) {
+            keywordLabels[i].text = userKeywords[i]
+        }
+        
+        for i in userKeywords.count..<keywordLabels.count {
+            keywordLabels[i].isHidden = true
+            deleteKeyword[i].isHidden = true
+        }
+    }
 
 }

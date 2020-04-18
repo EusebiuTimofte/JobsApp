@@ -41,7 +41,7 @@ class DataBase {
     }
     
     static var users: [User] = [
-        User(id: 1, username: "employee1", password: "employee1pass", mail: "employee1@gmail.com", keywords: ["it", "relax", "team"], cv: 1, userType: .employee)
+        User(id: 1, username: "employee1", password: "employee1pass", mail: "employee1@gmail.com", keywords: ["it", "relax", "team", "pharma"], cv: 1, userType: .employee)
     ]
     
     static var loggedUserId = 1
