@@ -10,7 +10,7 @@ import UIKit
 
 class EmployeeProfileViewController: UIViewController {
 
-    let userKeywords: [String] = ["it", "pharma"]
+    let userKeywords: [String] = ["it", "pharma", "teamwork", "salary"]
     @IBOutlet var rootView: UIView!
     @IBOutlet weak var keywords: UILabel!
     override func viewDidLoad() {
@@ -20,6 +20,8 @@ class EmployeeProfileViewController: UIViewController {
         
         let label0 = UILabel()
         label0.text = userKeywords[0]
+        
+        
     }
     
 
