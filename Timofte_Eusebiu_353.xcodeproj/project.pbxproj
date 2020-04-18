@@ -46,6 +46,7 @@
 		602EA7E0244B3D6900CA591E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		6065FFD12449A80E00892644 /* DataBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBase.swift; sourceTree = "<group>"; };
 		606BFF99244B11F600963DC0 /* EmployeeProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeProfileViewController.swift; sourceTree = "<group>"; };
+		608F5AE8244B82CE0057835B /* Timofte_Eusebiu_353.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Timofte_Eusebiu_353.entitlements; sourceTree = "<group>"; };
 		60E3DC422449F692006A750A /* AppliedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppliedTableViewController.swift; sourceTree = "<group>"; };
 		60E3DC452449F717006A750A /* AppliedJobDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppliedJobDescriptionView.swift; sourceTree = "<group>"; };
 		610F21DF24479B11002F6C40 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
@@ -112,6 +113,7 @@
 		539A4921243BBA670011AEB4 /* Timofte_Eusebiu_353 */ = {
 			isa = PBXGroup;
 			children = (
+				608F5AE8244B82CE0057835B /* Timofte_Eusebiu_353.entitlements */,
 				535F66B7244263C000C33355 /* Pages */,
 				53117583243FD345005BB73D /* Extensions */,
 				53A7931F243D44380084AD6F /* Utils */,
@@ -408,6 +410,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Timofte_Eusebiu_353/Timofte_Eusebiu_353.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Timofte_Eusebiu_353/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -425,6 +428,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Timofte_Eusebiu_353/Timofte_Eusebiu_353.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Timofte_Eusebiu_353/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import MobileCoreServices
 
-class EmployeeProfileViewController: UIViewController {
+
+class EmployeeProfileViewController: UIViewController, UIDocumentPickerDelegate, UIDocumentMenuDelegate {
 
     @IBOutlet var deleteKeyword: [UIButton]!
     @IBOutlet var keywordLabels: [UILabel]!
@@ -16,6 +18,13 @@ class EmployeeProfileViewController: UIViewController {
     @IBOutlet var rootView: UIView!
     @IBOutlet weak var keywords: UILabel!
     
+    @IBAction func uploadCV(_ sender: UIButton) {
+        let importMenu = UIDocumentMenuViewController(documentTypes: [String(kUTTypePDF)], in: .import)
+        importMenu.delegate = self
+        importMenu.modalPresentationStyle = .formSheet
+        self.present(importMenu, animated: true, completion: nil)
+        
+    }
     @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var usernameValue: UILabel!
     @IBOutlet weak var changePasswordButton: UIButton!
@@ -159,5 +168,25 @@ class EmployeeProfileViewController: UIViewController {
             deleteKeyword[i].isHidden = true
         }
     }
+    
+    
+    public func documentPicker(_ controller: UIDocumentPickerViewController, didPickDocumentsAt urls: [URL]) {
+                  guard let myURL = urls.first else {
+                       return
+                  }
+                  print("import result : \(myURL)")
+        }
+
+
+    public func documentMenu(_ documentMenu:UIDocumentMenuViewController, didPickDocumentPicker documentPicker: UIDocumentPickerViewController) {
+            documentPicker.delegate = self
+            present(documentPicker, animated: true, completion: nil)
+        }
+
+
+    func documentPickerWasCancelled(_ controller: UIDocumentPickerViewController) {
+                print("view was cancelled")
+                dismiss(animated: true, completion: nil)
+        }
 
 }
