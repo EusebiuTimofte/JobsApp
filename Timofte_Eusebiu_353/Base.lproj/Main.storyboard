@@ -606,7 +606,7 @@
                                 <state key="normal" title="CV"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="document name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="59K-Ik-1fS">
-                                <rect key="frame" x="130.33333333333334" y="522.66666666666663" width="277.33333333333326" height="21"/>
+                                <rect key="frame" x="130.33333333333334" y="527" width="277.33333333333326" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -701,7 +701,7 @@
                             <constraint firstItem="Vqh-3C-HJD" firstAttribute="width" secondItem="hzK-QV-X4h" secondAttribute="width" multiplier="0.25" id="ccK-o7-ep7"/>
                             <constraint firstItem="XWC-qL-dck" firstAttribute="width" secondItem="hzK-QV-X4h" secondAttribute="width" multiplier="0.67" id="e2u-Rv-35A"/>
                             <constraint firstItem="eiE-Wx-5BX" firstAttribute="centerY" secondItem="tBM-p9-Fng" secondAttribute="centerY" id="fmc-1L-mgw"/>
-                            <constraint firstItem="59K-Ik-1fS" firstAttribute="top" secondItem="DZ2-OF-CYq" secondAttribute="top" id="fxu-Tb-T6I"/>
+                            <constraint firstItem="59K-Ik-1fS" firstAttribute="centerY" secondItem="DZ2-OF-CYq" secondAttribute="centerY" id="fxu-Tb-T6I"/>
                             <constraint firstItem="59K-Ik-1fS" firstAttribute="leading" secondItem="hzK-QV-X4h" secondAttribute="centerX" multiplier="0.63" id="hDt-Jz-RRx"/>
                             <constraint firstItem="5Dt-jE-sjH" firstAttribute="top" secondItem="hzK-QV-X4h" secondAttribute="centerY" multiplier="0.85" id="jWg-Gz-mHy"/>
                             <constraint firstItem="H5M-df-eTO" firstAttribute="leading" secondItem="hzK-QV-X4h" secondAttribute="centerX" multiplier="0.63" id="jlk-CD-7vI"/>
