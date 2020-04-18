@@ -742,9 +742,17 @@
                     </view>
                     <navigationItem key="navigationItem" id="bq6-pQ-5Zd"/>
                     <connections>
+                        <outlet property="changePasswordButton" destination="L4v-NP-qNF" id="FjI-zl-OEX"/>
+                        <outlet property="cvButton" destination="DZ2-OF-CYq" id="DBO-Cx-8Ya"/>
+                        <outlet property="documentName" destination="59K-Ik-1fS" id="5EH-bt-5Gv"/>
+                        <outlet property="emailLabel" destination="N7A-kS-T0S" id="isI-kv-2cm"/>
+                        <outlet property="emailValue" destination="LoW-gH-RF1" id="2Kz-do-4SD"/>
                         <outlet property="keywords" destination="tVh-YA-yBp" id="mql-Hc-97a"/>
+                        <outlet property="logoutButton" destination="rHi-7u-TYE" id="nu4-Av-ZnV"/>
                         <outlet property="newKeywordButton" destination="H5M-df-eTO" id="3eb-ZW-vys"/>
                         <outlet property="rootView" destination="VlE-y0-lyH" id="LNg-0r-qjd"/>
+                        <outlet property="usernameLabel" destination="Vqh-3C-HJD" id="SPu-Se-KyY"/>
+                        <outlet property="usernameValue" destination="XWC-qL-dck" id="DqH-6M-3SY"/>
                         <outletCollection property="keywordLabels" destination="BZv-Cg-UPp" collectionClass="NSMutableArray" id="L0D-ce-J2q"/>
                         <outletCollection property="keywordLabels" destination="JpJ-SR-pWl" collectionClass="NSMutableArray" id="UUe-1c-I2h"/>
                         <outletCollection property="keywordLabels" destination="5Dt-jE-sjH" collectionClass="NSMutableArray" id="J1j-Ug-JsA"/>

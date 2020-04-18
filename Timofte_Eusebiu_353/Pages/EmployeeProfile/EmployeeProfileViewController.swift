@@ -16,6 +16,17 @@ class EmployeeProfileViewController: UIViewController {
     @IBOutlet var rootView: UIView!
     @IBOutlet weak var keywords: UILabel!
     
+    @IBOutlet weak var usernameLabel: UILabel!
+    @IBOutlet weak var usernameValue: UILabel!
+    @IBOutlet weak var changePasswordButton: UIButton!
+    
+    @IBOutlet weak var logoutButton: UIButton!
+    
+    @IBOutlet weak var cvButton: UIButton!
+    @IBOutlet weak var documentName: UILabel!
+    
+    @IBOutlet weak var emailLabel: UILabel!
+    @IBOutlet weak var emailValue: UILabel!
     
     @IBAction func addNewKeyword(_ sender: UIButton) {
         
@@ -64,6 +75,48 @@ class EmployeeProfileViewController: UIViewController {
         
         // Do any additional setup after loading the view.
         
+        if UIScreen.main.bounds.width > 500 {
+            
+            let screenHeight = UIScreen.main.bounds.height
+            let multiplier = CGFloat(15)
+            
+            usernameLabel.font = usernameLabel.fontToFitHeight(height: screenHeight/multiplier)
+            usernameLabel.sizeToFit()
+            usernameValue.font = usernameValue.fontToFitHeight(height: screenHeight/multiplier)
+            usernameValue.sizeToFit()
+            emailLabel.font = emailLabel.fontToFitHeight(height: screenHeight/multiplier)
+            emailLabel.sizeToFit()
+            emailValue.font = emailValue.fontToFitHeight(height: screenHeight/multiplier)
+            emailValue.sizeToFit()
+            keywords.font = keywords.fontToFitHeight(height: screenHeight/multiplier)
+            keywords.sizeToFit()
+            for i in 0..<keywordLabels.count {
+                keywordLabels[i].font = keywordLabels[i].fontToFitHeight(height: screenHeight/multiplier)
+                keywordLabels[i].sizeToFit()
+                
+                deleteKeyword[i].frame.size = CGSize(width: screenHeight/multiplier, height: screenHeight/multiplier)
+                deleteKeyword[i].layoutIfNeeded()
+            }
+            
+            cvButton.titleLabel!.font = cvButton.titleLabel?.fontToFitHeight(height: cvButton.frame.height * CGFloat(2.0/3/0))
+            cvButton.layoutIfNeeded()
+            
+            documentName.font = documentName.fontToFitHeight(height: screenHeight/multiplier)
+            documentName.sizeToFit()
+            
+            changePasswordButton.titleLabel!.font = changePasswordButton.titleLabel?.fontToFitHeight(height: changePasswordButton.frame.height * CGFloat(2.0/3.0))
+            
+            logoutButton.titleLabel!.font = logoutButton.titleLabel?.fontToFitHeight(height: logoutButton.frame.height * CGFloat(2.0/3.0))
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        }
         
         
         
