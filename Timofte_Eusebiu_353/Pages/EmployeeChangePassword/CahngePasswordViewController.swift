@@ -31,8 +31,15 @@ class CahngePasswordViewController: UIViewController {
                 warningLabel.isHidden = false
             } else {
                 DataBase.setLoggedUserPassword(newPassword: newPasswordTextField.text!)
-                let pc = (storyboard!.instantiateViewController(withIdentifier: "YourTableViewController") as? EmployeeProfileViewController)!
+                let pc = (storyboard!.instantiateViewController(withIdentifier: "employeeProfile") as? EmployeeProfileViewController)!
                 self.navigationController!.pushViewController( pc, animated: true)
+                //delete last two views from navigation history
+                var viewControllersVar = navigationController?.viewControllers
+                var indexToRemove = viewControllersVar!.count - 2
+                viewControllersVar?.remove(at: indexToRemove)
+                indexToRemove = viewControllersVar!.count - 2
+                viewControllersVar?.remove(at: indexToRemove)
+                navigationController?.viewControllers = viewControllersVar!
             }
         }
         
