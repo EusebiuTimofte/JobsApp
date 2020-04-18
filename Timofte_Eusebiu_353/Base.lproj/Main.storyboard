@@ -620,8 +620,11 @@
                                 <state key="normal" title="logout"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H5M-df-eTO">
-                                <rect key="frame" x="130.33333333333334" y="261.33333333333331" width="34" height="30"/>
+                                <rect key="frame" x="130.33333333333334" y="256.66666666666669" width="34" height="30"/>
                                 <state key="normal" title="NEW"/>
+                                <connections>
+                                    <action selector="addNewKeyword:" destination="IT5-sb-4UW" eventType="touchUpInside" id="i8s-eB-UzS"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="first keyword" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BZv-Cg-UPp">
                                 <rect key="frame" x="20.666666666666657" y="308.66666666666669" width="290" height="20.333333333333314"/>
@@ -707,7 +710,7 @@
                             <constraint firstItem="BZv-Cg-UPp" firstAttribute="width" secondItem="hzK-QV-X4h" secondAttribute="width" multiplier="0.7" id="WJa-bh-Btp"/>
                             <constraint firstItem="eiE-Wx-5BX" firstAttribute="leading" secondItem="hzK-QV-X4h" secondAttribute="centerX" multiplier="1.7" id="Wj3-eS-4Yy"/>
                             <constraint firstItem="L4v-NP-qNF" firstAttribute="width" secondItem="hzK-QV-X4h" secondAttribute="width" multiplier="0.4" id="XfT-sY-Qkj"/>
-                            <constraint firstItem="H5M-df-eTO" firstAttribute="top" secondItem="tVh-YA-yBp" secondAttribute="top" id="Y0r-Z5-psp"/>
+                            <constraint firstItem="H5M-df-eTO" firstAttribute="centerY" secondItem="tVh-YA-yBp" secondAttribute="centerY" id="Y0r-Z5-psp"/>
                             <constraint firstItem="N7A-kS-T0S" firstAttribute="leading" secondItem="hzK-QV-X4h" secondAttribute="centerX" multiplier="0.05" id="Y8F-ju-tqo"/>
                             <constraint firstItem="BZv-Cg-UPp" firstAttribute="leading" secondItem="hzK-QV-X4h" secondAttribute="centerX" multiplier="0.1" id="ZXO-q3-Ddu"/>
                             <constraint firstItem="Vqh-3C-HJD" firstAttribute="width" secondItem="hzK-QV-X4h" secondAttribute="width" multiplier="0.25" id="ccK-o7-ep7"/>
@@ -733,6 +736,7 @@
                     <navigationItem key="navigationItem" id="bq6-pQ-5Zd"/>
                     <connections>
                         <outlet property="keywords" destination="tVh-YA-yBp" id="mql-Hc-97a"/>
+                        <outlet property="newKeywordButton" destination="H5M-df-eTO" id="3eb-ZW-vys"/>
                         <outlet property="rootView" destination="VlE-y0-lyH" id="LNg-0r-qjd"/>
                         <outletCollection property="keywordLabels" destination="BZv-Cg-UPp" collectionClass="NSMutableArray" id="L0D-ce-J2q"/>
                         <outletCollection property="keywordLabels" destination="JpJ-SR-pWl" collectionClass="NSMutableArray" id="UUe-1c-I2h"/>

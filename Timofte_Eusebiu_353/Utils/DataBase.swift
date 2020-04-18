@@ -64,6 +64,10 @@ class DataBase {
         
     }
     
+    static func addLoggedUserKeyword(keyword: String){
+        users[getLoggedUserIndex()].keywords.append(keyword)
+    }
+    
     private init(){
         
     }

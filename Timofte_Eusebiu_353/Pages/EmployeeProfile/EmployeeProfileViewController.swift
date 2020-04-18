@@ -17,6 +17,28 @@ class EmployeeProfileViewController: UIViewController {
     @IBOutlet weak var keywords: UILabel!
     
     
+    @IBAction func addNewKeyword(_ sender: UIButton) {
+        
+        //1. Create the alert controller.
+        let alert = UIAlertController(title: "New Keyword", message: "Enter keyword", preferredStyle: .alert)
+
+        //2. Add the text field. You can configure it however you need.
+        alert.addTextField { (textField) in
+            textField.placeholder = "Keyword"
+        }
+
+        // 3. Grab the value from the text field, and print it when the user clicks OK.
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { [weak alert] (_) in
+            let textField = alert?.textFields![0] // Force unwrapping because we know it exists.
+            DataBase.addLoggedUserKeyword(keyword: textField!.text!)
+            self.viewWillAppear(true)
+        }))
+        
+        alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil))
+        
+        // 4. Present the alert.
+        self.present(alert, animated: true, completion: nil)
+    }
     @IBAction func firstKeywordDelete(_ sender: UIButton) {
         DataBase.removeLoggedUserKeyword(at: 0)
         viewWillAppear(true)
@@ -31,6 +53,7 @@ class EmployeeProfileViewController: UIViewController {
         viewWillAppear(true)
     }
     
+    @IBOutlet weak var newKeywordButton: UIButton!
     @IBAction func fourthKeywordDelete(_ sender: UIButton) {
         DataBase.removeLoggedUserKeyword(at: 3)
         viewWillAppear(true)
@@ -59,8 +82,17 @@ class EmployeeProfileViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         userKeywords = DataBase.getLoggedUserKeywords()
+        
+        if userKeywords.count >= 4 {
+            newKeywordButton.isEnabled = false
+        }else {
+            newKeywordButton.isEnabled = true
+        }
+        
         for i in 0..<min(userKeywords.count, keywordLabels.count) {
             keywordLabels[i].text = userKeywords[i]
+            keywordLabels[i].isHidden = false
+            deleteKeyword[i].isHidden = false
         }
         
         for i in userKeywords.count..<keywordLabels.count {
