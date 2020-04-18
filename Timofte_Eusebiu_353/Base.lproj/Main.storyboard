@@ -566,7 +566,7 @@
         <!--Profile-->
         <scene sceneID="syZ-YH-vGC">
             <objects>
-                <viewController title="Profile" id="IT5-sb-4UW" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="employeeProfile" title="Profile" id="IT5-sb-4UW" customClass="EmployeeProfileViewController" customModule="Timofte_Eusebiu_353" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VlE-y0-lyH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -659,6 +659,10 @@
                         <viewLayoutGuide key="safeArea" id="hzK-QV-X4h"/>
                     </view>
                     <navigationItem key="navigationItem" id="bq6-pQ-5Zd"/>
+                    <connections>
+                        <outlet property="keywords" destination="tVh-YA-yBp" id="mql-Hc-97a"/>
+                        <outlet property="rootView" destination="VlE-y0-lyH" id="LNg-0r-qjd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZXR-al-DDF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
