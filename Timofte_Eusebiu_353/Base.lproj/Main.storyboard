@@ -612,15 +612,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L4v-NP-qNF">
-                                <rect key="frame" x="10.333333333333329" y="617.66666666666663" width="165.66666666666669" height="30"/>
-                                <state key="normal" title="schimbare parola"/>
+                                <rect key="frame" x="10.333333333333329" y="617.66666666666663" width="165.66666666666669" height="61.666666666666629"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Schimba parola"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rHi-7u-TYE">
                                 <rect key="frame" x="145" y="783.66666666666663" width="124" height="41.333333333333371"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="rHi-7u-TYE" secondAttribute="height" multiplier="3:1" id="c8O-Bj-Jl8"/>
                                 </constraints>
-                                <state key="normal" title="Logout"/>
+                                <state key="normal" title="Logout">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H5M-df-eTO">
                                 <rect key="frame" x="130.33333333333334" y="256.66666666666669" width="34" height="30"/>
@@ -737,6 +741,7 @@
                             <constraint firstItem="EhT-gQ-9zq" firstAttribute="leading" secondItem="hzK-QV-X4h" secondAttribute="centerX" multiplier="1.7" id="usz-Ij-g50"/>
                             <constraint firstItem="LoW-gH-RF1" firstAttribute="leading" secondItem="hzK-QV-X4h" secondAttribute="centerX" multiplier="0.63" id="vXZ-vj-7df"/>
                             <constraint firstItem="JpJ-SR-pWl" firstAttribute="width" secondItem="hzK-QV-X4h" secondAttribute="width" multiplier="0.7" id="x6o-1c-9uj"/>
+                            <constraint firstItem="L4v-NP-qNF" firstAttribute="height" secondItem="hzK-QV-X4h" secondAttribute="height" multiplier="0.08" id="z5F-R1-pLZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hzK-QV-X4h"/>
                     </view>

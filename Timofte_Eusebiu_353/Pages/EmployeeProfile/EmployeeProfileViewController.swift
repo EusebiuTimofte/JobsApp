@@ -78,7 +78,7 @@ class EmployeeProfileViewController: UIViewController {
         if UIScreen.main.bounds.width > 500 {
             
             let screenHeight = UIScreen.main.bounds.height
-            let multiplier = CGFloat(15)
+            let multiplier = CGFloat(22)
             
             usernameLabel.font = usernameLabel.fontToFitHeight(height: screenHeight/multiplier)
             usernameLabel.sizeToFit()
@@ -94,8 +94,14 @@ class EmployeeProfileViewController: UIViewController {
                 keywordLabels[i].font = keywordLabels[i].fontToFitHeight(height: screenHeight/multiplier)
                 keywordLabels[i].sizeToFit()
                 
-                deleteKeyword[i].frame.size = CGSize(width: screenHeight/multiplier, height: screenHeight/multiplier)
-                deleteKeyword[i].layoutIfNeeded()
+//                deleteKeyword[i].frame.size = CGSize(width: screenHeight/multiplier, height: screenHeight/multiplier)
+//                deleteKeyword[i].imageView?.frame.size = CGSize(width: screenHeight/multiplier, height: screenHeight/multiplier)
+//                deleteKeyword[i].imageView?.contentMode = .scaleToFill
+                
+//                rootView.addConstraint(NSLayoutConstraint(item: deleteKeyword[i], attribute: .height, relatedBy: .equal, toItem: rootView, attribute: .height, multiplier: CGFloat(0.08), constant: CGFloat(0)))
+//                deleteKeyword[i].addConstraint(NSLayoutConstraint(item: deleteKeyword[i], attribute: .width, relatedBy: .equal, toItem: deleteKeyword[i], attribute: .height, multiplier: CGFloat(1), constant: CGFloat(0)))
+//                deleteKeyword[i].imageEdgeInsets = UIEdgeInsets(top: CGFloat(30), left: CGFloat(30), bottom: CGFloat(30), right: CGFloat(30))
+//                deleteKeyword[i].layoutIfNeeded()
             }
             
             cvButton.titleLabel!.font = cvButton.titleLabel?.fontToFitHeight(height: cvButton.frame.height * CGFloat(2.0/3/0))
@@ -105,15 +111,11 @@ class EmployeeProfileViewController: UIViewController {
             documentName.sizeToFit()
             
             changePasswordButton.titleLabel!.font = changePasswordButton.titleLabel?.fontToFitHeight(height: changePasswordButton.frame.height * CGFloat(2.0/3.0))
+            changePasswordButton.layoutIfNeeded()
+            logoutButton.titleLabel!.font = logoutButton.titleLabel?.fontToFitHeight(height: logoutButton.frame.height)
+            logoutButton.layoutIfNeeded()
             
-            logoutButton.titleLabel!.font = logoutButton.titleLabel?.fontToFitHeight(height: logoutButton.frame.height * CGFloat(2.0/3.0))
-            
-            
-            
-            
-            
-            
-            
+            rootView.layoutIfNeeded()
             
             
         }
