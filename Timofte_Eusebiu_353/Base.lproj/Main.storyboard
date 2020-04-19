@@ -547,7 +547,7 @@
         <!--Login-->
         <scene sceneID="PbM-Rx-pQi">
             <objects>
-                <viewController title="Login" id="jHF-vn-xgB" sceneMemberID="viewController">
+                <viewController title="Login" id="jHF-vn-xgB" customClass="LoginViewController" customModule="Timofte_Eusebiu_353" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rS7-og-Zrx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -583,6 +583,9 @@
                                             <constraint firstAttribute="width" secondItem="Ihh-CN-wET" secondAttribute="height" multiplier="3:1" id="OQh-cw-8FE"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="login:" destination="jHF-vn-xgB" eventType="touchUpInside" id="92s-Tr-X9X"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -618,6 +621,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dkd-8R-1pt"/>
                     </view>
+                    <connections>
+                        <outlet property="loginButton" destination="Ihh-CN-wET" id="X8i-Ww-s2m"/>
+                        <outlet property="passwordInput" destination="QVh-9h-p15" id="lp2-XH-4Qy"/>
+                        <outlet property="username" destination="a7C-VX-RVW" id="Xtm-zO-tMR"/>
+                        <outlet property="usernameInput" destination="Nbi-el-8Mg" id="oMf-2v-BA7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n8m-hD-82C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
