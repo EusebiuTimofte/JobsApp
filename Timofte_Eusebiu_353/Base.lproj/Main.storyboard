@@ -575,18 +575,27 @@
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QVh-9h-p15">
                                         <rect key="frame" x="41.333333333333343" y="409" width="331.33333333333326" height="57.333333333333314"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ihh-CN-wET">
                                         <rect key="frame" x="145" y="613.66666666666663" width="124" height="41.333333333333371"/>
+                                        <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="Ihh-CN-wET" secondAttribute="height" multiplier="3:1" id="OQh-cw-8FE"/>
                                         </constraints>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" title="Login">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
                                         <connections>
                                             <action selector="login:" destination="jHF-vn-xgB" eventType="touchUpInside" id="92s-Tr-X9X"/>
                                         </connections>
                                     </button>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Warning" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Py-KV-p4h" customClass="FontHeightAdjustableLabel" customModule="Timofte_Eusebiu_353" customModuleProvider="target">
+                                        <rect key="frame" x="175.33333333333334" y="736.33333333333337" width="63.333333333333343" height="32.666666666666629"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
@@ -594,19 +603,23 @@
                                     <constraint firstItem="Ihh-CN-wET" firstAttribute="centerX" secondItem="fQL-NS-Dze" secondAttribute="centerX" id="43l-5Q-sZ2"/>
                                     <constraint firstItem="nqt-si-mWi" firstAttribute="height" secondItem="fQL-NS-Dze" secondAttribute="height" multiplier="0.07" id="4Tj-dB-HOX"/>
                                     <constraint firstItem="QVh-9h-p15" firstAttribute="width" secondItem="fQL-NS-Dze" secondAttribute="width" multiplier="0.8" id="5ZG-x6-0kb"/>
+                                    <constraint firstItem="6Py-KV-p4h" firstAttribute="height" secondItem="fQL-NS-Dze" secondAttribute="height" multiplier="0.04" id="6CT-xg-UOb"/>
                                     <constraint firstItem="Nbi-el-8Mg" firstAttribute="height" secondItem="fQL-NS-Dze" secondAttribute="height" multiplier="0.07" id="DqS-0c-5lE"/>
                                     <constraint firstItem="Nbi-el-8Mg" firstAttribute="top" secondItem="fQL-NS-Dze" secondAttribute="centerY" multiplier="0.4" id="Etc-Cx-v8J"/>
                                     <constraint firstItem="a7C-VX-RVW" firstAttribute="top" secondItem="fQL-NS-Dze" secondAttribute="centerY" multiplier="0.2" id="Hon-jj-31w"/>
+                                    <constraint firstItem="6Py-KV-p4h" firstAttribute="centerX" secondItem="fQL-NS-Dze" secondAttribute="centerX" id="I3S-pi-RhL"/>
                                     <constraint firstItem="a7C-VX-RVW" firstAttribute="width" relation="lessThanOrEqual" secondItem="fQL-NS-Dze" secondAttribute="width" multiplier="0.9" id="ILx-l4-1Cc"/>
                                     <constraint firstItem="QVh-9h-p15" firstAttribute="top" secondItem="fQL-NS-Dze" secondAttribute="centerY" id="KTJ-rD-aB9"/>
                                     <constraint firstItem="nqt-si-mWi" firstAttribute="top" secondItem="fQL-NS-Dze" secondAttribute="centerY" multiplier="0.8" id="LnN-jO-aNU"/>
                                     <constraint firstItem="Nbi-el-8Mg" firstAttribute="centerX" secondItem="fQL-NS-Dze" secondAttribute="centerX" id="RIr-BU-ZOO"/>
                                     <constraint firstItem="QVh-9h-p15" firstAttribute="centerX" secondItem="fQL-NS-Dze" secondAttribute="centerX" id="TfJ-wn-u6n"/>
+                                    <constraint firstItem="6Py-KV-p4h" firstAttribute="width" relation="lessThanOrEqual" secondItem="fQL-NS-Dze" secondAttribute="width" multiplier="0.95" id="UpQ-47-Obz"/>
                                     <constraint firstItem="a7C-VX-RVW" firstAttribute="centerX" secondItem="fQL-NS-Dze" secondAttribute="centerX" id="VIo-fe-Ek0"/>
                                     <constraint firstItem="nqt-si-mWi" firstAttribute="width" relation="lessThanOrEqual" secondItem="fQL-NS-Dze" secondAttribute="width" multiplier="0.9" id="XV2-vO-Ra5"/>
                                     <constraint firstItem="Ihh-CN-wET" firstAttribute="top" secondItem="fQL-NS-Dze" secondAttribute="centerY" multiplier="1.5" id="cwn-xI-01v"/>
                                     <constraint firstItem="QVh-9h-p15" firstAttribute="height" secondItem="fQL-NS-Dze" secondAttribute="height" multiplier="0.07" id="d2j-jM-CfS"/>
                                     <constraint firstItem="Ihh-CN-wET" firstAttribute="width" secondItem="fQL-NS-Dze" secondAttribute="width" multiplier="0.3" id="dAN-2z-7Rr"/>
+                                    <constraint firstItem="6Py-KV-p4h" firstAttribute="top" secondItem="fQL-NS-Dze" secondAttribute="centerY" multiplier="1.8" id="gVV-5u-gQe"/>
                                     <constraint firstItem="Nbi-el-8Mg" firstAttribute="width" secondItem="fQL-NS-Dze" secondAttribute="width" multiplier="0.8" id="o2N-D4-rNs"/>
                                     <constraint firstItem="a7C-VX-RVW" firstAttribute="height" secondItem="fQL-NS-Dze" secondAttribute="height" multiplier="0.07" id="tKN-EZ-sBj"/>
                                 </constraints>
