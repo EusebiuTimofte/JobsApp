@@ -17,6 +17,12 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var loginButton: UIButton!
     
     @IBAction func login(_ sender: UIButton) {
+        
+        let loginResult = DataBase.login(username: usernameInput.text!, password: passwordInput.text!)
+        if loginResult != "Success" {
+            
+        }
+        
     }
     
     override func viewDidLoad() {

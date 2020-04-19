@@ -59,6 +59,22 @@ class DataBase {
         users[getLoggedUserIndex()].password = newPassword
     }
     
+    static func login(username: String, password: String) -> String {
+        for i in 0..<users.count {
+            if users[i].username == username {
+                if users[i].password == password {
+                    loggedUserId = users[i].id
+                    return "Success"
+                }else {
+                    return "Parola gresita!"
+                }
+            }else {
+                return "Username gresit!"
+            }
+        }
+        return "App Error!"
+    }
+    
     static func getLoggedUser() -> User {
         return users[getLoggedUserIndex()]
     }
