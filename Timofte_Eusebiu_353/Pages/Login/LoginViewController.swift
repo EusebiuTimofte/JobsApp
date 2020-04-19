@@ -26,12 +26,9 @@ class LoginViewController: UIViewController {
         }else {
             let tabBarController =
                 (storyboard!.instantiateViewController(withIdentifier: "employeeTabBarController") as? UITabBarController)!
-            self.navigationController!.pushViewController( tabBarController, animated: true)
-            //delete last view from navigation history
-            var viewControllersVar = navigationController?.viewControllers
-            let indexToRemove = viewControllersVar!.count - 2
-            viewControllersVar?.remove(at: indexToRemove)
-            navigationController?.viewControllers = viewControllersVar!
+            tabBarController.modalPresentationStyle = .fullScreen
+            tabBarController.modalTransitionStyle = .crossDissolve
+            self.present(tabBarController, animated: true, completion: nil)
             
         }
         

@@ -37,6 +37,15 @@ class EmployeeProfileViewController: UIViewController, UIDocumentPickerDelegate,
     @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var emailValue: UILabel!
     
+    @IBAction func logout(_ sender: UIButton) {
+        
+        let loginController =
+            (storyboard!.instantiateViewController(withIdentifier: "loginController") as? LoginViewController)!
+        loginController.modalPresentationStyle = .fullScreen
+        loginController.modalTransitionStyle = .crossDissolve
+        self.present(loginController, animated: true, completion: nil)
+        
+    }
     @IBAction func addNewKeyword(_ sender: UIButton) {
         
         //1. Create the alert controller.
@@ -78,6 +87,9 @@ class EmployeeProfileViewController: UIViewController, UIDocumentPickerDelegate,
         DataBase.removeLoggedUserKeyword(at: 3)
         viewWillAppear(true)
     }
+    
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

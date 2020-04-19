@@ -386,7 +386,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xfx-QL-EAJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1625" y="903"/>
+            <point key="canvasLocation" x="2534.7826086956525" y="902.67857142857133"/>
         </scene>
         <!--Job Description Applied-->
         <scene sceneID="4oV-YJ-e7W">
@@ -542,12 +542,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qos-DY-oVz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2659" y="903"/>
+            <point key="canvasLocation" x="3568.115942028986" y="902.67857142857133"/>
         </scene>
         <!--Login-->
         <scene sceneID="PbM-Rx-pQi">
             <objects>
-                <viewController title="Login" id="jHF-vn-xgB" customClass="LoginViewController" customModule="Timofte_Eusebiu_353" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="loginController" title="Login" id="jHF-vn-xgB" customClass="LoginViewController" customModule="Timofte_Eusebiu_353" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rS7-og-Zrx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -634,6 +634,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dkd-8R-1pt"/>
                     </view>
+                    <navigationItem key="navigationItem" id="cAK-XN-dOe"/>
                     <connections>
                         <outlet property="Warning" destination="6Py-KV-p4h" id="wSa-xD-JIJ"/>
                         <outlet property="loginButton" destination="Ihh-CN-wET" id="X8i-Ww-s2m"/>
@@ -644,7 +645,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n8m-hD-82C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1577" y="1164"/>
+            <point key="canvasLocation" x="-668.11594202898561" y="1163.8392857142856"/>
         </scene>
         <!--AppliedNav-->
         <scene sceneID="hMW-PP-nTR">
@@ -663,7 +664,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0KG-cQ-90U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="715.94202898550725" y="902.67857142857133"/>
+            <point key="canvasLocation" x="1624.6376811594205" y="902.67857142857133"/>
         </scene>
         <!--Profile-->
         <scene sceneID="syZ-YH-vGC">
@@ -733,6 +734,9 @@
                                 <state key="normal" title="Logout">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="logout:" destination="IT5-sb-4UW" eventType="touchUpInside" id="YiD-51-ZnA"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H5M-df-eTO">
                                 <rect key="frame" x="130.33333333333334" y="229.33333333333337" width="34" height="58"/>
@@ -879,7 +883,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZXR-al-DDF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1623.1884057971015" y="1615.8482142857142"/>
+            <point key="canvasLocation" x="2533.3333333333335" y="1615.8482142857142"/>
         </scene>
         <!--Change Password-->
         <scene sceneID="Ezn-bW-wCX">
@@ -1009,13 +1013,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0HQ-hP-jlg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="B8E-RK-q4C" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2658" y="1616"/>
+            <point key="canvasLocation" x="3568.115942028986" y="1615.8482142857142"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="FrV-N8-ojT">
             <objects>
                 <tabBarController storyboardIdentifier="employeeTabBarController" automaticallyAdjustsScrollViewInsets="NO" id="JgB-36-OEu" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="sOi-b1-G5u"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vya-3y-PnZ">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1048,7 +1053,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Puh-zm-IT6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="713.04347826086962" y="1615.8482142857142"/>
+            <point key="canvasLocation" x="1623.1884057971015" y="1615.8482142857142"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
