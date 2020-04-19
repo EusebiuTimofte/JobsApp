@@ -555,8 +555,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fQL-NS-Dze">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a7C-VX-RVW">
-                                        <rect key="frame" x="186" y="84" width="42" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a7C-VX-RVW" customClass="FontHeightAdjustableLabel" customModule="Timofte_Eusebiu_353" customModuleProvider="target">
+                                        <rect key="frame" x="167.66666666666666" y="81.666666666666671" width="78.666666666666657" height="57.333333333333329"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -590,8 +590,8 @@
                                     <constraint firstItem="QVh-9h-p15" firstAttribute="width" secondItem="fQL-NS-Dze" secondAttribute="width" multiplier="0.2343" id="5ZG-x6-0kb"/>
                                     <constraint firstItem="Nbi-el-8Mg" firstAttribute="height" secondItem="fQL-NS-Dze" secondAttribute="height" multiplier="0.0415648" id="DqS-0c-5lE"/>
                                     <constraint firstItem="Nbi-el-8Mg" firstAttribute="top" secondItem="fQL-NS-Dze" secondAttribute="top" constant="158" id="Etc-Cx-v8J"/>
-                                    <constraint firstItem="a7C-VX-RVW" firstAttribute="top" secondItem="fQL-NS-Dze" secondAttribute="top" constant="84" id="Hon-jj-31w"/>
-                                    <constraint firstItem="a7C-VX-RVW" firstAttribute="width" secondItem="fQL-NS-Dze" secondAttribute="width" multiplier="0.101449" id="ILx-l4-1Cc"/>
+                                    <constraint firstItem="a7C-VX-RVW" firstAttribute="top" secondItem="fQL-NS-Dze" secondAttribute="centerY" multiplier="0.2" id="Hon-jj-31w"/>
+                                    <constraint firstItem="a7C-VX-RVW" firstAttribute="width" relation="lessThanOrEqual" secondItem="fQL-NS-Dze" secondAttribute="width" multiplier="0.9" id="ILx-l4-1Cc"/>
                                     <constraint firstItem="QVh-9h-p15" firstAttribute="top" secondItem="fQL-NS-Dze" secondAttribute="top" constant="392" id="KTJ-rD-aB9"/>
                                     <constraint firstItem="nqt-si-mWi" firstAttribute="top" secondItem="fQL-NS-Dze" secondAttribute="top" constant="300" id="LnN-jO-aNU"/>
                                     <constraint firstItem="Nbi-el-8Mg" firstAttribute="centerX" secondItem="fQL-NS-Dze" secondAttribute="centerX" id="RIr-BU-ZOO"/>
@@ -602,7 +602,7 @@
                                     <constraint firstItem="QVh-9h-p15" firstAttribute="height" secondItem="fQL-NS-Dze" secondAttribute="height" multiplier="0.0415648" id="d2j-jM-CfS"/>
                                     <constraint firstItem="Ihh-CN-wET" firstAttribute="width" secondItem="fQL-NS-Dze" secondAttribute="width" multiplier="0.111111" id="dAN-2z-7Rr"/>
                                     <constraint firstItem="Nbi-el-8Mg" firstAttribute="width" secondItem="fQL-NS-Dze" secondAttribute="width" multiplier="0.2343" id="o2N-D4-rNs"/>
-                                    <constraint firstItem="a7C-VX-RVW" firstAttribute="height" secondItem="fQL-NS-Dze" secondAttribute="height" multiplier="0.0256724" id="tKN-EZ-sBj"/>
+                                    <constraint firstItem="a7C-VX-RVW" firstAttribute="height" secondItem="fQL-NS-Dze" secondAttribute="height" multiplier="0.07" id="tKN-EZ-sBj"/>
                                 </constraints>
                             </view>
                         </subviews>
