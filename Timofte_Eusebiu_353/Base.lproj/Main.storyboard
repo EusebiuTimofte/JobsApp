@@ -561,7 +561,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nbi-el-8Mg">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nbi-el-8Mg">
                                         <rect key="frame" x="41.333333333333343" y="163.66666666666666" width="331.33333333333326" height="57.333333333333343"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -572,7 +572,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QVh-9h-p15">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QVh-9h-p15">
                                         <rect key="frame" x="41.333333333333343" y="409" width="331.33333333333326" height="57.333333333333314"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
@@ -635,6 +635,7 @@
                         <viewLayoutGuide key="safeArea" id="dkd-8R-1pt"/>
                     </view>
                     <connections>
+                        <outlet property="Warning" destination="6Py-KV-p4h" id="wSa-xD-JIJ"/>
                         <outlet property="loginButton" destination="Ihh-CN-wET" id="X8i-Ww-s2m"/>
                         <outlet property="passwordInput" destination="QVh-9h-p15" id="lp2-XH-4Qy"/>
                         <outlet property="username" destination="a7C-VX-RVW" id="Xtm-zO-tMR"/>

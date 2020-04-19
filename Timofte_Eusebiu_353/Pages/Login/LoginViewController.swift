@@ -16,10 +16,22 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var loginButton: UIButton!
     
+    @IBOutlet weak var Warning: UILabel!
     @IBAction func login(_ sender: UIButton) {
         
         let loginResult = DataBase.login(username: usernameInput.text!, password: passwordInput.text!)
         if loginResult != "Success" {
+            Warning.text = loginResult
+            Warning.isHidden = false
+        }else {
+            let tabBarController =
+                (storyboard!.instantiateViewController(withIdentifier: "employeeTabBarController") as? UITabBarController)!
+            self.navigationController!.pushViewController( tabBarController, animated: true)
+            //delete last view from navigation history
+            var viewControllersVar = navigationController?.viewControllers
+            let indexToRemove = viewControllersVar!.count - 2
+            viewControllersVar?.remove(at: indexToRemove)
+            navigationController?.viewControllers = viewControllersVar!
             
         }
         
@@ -27,9 +39,9 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        passwordInput.font = username.fontToFitHeight(height: passwordInput.frame.height)
+        passwordInput.font = username.fontToFitHeight(height: passwordInput.frame.height * CGFloat(2.0/3.0))
         passwordInput.layoutIfNeeded()
-        usernameInput.font = username.fontToFitHeight(height: usernameInput.frame.height)
+        usernameInput.font = username.fontToFitHeight(height: usernameInput.frame.height * CGFloat(2.0/3.0))
         usernameInput.layoutIfNeeded()
         loginButton.titleLabel!.font = loginButton.titleLabel?.fontToFitHeight(height: loginButton.frame.height)
         loginButton.layoutIfNeeded()
