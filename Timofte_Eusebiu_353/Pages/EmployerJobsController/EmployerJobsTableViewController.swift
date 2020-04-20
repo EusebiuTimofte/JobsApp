@@ -82,5 +82,11 @@ class EmployerJobsTableViewController: UITableViewController {
             cell.id = jobs[indexPath.row].id
             return cell
         }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        jobs = DataBase.getEmployerLoggedUserJobs()
+        tableView.reloadData()
+    }
 
 }
