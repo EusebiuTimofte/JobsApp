@@ -39,6 +39,14 @@ class DataBase {
         return localNotifications
     }
     
+    static func notificationSeen(notification: (Job, Bool)) {
+        for i in 0..<notifications.count {
+            if notifications[i].0.id == notification.0.id {
+                notifications[i].1 = false
+            }
+        }
+    }
+    
     static func getJobsUser0AppliedTo() -> [Job] {
         var jobsAppliedTo : [Job] = []
         for i in 0..<appliances.count {
@@ -58,8 +66,8 @@ class DataBase {
     
     static func addJob(title: String, employer: String, location: String, publishDate: String, description: String, domain: String) -> Job {
         jobs.append(Job(id: nextJobId, title: title, employer: employer, location: location, publishDate: publishDate, description: description, domain: domain))
-        return Job(id: nextJobId, title: title, employer: employer, location: location, publishDate: publishDate, description: description, domain: domain)
         nextJobId += 1
+        return Job(id: nextJobId-1, title: title, employer: employer, location: location, publishDate: publishDate, description: description, domain: domain)
     }
     
     static func getJobsWithAppliance() -> [Job] {

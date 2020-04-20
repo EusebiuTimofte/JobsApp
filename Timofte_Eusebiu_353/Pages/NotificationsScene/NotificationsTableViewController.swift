@@ -89,7 +89,7 @@ class NotificationsTableViewController: UITableViewController {
         }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        DataBase.notifications[indexPath.row].1 = false
+        DataBase.notificationSeen(notification: notifications[indexPath.row])
         
     }
     

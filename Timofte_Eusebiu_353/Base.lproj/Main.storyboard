@@ -2036,7 +2036,7 @@
             <objects>
                 <tableViewController storyboardIdentifier="notifications" title="Notifications" id="Ayk-gC-pGq" customClass="NotificationsTableViewController" customModule="Timofte_Eusebiu_353" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" contentInsetAdjustmentBehavior="always" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="dsS-FK-sdr">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="OzG-MQ-hkm"/>
@@ -2130,17 +2130,17 @@
             <objects>
                 <viewController storyboardIdentifier="notificationJobDescription" title="Notification Job Description" id="91B-WQ-Gqg" customClass="JobDescriptionViewController" customModule="Timofte_Eusebiu_353" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fD7-xG-87A">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="TopLeft" ambiguous="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L9b-bL-hMu">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <subviews>
                                     <view contentMode="TopLeft" translatesAutoresizingMaskIntoConstraints="NO" id="Jor-ds-wkI">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="623.66666666666663"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="632"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Job" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jff-bG-LGQ">
-                                                <rect key="frame" x="4.0000000000000018" y="177.33333333333331" width="28.666666666666671" height="21"/>
+                                                <rect key="frame" x="4.0000000000000018" y="177.33333333333334" width="28.666666666666671" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -2206,7 +2206,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1JQ-Cd-Gp8">
-                                                <rect key="frame" x="116.33333333333333" y="538.66666666666663" width="181.33333333333337" height="72.666666666666629"/>
+                                                <rect key="frame" x="106" y="539" width="202" height="80.666666666666629"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="1JQ-Cd-Gp8" secondAttribute="height" multiplier="25:10" id="TOq-8B-t6R"/>
@@ -2320,7 +2320,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="G52-wR-gD7"/>
+        <segue reference="N6Y-Xt-70R"/>
         <segue reference="qZb-RP-KFx"/>
         <segue reference="Yss-i0-PRI"/>
     </inferredMetricsTieBreakers>

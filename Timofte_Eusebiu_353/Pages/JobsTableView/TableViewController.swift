@@ -87,6 +87,11 @@ class TableViewController: UITableViewController {
 //
 //    }
     
+    override func viewWillAppear(_ animated: Bool) {
+        jobs = DataBase.getJobsWithoutAppliance()
+        tableView.reloadData()
+    }
+    
 
 
 }
