@@ -1605,7 +1605,7 @@
         <!--Employer Profile-->
         <scene sceneID="oyu-CG-Efh">
             <objects>
-                <viewController storyboardIdentifier="employerProfile" title="Employer Profile" id="BLE-87-3IV" customClass="EmployeeProfileViewController" customModule="Timofte_Eusebiu_353" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="employerProfile" title="Employer Profile" id="BLE-87-3IV" customClass="EmployerProfileViewController" customModule="Timofte_Eusebiu_353" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Y7g-V8-5hF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1703,6 +1703,7 @@
                         <outlet property="changePasswordButton" destination="hFj-si-dHt" id="mp2-N6-BIR"/>
                         <outlet property="emailLabel" destination="nTu-o7-uXw" id="57f-jd-fqI"/>
                         <outlet property="emailValue" destination="HDu-2U-GcK" id="Q3b-63-v7i"/>
+                        <outlet property="employerNameLabel" destination="1dk-mW-TmA" id="hAa-rV-gyR"/>
                         <outlet property="keywords" destination="u0j-IK-Nb5" id="qMU-ZY-gW4"/>
                         <outlet property="logoutButton" destination="dz3-OG-5bY" id="EHV-Sh-3Yr"/>
                         <outlet property="rootView" destination="Y7g-V8-5hF" id="tNb-GI-Trd"/>

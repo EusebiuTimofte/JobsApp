@@ -101,6 +101,10 @@ class EmployeeProfileViewController: UIViewController, UIDocumentPickerDelegate,
             let screenHeight = UIScreen.main.bounds.height
             let multiplier = CGFloat(22)
             
+           
+            
+            
+            
             usernameLabel.font = usernameLabel.fontToFitHeight(height: screenHeight/multiplier)
             usernameLabel.sizeToFit()
             usernameValue.font = usernameValue.fontToFitHeight(height: screenHeight/multiplier)
@@ -161,6 +165,9 @@ class EmployeeProfileViewController: UIViewController, UIDocumentPickerDelegate,
     */
     
     override func viewWillAppear(_ animated: Bool) {
+         let loggedUser = DataBase.getLoggedUser()
+        usernameValue.text = loggedUser.username
+        emailValue.text = loggedUser.mail
         userKeywords = DataBase.getLoggedUserKeywords()
         
         if userKeywords.count >= 4 {
