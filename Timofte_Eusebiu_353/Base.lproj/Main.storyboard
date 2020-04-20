@@ -1602,10 +1602,10 @@
             </objects>
             <point key="canvasLocation" x="1687" y="2798"/>
         </scene>
-        <!--Profile-->
+        <!--Employer Profile-->
         <scene sceneID="oyu-CG-Efh">
             <objects>
-                <viewController storyboardIdentifier="employerProfile" title="Profile" id="BLE-87-3IV" customClass="EmployeeProfileViewController" customModule="Timofte_Eusebiu_353" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="employerProfile" title="Employer Profile" id="BLE-87-3IV" customClass="EmployeeProfileViewController" customModule="Timofte_Eusebiu_353" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Y7g-V8-5hF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1634,21 +1634,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Keywords" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u0j-IK-Nb5">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nume" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u0j-IK-Nb5">
                                 <rect key="frame" x="10.333333333333336" y="247.66666666666663" width="103.66666666666666" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vH4-7n-LjR">
-                                <rect key="frame" x="10.333333333333336" y="495.66666666666669" width="82.666666666666657" height="30.000000000000057"/>
-                                <state key="normal" title="CV"/>
-                                <connections>
-                                    <action selector="uploadCV:" destination="BLE-87-3IV" eventType="touchUpInside" id="TR2-9T-vCN"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="cv.doc" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2SZ-X9-xUk">
-                                <rect key="frame" x="130.33333333333334" y="500" width="277.33333333333326" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1674,147 +1661,53 @@
                                     <action selector="logout:" destination="BLE-87-3IV" eventType="touchUpInside" id="tSM-0f-qgb"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bq7-ba-EYR">
-                                <rect key="frame" x="130.33333333333334" y="229.33333333333337" width="34" height="58"/>
-                                <state key="normal" title="NEW"/>
-                                <connections>
-                                    <action selector="addNewKeyword:" destination="BLE-87-3IV" eventType="touchUpInside" id="Gtl-Wo-Y5r"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="first keyword" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tlT-q9-NXU">
-                                <rect key="frame" x="20.666666666666657" y="292.66666666666669" width="290" height="20.333333333333314"/>
-                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Employer name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1dk-mW-TmA">
+                                <rect key="frame" x="130.33333333333334" y="247.66666666666663" width="277.33333333333326" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q2m-WP-NLV">
-                                <rect key="frame" x="352" y="292" width="21" height="22"/>
-                                <state key="normal" image="xmark.octagon.fill" catalog="system"/>
-                                <connections>
-                                    <action selector="firstKeywordDelete:" destination="BLE-87-3IV" eventType="touchUpInside" id="JMF-5K-QjG"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="second keyword" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="172-9B-IVh">
-                                <rect key="frame" x="20.666666666666657" y="338" width="290" height="21"/>
-                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z4O-zh-ffK">
-                                <rect key="frame" x="352" y="337.33333333333331" width="21" height="22"/>
-                                <state key="normal" image="xmark.octagon.fill" catalog="system"/>
-                                <connections>
-                                    <action selector="secondKeywordDelete:" destination="BLE-87-3IV" eventType="touchUpInside" id="rUD-TS-YOB"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="third keyword" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0iq-ea-HdX">
-                                <rect key="frame" x="20.666666666666657" y="383" width="290" height="21"/>
-                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E3A-3F-TSP">
-                                <rect key="frame" x="352" y="382.33333333333331" width="21" height="22"/>
-                                <state key="normal" image="xmark.octagon.fill" catalog="system"/>
-                                <connections>
-                                    <action selector="thirdKeywordDelete:" destination="BLE-87-3IV" eventType="touchUpInside" id="NTX-io-H8l"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="forth keyword" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iC3-ef-WmU">
-                                <rect key="frame" x="20.666666666666657" y="428" width="290" height="21"/>
-                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ou-uV-bJB">
-                                <rect key="frame" x="352" y="427.33333333333331" width="21" height="22"/>
-                                <state key="normal" image="xmark.octagon.fill" catalog="system"/>
-                                <connections>
-                                    <action selector="fourthKeywordDelete:" destination="BLE-87-3IV" eventType="touchUpInside" id="Y9v-Ql-rDk"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="hFj-si-dHt" firstAttribute="height" secondItem="PuB-aM-igG" secondAttribute="height" multiplier="0.08" id="2vP-uX-oBX"/>
                             <constraint firstItem="u0j-IK-Nb5" firstAttribute="leading" secondItem="PuB-aM-igG" secondAttribute="centerX" multiplier="0.05" id="3DC-t5-Kbj"/>
-                            <constraint firstItem="iC3-ef-WmU" firstAttribute="leading" secondItem="PuB-aM-igG" secondAttribute="centerX" multiplier="0.1" id="480-0o-17h"/>
                             <constraint firstItem="hFj-si-dHt" firstAttribute="width" secondItem="PuB-aM-igG" secondAttribute="width" multiplier="0.4" id="66Y-C2-P99"/>
                             <constraint firstItem="8Pp-6j-pli" firstAttribute="top" secondItem="VO1-VT-nfd" secondAttribute="top" id="AG1-AZ-gOO"/>
-                            <constraint firstItem="bq7-ba-EYR" firstAttribute="centerY" secondItem="u0j-IK-Nb5" secondAttribute="centerY" id="Az1-vD-ir1"/>
-                            <constraint firstItem="172-9B-IVh" firstAttribute="top" secondItem="PuB-aM-igG" secondAttribute="centerY" multiplier="0.75" id="Bnj-kI-aVe"/>
-                            <constraint firstItem="bq7-ba-EYR" firstAttribute="leading" secondItem="PuB-aM-igG" secondAttribute="centerX" multiplier="0.63" id="ChO-Bf-NuF"/>
-                            <constraint firstItem="E3A-3F-TSP" firstAttribute="leading" secondItem="PuB-aM-igG" secondAttribute="centerX" multiplier="1.7" id="G5W-nS-PJq"/>
+                            <constraint firstItem="1dk-mW-TmA" firstAttribute="width" secondItem="PuB-aM-igG" secondAttribute="width" multiplier="0.67" id="Eo7-cH-ZlF"/>
                             <constraint firstItem="VO1-VT-nfd" firstAttribute="width" secondItem="PuB-aM-igG" secondAttribute="width" multiplier="0.25" id="HFQ-as-aCI"/>
-                            <constraint firstItem="vH4-7n-LjR" firstAttribute="top" secondItem="PuB-aM-igG" secondAttribute="centerY" multiplier="1.1" id="Is4-M3-vbE"/>
                             <constraint firstItem="dz3-OG-5bY" firstAttribute="top" secondItem="PuB-aM-igG" secondAttribute="centerY" multiplier="1.65" id="JdD-QY-LuZ"/>
                             <constraint firstItem="VO1-VT-nfd" firstAttribute="top" secondItem="PuB-aM-igG" secondAttribute="centerY" multiplier="0.25" id="KPi-0C-jXy"/>
                             <constraint firstItem="HDu-2U-GcK" firstAttribute="top" secondItem="nTu-o7-uXw" secondAttribute="top" id="LFN-Kf-1yI"/>
                             <constraint firstItem="nTu-o7-uXw" firstAttribute="leading" secondItem="PuB-aM-igG" secondAttribute="centerX" multiplier="0.05" id="Mc4-S4-NmB"/>
                             <constraint firstItem="HDu-2U-GcK" firstAttribute="width" secondItem="PuB-aM-igG" secondAttribute="width" multiplier="0.67" id="NZk-VK-Ed7"/>
-                            <constraint firstItem="tlT-q9-NXU" firstAttribute="leading" secondItem="PuB-aM-igG" secondAttribute="centerX" multiplier="0.1" id="Na7-XL-Wy0"/>
-                            <constraint firstItem="0iq-ea-HdX" firstAttribute="top" secondItem="PuB-aM-igG" secondAttribute="centerY" multiplier="0.85" id="Nbn-fQ-3b8"/>
                             <constraint firstItem="hFj-si-dHt" firstAttribute="leading" secondItem="PuB-aM-igG" secondAttribute="centerX" multiplier="0.05" id="Nkr-lz-YtZ"/>
-                            <constraint firstItem="iC3-ef-WmU" firstAttribute="width" secondItem="PuB-aM-igG" secondAttribute="width" multiplier="0.7" id="Nle-8G-Gqa"/>
-                            <constraint firstItem="tlT-q9-NXU" firstAttribute="top" secondItem="PuB-aM-igG" secondAttribute="centerY" multiplier="0.65" id="NnI-kT-WoO"/>
                             <constraint firstItem="dz3-OG-5bY" firstAttribute="centerX" secondItem="PuB-aM-igG" secondAttribute="centerX" id="OwZ-hJ-roM"/>
-                            <constraint firstItem="0iq-ea-HdX" firstAttribute="width" secondItem="PuB-aM-igG" secondAttribute="width" multiplier="0.7" id="QXr-UV-G8B"/>
-                            <constraint firstItem="2SZ-X9-xUk" firstAttribute="width" secondItem="PuB-aM-igG" secondAttribute="width" multiplier="0.67" id="Rkd-IG-bG9"/>
-                            <constraint firstItem="0ou-uV-bJB" firstAttribute="centerY" secondItem="iC3-ef-WmU" secondAttribute="centerY" id="S8l-JU-R7f"/>
+                            <constraint firstItem="1dk-mW-TmA" firstAttribute="leading" secondItem="PuB-aM-igG" secondAttribute="centerX" multiplier="0.63" id="TBK-Pi-ZaU"/>
                             <constraint firstItem="HDu-2U-GcK" firstAttribute="leading" secondItem="PuB-aM-igG" secondAttribute="centerX" multiplier="0.63" id="UJG-EN-3Dh"/>
-                            <constraint firstItem="vH4-7n-LjR" firstAttribute="leading" secondItem="PuB-aM-igG" secondAttribute="centerX" multiplier="0.05" id="Uvz-hE-WTP"/>
-                            <constraint firstItem="E3A-3F-TSP" firstAttribute="centerY" secondItem="0iq-ea-HdX" secondAttribute="centerY" id="Wl0-Ia-l5x"/>
+                            <constraint firstItem="1dk-mW-TmA" firstAttribute="centerY" secondItem="u0j-IK-Nb5" secondAttribute="centerY" id="XkH-rP-Aoq"/>
                             <constraint firstItem="nTu-o7-uXw" firstAttribute="width" secondItem="PuB-aM-igG" secondAttribute="width" multiplier="0.25" id="ZsO-yY-sLV"/>
                             <constraint firstItem="u0j-IK-Nb5" firstAttribute="width" secondItem="PuB-aM-igG" secondAttribute="width" multiplier="0.25" id="bOl-zl-X6a"/>
-                            <constraint firstItem="iC3-ef-WmU" firstAttribute="top" secondItem="PuB-aM-igG" secondAttribute="centerY" multiplier="0.95" id="fG0-b3-Xez"/>
                             <constraint firstItem="nTu-o7-uXw" firstAttribute="top" secondItem="PuB-aM-igG" secondAttribute="centerY" multiplier="0.4" id="gTW-hM-iMr"/>
-                            <constraint firstItem="0ou-uV-bJB" firstAttribute="leading" secondItem="PuB-aM-igG" secondAttribute="centerX" multiplier="1.7" id="gqd-Fs-fYz"/>
-                            <constraint firstItem="2SZ-X9-xUk" firstAttribute="centerY" secondItem="vH4-7n-LjR" secondAttribute="centerY" id="iqw-DX-Hwr"/>
-                            <constraint firstItem="Q2m-WP-NLV" firstAttribute="centerY" secondItem="tlT-q9-NXU" secondAttribute="centerY" id="jY1-63-idZ"/>
                             <constraint firstItem="u0j-IK-Nb5" firstAttribute="top" secondItem="PuB-aM-igG" secondAttribute="centerY" multiplier="0.55" id="n7I-rW-8yK"/>
-                            <constraint firstItem="2SZ-X9-xUk" firstAttribute="leading" secondItem="PuB-aM-igG" secondAttribute="centerX" multiplier="0.63" id="nZ1-e9-TIb"/>
                             <constraint firstItem="8Pp-6j-pli" firstAttribute="leading" secondItem="PuB-aM-igG" secondAttribute="centerX" multiplier="0.63" id="oNX-9V-k5E"/>
                             <constraint firstItem="hFj-si-dHt" firstAttribute="top" secondItem="PuB-aM-igG" secondAttribute="centerY" multiplier="1.3" id="oPQ-PJ-1rj"/>
-                            <constraint firstItem="z4O-zh-ffK" firstAttribute="leading" secondItem="PuB-aM-igG" secondAttribute="centerX" multiplier="1.7" id="pEF-D3-XZ9"/>
-                            <constraint firstItem="vH4-7n-LjR" firstAttribute="width" secondItem="PuB-aM-igG" secondAttribute="width" multiplier="0.2" id="pxm-VQ-YrX"/>
                             <constraint firstItem="dz3-OG-5bY" firstAttribute="width" secondItem="PuB-aM-igG" secondAttribute="width" multiplier="0.3" id="q3A-dZ-SDG"/>
-                            <constraint firstItem="172-9B-IVh" firstAttribute="width" secondItem="PuB-aM-igG" secondAttribute="width" multiplier="0.7" id="q8d-Gt-74f"/>
                             <constraint firstItem="8Pp-6j-pli" firstAttribute="width" secondItem="PuB-aM-igG" secondAttribute="width" multiplier="0.67" id="qkV-sB-6M3"/>
-                            <constraint firstItem="172-9B-IVh" firstAttribute="leading" secondItem="PuB-aM-igG" secondAttribute="centerX" multiplier="0.1" id="va5-Gn-s8a"/>
-                            <constraint firstItem="tlT-q9-NXU" firstAttribute="width" secondItem="PuB-aM-igG" secondAttribute="width" multiplier="0.7" id="w5x-9g-9a9"/>
-                            <constraint firstItem="Q2m-WP-NLV" firstAttribute="leading" secondItem="PuB-aM-igG" secondAttribute="centerX" multiplier="1.7" id="wMS-BZ-Q4L"/>
-                            <constraint firstItem="bq7-ba-EYR" firstAttribute="height" secondItem="PuB-aM-igG" secondAttribute="height" multiplier="0.08" id="wSX-51-eCA"/>
                             <constraint firstItem="VO1-VT-nfd" firstAttribute="leading" secondItem="PuB-aM-igG" secondAttribute="centerX" multiplier="0.05" id="wqb-Ty-nT1"/>
-                            <constraint firstItem="z4O-zh-ffK" firstAttribute="centerY" secondItem="172-9B-IVh" secondAttribute="centerY" id="xOn-d9-ogl"/>
-                            <constraint firstItem="0iq-ea-HdX" firstAttribute="leading" secondItem="PuB-aM-igG" secondAttribute="centerX" multiplier="0.1" id="ygv-jv-iVt"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PuB-aM-igG"/>
                     </view>
                     <navigationItem key="navigationItem" id="8Yo-Ko-5eH"/>
                     <connections>
                         <outlet property="changePasswordButton" destination="hFj-si-dHt" id="mp2-N6-BIR"/>
-                        <outlet property="cvButton" destination="vH4-7n-LjR" id="qbE-dJ-ssa"/>
-                        <outlet property="documentName" destination="2SZ-X9-xUk" id="ZoM-zk-maD"/>
                         <outlet property="emailLabel" destination="nTu-o7-uXw" id="57f-jd-fqI"/>
                         <outlet property="emailValue" destination="HDu-2U-GcK" id="Q3b-63-v7i"/>
                         <outlet property="keywords" destination="u0j-IK-Nb5" id="qMU-ZY-gW4"/>
                         <outlet property="logoutButton" destination="dz3-OG-5bY" id="EHV-Sh-3Yr"/>
-                        <outlet property="newKeywordButton" destination="bq7-ba-EYR" id="m83-JS-ezb"/>
                         <outlet property="rootView" destination="Y7g-V8-5hF" id="tNb-GI-Trd"/>
                         <outlet property="usernameLabel" destination="VO1-VT-nfd" id="OJa-l1-lgF"/>
                         <outlet property="usernameValue" destination="8Pp-6j-pli" id="i3t-pN-c4i"/>
-                        <outletCollection property="keywordLabels" destination="tlT-q9-NXU" collectionClass="NSMutableArray" id="2qx-oe-AUO"/>
-                        <outletCollection property="keywordLabels" destination="172-9B-IVh" collectionClass="NSMutableArray" id="aXE-Vy-ySv"/>
-                        <outletCollection property="keywordLabels" destination="0iq-ea-HdX" collectionClass="NSMutableArray" id="dG7-wi-2Kn"/>
-                        <outletCollection property="keywordLabels" destination="iC3-ef-WmU" collectionClass="NSMutableArray" id="4ZK-9a-fpL"/>
-                        <outletCollection property="deleteKeyword" destination="Q2m-WP-NLV" collectionClass="NSMutableArray" id="Zky-TL-e2O"/>
-                        <outletCollection property="deleteKeyword" destination="z4O-zh-ffK" collectionClass="NSMutableArray" id="59l-nE-RNM"/>
-                        <outletCollection property="deleteKeyword" destination="E3A-3F-TSP" collectionClass="NSMutableArray" id="HPj-VM-h2p"/>
-                        <outletCollection property="deleteKeyword" destination="0ou-uV-bJB" collectionClass="NSMutableArray" id="2Mr-F3-Pa3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rwJ-fH-cf3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
