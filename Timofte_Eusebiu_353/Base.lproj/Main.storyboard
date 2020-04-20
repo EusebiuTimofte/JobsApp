@@ -1887,7 +1887,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ae5-H0-jF3">
-                                        <rect key="frame" x="145" y="715.66666666666663" width="124" height="41.333333333333371"/>
+                                        <rect key="frame" x="134.66666666666669" y="715.66666666666663" width="144.66666666666669" height="48.333333333333371"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="ae5-H0-jF3" secondAttribute="height" multiplier="3:1" id="WWB-6d-2XL"/>
                                         </constraints>
@@ -1910,7 +1910,7 @@
                                     <constraint firstItem="ccQ-SY-4Az" firstAttribute="height" secondItem="VEJ-dS-LTh" secondAttribute="height" multiplier="0.05" id="2On-su-SLO"/>
                                     <constraint firstItem="i63-pc-Iml" firstAttribute="top" secondItem="VEJ-dS-LTh" secondAttribute="centerY" multiplier="0.65" id="6aG-kU-3e7"/>
                                     <constraint firstItem="jCl-Jc-Kty" firstAttribute="width" relation="lessThanOrEqual" secondItem="VEJ-dS-LTh" secondAttribute="width" multiplier="0.9" id="6yJ-nb-j4F"/>
-                                    <constraint firstItem="ae5-H0-jF3" firstAttribute="width" secondItem="VEJ-dS-LTh" secondAttribute="width" multiplier="0.3" id="7xN-Qx-6Ye"/>
+                                    <constraint firstItem="ae5-H0-jF3" firstAttribute="width" secondItem="VEJ-dS-LTh" secondAttribute="width" multiplier="0.35" id="7xN-Qx-6Ye"/>
                                     <constraint firstItem="SS9-uZ-RbL" firstAttribute="width" relation="lessThanOrEqual" secondItem="VEJ-dS-LTh" secondAttribute="width" multiplier="0.8" id="88p-CV-asL"/>
                                     <constraint firstItem="o8w-ua-xTQ" firstAttribute="width" secondItem="VEJ-dS-LTh" secondAttribute="width" multiplier="0.8" id="BOl-Om-90A"/>
                                     <constraint firstItem="4WP-X8-1Eu" firstAttribute="height" secondItem="VEJ-dS-LTh" secondAttribute="height" multiplier="0.05" id="D32-bY-saO"/>

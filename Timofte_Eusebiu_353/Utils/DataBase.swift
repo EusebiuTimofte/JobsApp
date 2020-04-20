@@ -18,7 +18,15 @@ class DataBase {
         Job(id: 6, title: "Inginer chimist", employer: "S.C. Biofarm S.A.", location: "Bucuresti", publishDate: "15/04/2020", description: "Organizeaza si repartizeaza sarcinile pentru fiecare loc de munca din echipa pe care o coordoneaza;Asigura folosirea completa a capacitatilor de productie si a fondului de timp, utilizand la randament maxim utilajele prin eliminarea intreruperilor sau deficientelor in functionare, datorate activitatii coordonate;Urmareste, verifica si inregistreaza parametrii tehnologici ai echipamentelor in dosarul de serie pentru fiecare serie de produs;Raspunde de completarea corecta si in timp real a dosarelor de serie pentru fiecare serie de produs;Coordoneaza utilizarea in fabricatie a produselor intermediare corespunzatoare din punct de vedere calitativ si cantitativ;", domain: "Farma")
     ]
     
+    static var nextJobId = 7
+    
     static var appliances: [Int] = []
+    
+    
+    static func addJob(title: String, employer: String, location: String, publishDate: String, description: String, domain: String) {
+        jobs.append(Job(id: nextJobId, title: title, employer: employer, location: location, publishDate: publishDate, description: description, domain: domain))
+        nextJobId += 1
+    }
     
     static func getJobsWithAppliance() -> [Job] {
         var localjobs : [Job] = []

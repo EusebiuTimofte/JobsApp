@@ -26,7 +26,15 @@ class NewJobViewController: UIViewController {
     @IBOutlet weak var warning: FontHeightAdjustableLabel!
     
     @IBAction func createJob(_ sender: UIButton) {
-        
+        if jobTitleInput.text != "" && locationInput.text != "" && descriptionInput.text != "" && domainInput.text != "" {
+            DataBase.addJob(title: jobTitleInput.text!, employer: (DataBase.getLoggedUser() as! Employer).name, location: locationInput.text!, publishDate: "15/04/2020", description: descriptionInput.text, domain: domainInput.text!)
+            warning.text = "Job creat cu succes!"
+            warning.textColor = .green
+            warning.isHidden = false
+        }else {
+            warning.text = "Toate campurile sunt obligatorii!"
+            warning.isHidden = false
+        }
     }
     
     override func viewDidLoad() {
@@ -42,7 +50,7 @@ class NewJobViewController: UIViewController {
         //descriptionInput.sizeToFit()
         domainInput.font  = jobTitle.fontToFitHeight(height: domainInput.frame.height * CGFloat(2.0/3.0))
         descriptionInput.sizeToFit()
-        createButton.titleLabel?.font = createButton.titleLabel?.fontToFitHeight(height: createButton.frame.size.height)
+        createButton.titleLabel?.font = createButton.titleLabel?.fontToFitHeight(height: createButton.frame.size.height * CGFloat(2.0/3.0))
         descriptionInput.layer.borderWidth = CGFloat(UIScreen.main.bounds.height / CGFloat(300))
         descriptionInput.layoutIfNeeded()
         
