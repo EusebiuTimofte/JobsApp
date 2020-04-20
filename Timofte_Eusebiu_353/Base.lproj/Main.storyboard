@@ -2034,7 +2034,7 @@
         <!--Notifications-->
         <scene sceneID="zfc-9H-UZb">
             <objects>
-                <tableViewController storyboardIdentifier="notifications" title="Notifications" id="Ayk-gC-pGq" customClass="TableViewController" customModule="Timofte_Eusebiu_353" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="notifications" title="Notifications" id="Ayk-gC-pGq" customClass="NotificationsTableViewController" customModule="Timofte_Eusebiu_353" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" contentInsetAdjustmentBehavior="always" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="dsS-FK-sdr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2119,7 +2119,7 @@
                             <outlet property="delegate" destination="Ayk-gC-pGq" id="TKL-LV-sRa"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Jobs" id="jwG-jc-Ez3"/>
+                    <navigationItem key="navigationItem" title="Notifications" id="jwG-jc-Ez3"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CgG-hk-R4s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2302,7 +2302,7 @@
         <!--Notifications-->
         <scene sceneID="Zuy-ra-0hn">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="T6c-Pq-VWX" customClass="NavigationController" customModule="Timofte_Eusebiu_353" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController title="Notifications" automaticallyAdjustsScrollViewInsets="NO" id="T6c-Pq-VWX" customClass="NavigationController" customModule="Timofte_Eusebiu_353" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Notifications" image="bell" catalog="system" id="gDh-MQ-UnN"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ved-NJ-tel">

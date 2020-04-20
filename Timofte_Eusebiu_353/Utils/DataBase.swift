@@ -56,8 +56,9 @@ class DataBase {
     static var appliances: [Int] = []
     
     
-    static func addJob(title: String, employer: String, location: String, publishDate: String, description: String, domain: String) {
+    static func addJob(title: String, employer: String, location: String, publishDate: String, description: String, domain: String) -> Job {
         jobs.append(Job(id: nextJobId, title: title, employer: employer, location: location, publishDate: publishDate, description: description, domain: domain))
+        return Job(id: nextJobId, title: title, employer: employer, location: location, publishDate: publishDate, description: description, domain: domain)
         nextJobId += 1
     }
     
