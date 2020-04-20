@@ -1833,7 +1833,7 @@
         <!--AddJobController-->
         <scene sceneID="PX7-Gs-E3F">
             <objects>
-                <viewController title="AddJobController" id="mpW-tE-HgH" sceneMemberID="viewController">
+                <viewController title="AddJobController" id="mpW-tE-HgH" customClass="NewJobViewController" customModule="Timofte_Eusebiu_353" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="B6k-67-906">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1841,7 +1841,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VEJ-dS-LTh">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Titlu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yXr-D3-t18">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Titlu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yXr-D3-t18" customClass="FontHeightAdjustableLabel" customModule="Timofte_Eusebiu_353" customModuleProvider="target">
                                         <rect key="frame" x="186" y="31" width="34" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -1852,7 +1852,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Locatie" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SS9-uZ-RbL">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Locatie" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SS9-uZ-RbL" customClass="FontHeightAdjustableLabel" customModule="Timofte_Eusebiu_353" customModuleProvider="target">
                                         <rect key="frame" x="179" y="102.33333333333334" width="56" height="40.666666666666657"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -1863,7 +1863,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descriere" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4WP-X8-1Eu">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descriere" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4WP-X8-1Eu" customClass="FontHeightAdjustableLabel" customModule="Timofte_Eusebiu_353" customModuleProvider="target">
                                         <rect key="frame" x="170" y="225" width="74" height="41"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -1876,7 +1876,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Domeniu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccQ-SY-4Az">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Domeniu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccQ-SY-4Az" customClass="FontHeightAdjustableLabel" customModule="Timofte_Eusebiu_353" customModuleProvider="target">
                                         <rect key="frame" x="172.66666666666666" y="613.66666666666663" width="69" height="40.666666666666629"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -1892,9 +1892,12 @@
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="ae5-H0-jF3" secondAttribute="height" multiplier="3:1" id="WWB-6d-2XL"/>
                                         </constraints>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" title="Creeaza"/>
+                                        <connections>
+                                            <action selector="createJob:" destination="mpW-tE-HgH" eventType="touchUpInside" id="sU8-MU-obF"/>
+                                        </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="warning" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jCl-Jc-Kty">
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="warning" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jCl-Jc-Kty" customClass="FontHeightAdjustableLabel" customModule="Timofte_Eusebiu_353" customModuleProvider="target">
                                         <rect key="frame" x="176.66666666666666" y="777" width="61" height="32.666666666666629"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1954,6 +1957,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jFt-QL-uFC"/>
                     </view>
+                    <connections>
+                        <outlet property="createButton" destination="ae5-H0-jF3" id="UpY-ZJ-a4G"/>
+                        <outlet property="descriptionInput" destination="i63-pc-Iml" id="90a-rM-oaf"/>
+                        <outlet property="domainInput" destination="Lto-oT-lsC" id="GPl-ac-F2V"/>
+                        <outlet property="jobTitle" destination="yXr-D3-t18" id="hfL-wO-Eo1"/>
+                        <outlet property="jobTitleInput" destination="lZ8-Ed-c9x" id="r6t-d6-cLP"/>
+                        <outlet property="locationInput" destination="o8w-ua-xTQ" id="wgy-U5-jPN"/>
+                        <outlet property="warning" destination="jCl-Jc-Kty" id="Vch-7g-kbC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l0k-g3-vlE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

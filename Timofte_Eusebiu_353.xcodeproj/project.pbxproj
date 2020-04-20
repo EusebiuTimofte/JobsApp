@@ -21,6 +21,7 @@
 		53C205B224432D8800C368AB /* UILabelExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C205B124432D8800C368AB /* UILabelExt.swift */; };
 		602EA7E1244B3D6900CA591E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602EA7E0244B3D6900CA591E /* User.swift */; };
 		6065FFD22449A80E00892644 /* DataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6065FFD12449A80E00892644 /* DataBase.swift */; };
+		606999D2244DDEEB0094977D /* NewJobViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606999D1244DDEEB0094977D /* NewJobViewController.swift */; };
 		606BFF9A244B11F600963DC0 /* EmployeeProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606BFF99244B11F600963DC0 /* EmployeeProfileViewController.swift */; };
 		608F5AEB244B91F30057835B /* CahngePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608F5AEA244B91F30057835B /* CahngePasswordViewController.swift */; };
 		60AB1034244CE02500721F47 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AB1033244CE02500721F47 /* LoginViewController.swift */; };
@@ -50,6 +51,7 @@
 		53C205B124432D8800C368AB /* UILabelExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExt.swift; sourceTree = "<group>"; };
 		602EA7E0244B3D6900CA591E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		6065FFD12449A80E00892644 /* DataBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBase.swift; sourceTree = "<group>"; };
+		606999D1244DDEEB0094977D /* NewJobViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewJobViewController.swift; sourceTree = "<group>"; };
 		606BFF99244B11F600963DC0 /* EmployeeProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeProfileViewController.swift; sourceTree = "<group>"; };
 		608F5AE8244B82CE0057835B /* Timofte_Eusebiu_353.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Timofte_Eusebiu_353.entitlements; sourceTree = "<group>"; };
 		608F5AEA244B91F30057835B /* CahngePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CahngePasswordViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 		535F66B7244263C000C33355 /* Pages */ = {
 			isa = PBXGroup;
 			children = (
+				606999D0244DDEA80094977D /* NewJobScene */,
 				60EB40CA244DB22C00E51BE1 /* EmployerJobDescriptionView */,
 				60EB40C5244DA46D00E51BE1 /* EmployerJobsController */,
 				60AB1032244CE00C00721F47 /* Login */,
@@ -161,6 +164,14 @@
 				60EB40C8244DA82600E51BE1 /* Employer.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		606999D0244DDEA80094977D /* NewJobScene */ = {
+			isa = PBXGroup;
+			children = (
+				606999D1244DDEEB0094977D /* NewJobViewController.swift */,
+			);
+			path = NewJobScene;
 			sourceTree = "<group>";
 		};
 		606BFF98244B11A900963DC0 /* EmployeeProfile */ = {
@@ -303,6 +314,7 @@
 				60E3DC462449F717006A750A /* AppliedJobDescriptionView.swift in Sources */,
 				539A4927243BBA670011AEB4 /* TableViewController.swift in Sources */,
 				53117585243FD35A005BB73D /* StrExt.swift in Sources */,
+				606999D2244DDEEB0094977D /* NewJobViewController.swift in Sources */,
 				602EA7E1244B3D6900CA591E /* User.swift in Sources */,
 				539A4938243BCE150011AEB4 /* FirstTableViewCell.swift in Sources */,
 				53A79321243D44770084AD6F /* FontSizer.swift in Sources */,
