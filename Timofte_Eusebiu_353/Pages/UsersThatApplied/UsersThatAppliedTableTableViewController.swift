@@ -83,7 +83,7 @@ class UsersThatAppliedTableTableViewController: UITableViewController {
    //    }
    
    override func viewWillAppear(_ animated: Bool) {
-       jobs = DataBase.getJobsWithAppliance()
+       jobs = DataBase.getJobsUser0AppliedTo()
        tableView.reloadData()
    }
 
