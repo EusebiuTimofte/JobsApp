@@ -1030,6 +1030,7 @@
                         <segue destination="zeJ-wk-N4V" kind="relationship" relationship="viewControllers" id="cda-oe-L6I"/>
                         <segue destination="pn7-Su-YQh" kind="relationship" relationship="viewControllers" id="hv2-He-FO2"/>
                         <segue destination="Dz0-Rj-CA6" kind="relationship" relationship="viewControllers" id="ItC-MR-LOp"/>
+                        <segue destination="T6c-Pq-VWX" kind="relationship" relationship="viewControllers" id="InV-WS-MRw"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h2B-2Q-2KF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -2035,7 +2036,7 @@
             <objects>
                 <tableViewController storyboardIdentifier="notifications" title="Notifications" id="Ayk-gC-pGq" customClass="TableViewController" customModule="Timofte_Eusebiu_353" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" contentInsetAdjustmentBehavior="always" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="dsS-FK-sdr">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="OzG-MQ-hkm"/>
@@ -2129,17 +2130,17 @@
             <objects>
                 <viewController storyboardIdentifier="notificationJobDescription" title="Notification Job Description" id="91B-WQ-Gqg" customClass="JobDescriptionViewController" customModule="Timofte_Eusebiu_353" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fD7-xG-87A">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="TopLeft" ambiguous="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L9b-bL-hMu">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <subviews>
                                     <view contentMode="TopLeft" translatesAutoresizingMaskIntoConstraints="NO" id="Jor-ds-wkI">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="632"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="623.66666666666663"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Job" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jff-bG-LGQ">
-                                                <rect key="frame" x="4.0000000000000018" y="177.33333333333334" width="28.666666666666671" height="21"/>
+                                                <rect key="frame" x="4.0000000000000018" y="177.33333333333331" width="28.666666666666671" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -2205,7 +2206,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1JQ-Cd-Gp8">
-                                                <rect key="frame" x="106" y="539" width="202" height="80.666666666666629"/>
+                                                <rect key="frame" x="116.33333333333333" y="538.66666666666663" width="181.33333333333337" height="72.666666666666629"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="1JQ-Cd-Gp8" secondAttribute="height" multiplier="25:10" id="TOq-8B-t6R"/>
@@ -2298,11 +2299,11 @@
             </objects>
             <point key="canvasLocation" x="3045" y="-1175"/>
         </scene>
-        <!--Jobs-->
+        <!--Notifications-->
         <scene sceneID="Zuy-ra-0hn">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="T6c-Pq-VWX" customClass="NavigationController" customModule="Timofte_Eusebiu_353" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Jobs" image="rectangle.grid.1x2" catalog="system" id="gDh-MQ-UnN"/>
+                    <tabBarItem key="tabBarItem" title="Notifications" image="bell" catalog="system" id="gDh-MQ-UnN"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ved-NJ-tel">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -2319,13 +2320,14 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="N6Y-Xt-70R"/>
+        <segue reference="G52-wR-gD7"/>
         <segue reference="qZb-RP-KFx"/>
         <segue reference="Yss-i0-PRI"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="archivebox" catalog="system" width="128" height="106"/>
         <image name="arrow.down.doc" catalog="system" width="115" height="128"/>
+        <image name="bell" catalog="system" width="128" height="124"/>
         <image name="person" catalog="system" width="128" height="117"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <image name="rectangle.grid.1x2" catalog="system" width="128" height="101"/>

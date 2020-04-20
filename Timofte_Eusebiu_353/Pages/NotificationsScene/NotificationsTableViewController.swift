@@ -10,7 +10,7 @@ import UIKit
 
 class NotificationsTableViewController: UITableViewController {
 
-    var notifications: [(Job, Bool)] = DataBase.notifications
+    var notifications: [(Job, Bool)] = DataBase.getNotifications()
         
         override func viewDidLoad() {
             super.viewDidLoad()
@@ -93,6 +93,7 @@ class NotificationsTableViewController: UITableViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        notifications = DataBase.getNotifications()
         tableView.reloadData()
     }
 

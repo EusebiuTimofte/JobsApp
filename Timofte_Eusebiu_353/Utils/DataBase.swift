@@ -29,7 +29,15 @@ class DataBase {
     
     static var notifications: [(Job, Bool)] = []
     
-    
+    static func getNotifications() -> [(Job, Bool)] {
+        var localNotifications: [(Job, Bool)] = []
+        for i in 0..<notifications.count {
+            if !appliances.contains(notifications[i].0.id) && getJob(withId: notifications[i].0.id) != nil{
+                localNotifications.append(notifications[i])
+            }
+        }
+        return localNotifications
+    }
     
     static func getJobsUser0AppliedTo() -> [Job] {
         var jobsAppliedTo : [Job] = []
