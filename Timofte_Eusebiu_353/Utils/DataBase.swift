@@ -27,6 +27,10 @@ class DataBase {
         return nil
     }
     
+    static var notifications: [(Job, Bool)] = []
+    
+    
+    
     static func getJobsUser0AppliedTo() -> [Job] {
         var jobsAppliedTo : [Job] = []
         for i in 0..<appliances.count {
