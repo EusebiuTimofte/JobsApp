@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jHF-vn-xgB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mpW-tE-HgH">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
@@ -1853,7 +1853,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Locatie" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SS9-uZ-RbL">
-                                        <rect key="frame" x="179" y="177" width="56" height="21"/>
+                                        <rect key="frame" x="179" y="143" width="56" height="41"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -1910,7 +1910,7 @@
                                     <constraint firstItem="i63-pc-Iml" firstAttribute="top" secondItem="VEJ-dS-LTh" secondAttribute="top" constant="386" id="6aG-kU-3e7"/>
                                     <constraint firstItem="jCl-Jc-Kty" firstAttribute="width" secondItem="VEJ-dS-LTh" secondAttribute="width" multiplier="0.147343" id="6yJ-nb-j4F"/>
                                     <constraint firstItem="ae5-H0-jF3" firstAttribute="width" secondItem="VEJ-dS-LTh" secondAttribute="width" multiplier="0.111111" id="7xN-Qx-6Ye"/>
-                                    <constraint firstItem="SS9-uZ-RbL" firstAttribute="width" secondItem="VEJ-dS-LTh" secondAttribute="width" multiplier="0.135266" id="88p-CV-asL"/>
+                                    <constraint firstItem="SS9-uZ-RbL" firstAttribute="width" relation="lessThanOrEqual" secondItem="VEJ-dS-LTh" secondAttribute="width" multiplier="0.8" id="88p-CV-asL"/>
                                     <constraint firstItem="o8w-ua-xTQ" firstAttribute="width" secondItem="VEJ-dS-LTh" secondAttribute="width" multiplier="0.0772947" id="BOl-Om-90A"/>
                                     <constraint firstItem="4WP-X8-1Eu" firstAttribute="height" secondItem="VEJ-dS-LTh" secondAttribute="height" multiplier="0.0256724" id="D32-bY-saO"/>
                                     <constraint firstItem="ccQ-SY-4Az" firstAttribute="centerX" secondItem="VEJ-dS-LTh" secondAttribute="centerX" id="JzA-Y7-1ly"/>
@@ -1920,7 +1920,7 @@
                                     <constraint firstItem="i63-pc-Iml" firstAttribute="centerX" secondItem="VEJ-dS-LTh" secondAttribute="centerX" id="W2I-ws-OBb"/>
                                     <constraint firstItem="4WP-X8-1Eu" firstAttribute="width" secondItem="VEJ-dS-LTh" secondAttribute="width" multiplier="0.178744" id="XDz-2d-d08"/>
                                     <constraint firstItem="o8w-ua-xTQ" firstAttribute="height" secondItem="VEJ-dS-LTh" secondAttribute="height" multiplier="0.0415648" id="drV-gI-wAM"/>
-                                    <constraint firstItem="SS9-uZ-RbL" firstAttribute="height" secondItem="VEJ-dS-LTh" secondAttribute="height" multiplier="0.0256724" id="fDo-sx-j2N"/>
+                                    <constraint firstItem="SS9-uZ-RbL" firstAttribute="height" secondItem="VEJ-dS-LTh" secondAttribute="height" multiplier="0.05" id="fDo-sx-j2N"/>
                                     <constraint firstItem="lZ8-Ed-c9x" firstAttribute="top" secondItem="VEJ-dS-LTh" secondAttribute="centerY" multiplier="0.15" id="fvp-XH-LMJ"/>
                                     <constraint firstItem="ae5-H0-jF3" firstAttribute="centerX" secondItem="VEJ-dS-LTh" secondAttribute="centerX" id="g8t-k5-euW"/>
                                     <constraint firstItem="Lto-oT-lsC" firstAttribute="height" secondItem="VEJ-dS-LTh" secondAttribute="height" multiplier="0.0415648" id="gz7-TI-esk"/>
@@ -1942,7 +1942,7 @@
                                     <constraint firstItem="Lto-oT-lsC" firstAttribute="centerX" secondItem="VEJ-dS-LTh" secondAttribute="centerX" id="xZL-3j-8J6"/>
                                     <constraint firstItem="o8w-ua-xTQ" firstAttribute="top" secondItem="VEJ-dS-LTh" secondAttribute="top" constant="231" id="ymp-wi-vX9"/>
                                     <constraint firstItem="ae5-H0-jF3" firstAttribute="top" secondItem="VEJ-dS-LTh" secondAttribute="top" constant="727" id="ywh-Nv-GBl"/>
-                                    <constraint firstItem="SS9-uZ-RbL" firstAttribute="top" secondItem="VEJ-dS-LTh" secondAttribute="top" constant="177" id="zgH-bb-wRZ"/>
+                                    <constraint firstItem="SS9-uZ-RbL" firstAttribute="top" secondItem="VEJ-dS-LTh" secondAttribute="centerY" multiplier="0.35" id="zgH-bb-wRZ"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -2135,7 +2135,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="VKu-su-HoQ"/>
         <segue reference="VOn-Ir-6P6"/>
         <segue reference="Yss-i0-PRI"/>
     </inferredMetricsTieBreakers>
