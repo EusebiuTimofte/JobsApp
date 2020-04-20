@@ -25,9 +25,9 @@ class UsersThatAppliedTableTableViewController: UITableViewController {
        }
        
        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-           let receiver = segue.destination as! AppliedJobDescriptionViewController
+           let receiver = segue.destination as! UserThatAppliedDescriptionViewController
            let senderLet = sender as! UserTableViewCell
-           if let text = senderLet.cellTitle.text {
+           if let text = senderLet.city.text {
                receiver.jobTitleReceived = text
            }
            
@@ -35,13 +35,16 @@ class UsersThatAppliedTableTableViewController: UITableViewController {
                receiver.employerImageReceived = imageViewImage
            }
            
-           if let employerLet = senderLet.employer.text {
+           if let employerLet = senderLet.user?.username {
                receiver.employerReceived = employerLet
            }
            
-           if let locationLet = senderLet.city.text {
+        if let locationLet = senderLet.user?.mail {
                receiver.locationReceived = locationLet
            }
+        
+        receiver.user = senderLet.user
+        receiver.job = senderLet.job
        }
        
        override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

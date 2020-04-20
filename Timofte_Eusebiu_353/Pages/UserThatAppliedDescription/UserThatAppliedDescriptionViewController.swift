@@ -10,21 +10,94 @@ import UIKit
 
 class UserThatAppliedDescriptionViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
+    var jobTitleReceived: String?
+        var employerImageReceived: UIImage?
+        var employerReceived: String?
+        var locationReceived: String?
+        var publishDateReceived: String?
+        var descriptionValueReceived: String?
+        var idReceived: Int?
+        
+        
+        @IBOutlet weak var scrollViewElement: UIScrollView!
+        @IBOutlet weak var employerImage: UIImageView!
+        @IBOutlet weak var scrollViewContent: UIView!
+        @IBOutlet weak var jobTitleLabel: UILabel!
+        @IBOutlet weak var jobTitle: UILabel!
+        @IBOutlet weak var employerLabel: UILabel!
+        @IBOutlet weak var employer: UILabel!
+        @IBOutlet weak var locationLabel: UILabel!
+        @IBOutlet weak var location: UILabel!
+        @IBOutlet weak var publishDateLabel: UILabel!
+        @IBOutlet weak var publishDate: UILabel!
+        
+    var user: User? = nil
+    var job: Job? = nil
+        
+    @IBOutlet weak var downloadCV: UIButton!
     
+    @IBOutlet weak var downloadCVLabel: UILabel!
+    
+        override func viewDidLoad() {
+            super.viewDidLoad()
+            if let jobTitleText = jobTitleReceived {
+                jobTitleLabel.text = jobTitleText
+            }
+            
+            if let employerImageView = employerImageReceived {
+                employerImage.image = employerImageView
+            }
+            
+            if let employerReceivedLet = employerReceived {
+                employer.text = employerReceivedLet
+            }
+            
+            if let locationReceivedLet = locationReceived {
+                location.text = locationReceivedLet
+            }
+            
+            if let publishDateReceivedLet = publishDateReceived {
+                publishDate.text = publishDateReceivedLet
+            }
+           
+            
+            var labelFontSizeMultiplier: CGFloat = 30
+            if UIScreen.main.bounds.width > 500 {
+                labelFontSizeMultiplier = 18
+            }
+    //
+            jobTitleLabel.font = jobTitleLabel.fontToFitHeight(height: scrollViewElement.frame.height / labelFontSizeMultiplier)
 
-    /*
-    // MARK: - Navigation
+            jobTitle.font = jobTitle.fontToFitHeight(height: scrollViewElement.frame.height / (labelFontSizeMultiplier - CGFloat(4)))
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+            employerLabel.font = employerLabel.fontToFitHeight(height: scrollViewElement.frame.height / (labelFontSizeMultiplier - CGFloat(4)))
+
+            employer.font = employer.fontToFitHeight(height: scrollViewElement.frame.height / labelFontSizeMultiplier)
+
+            locationLabel.font = locationLabel.fontToFitHeight(height: scrollViewElement.frame.height / (labelFontSizeMultiplier - CGFloat(4)))
+
+            location.font = location.fontToFitHeight(height: scrollViewElement.frame.height / labelFontSizeMultiplier)
+
+            publishDateLabel.font = publishDateLabel.fontToFitHeight(height: scrollViewElement.frame.height / (labelFontSizeMultiplier - CGFloat(4)))
+
+            publishDate.font = publishDate.fontToFitHeight(height: scrollViewElement.frame.height / labelFontSizeMultiplier)
+            
+            downloadCVLabel.font = publishDateLabel.fontToFitHeight(height: scrollViewElement.frame.height / (labelFontSizeMultiplier - CGFloat(4)))
+            
+            
+            jobTitleLabel.sizeToFit()
+            jobTitle.sizeToFit()
+            employerLabel.sizeToFit()
+            employer.sizeToFit()
+            locationLabel.sizeToFit()
+            location.sizeToFit()
+            publishDateLabel.sizeToFit()
+            publishDate.sizeToFit()
+            downloadCVLabel.sizeToFit()
+            
+            scrollViewContent.layoutIfNeeded()
+            scrollViewElement.contentSize = scrollViewContent.frame.size
+            
+        }
 
 }
