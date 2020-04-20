@@ -1878,13 +1878,13 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Domeniu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccQ-SY-4Az">
-                                        <rect key="frame" x="172.66666666666666" y="555" width="69" height="21"/>
+                                        <rect key="frame" x="172.66666666666666" y="613.66666666666663" width="69" height="40.666666666666629"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lto-oT-lsC">
-                                        <rect key="frame" x="191" y="623" width="32" height="34"/>
+                                        <rect key="frame" x="41.333333333333343" y="654.33333333333337" width="331.33333333333326" height="41"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -1904,9 +1904,9 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstItem="ccQ-SY-4Az" firstAttribute="top" secondItem="VEJ-dS-LTh" secondAttribute="top" constant="555" id="0ta-H2-Cfw"/>
-                                    <constraint firstItem="Lto-oT-lsC" firstAttribute="top" secondItem="VEJ-dS-LTh" secondAttribute="top" constant="623" id="0wA-jd-sRT"/>
-                                    <constraint firstItem="ccQ-SY-4Az" firstAttribute="height" secondItem="VEJ-dS-LTh" secondAttribute="height" multiplier="0.0256724" id="2On-su-SLO"/>
+                                    <constraint firstItem="ccQ-SY-4Az" firstAttribute="top" secondItem="VEJ-dS-LTh" secondAttribute="centerY" multiplier="1.5" id="0ta-H2-Cfw"/>
+                                    <constraint firstItem="Lto-oT-lsC" firstAttribute="top" secondItem="VEJ-dS-LTh" secondAttribute="centerY" multiplier="1.6" id="0wA-jd-sRT"/>
+                                    <constraint firstItem="ccQ-SY-4Az" firstAttribute="height" secondItem="VEJ-dS-LTh" secondAttribute="height" multiplier="0.05" id="2On-su-SLO"/>
                                     <constraint firstItem="i63-pc-Iml" firstAttribute="top" secondItem="VEJ-dS-LTh" secondAttribute="centerY" multiplier="0.65" id="6aG-kU-3e7"/>
                                     <constraint firstItem="jCl-Jc-Kty" firstAttribute="width" secondItem="VEJ-dS-LTh" secondAttribute="width" multiplier="0.147343" id="6yJ-nb-j4F"/>
                                     <constraint firstItem="ae5-H0-jF3" firstAttribute="width" secondItem="VEJ-dS-LTh" secondAttribute="width" multiplier="0.111111" id="7xN-Qx-6Ye"/>
@@ -1923,7 +1923,7 @@
                                     <constraint firstItem="SS9-uZ-RbL" firstAttribute="height" secondItem="VEJ-dS-LTh" secondAttribute="height" multiplier="0.05" id="fDo-sx-j2N"/>
                                     <constraint firstItem="lZ8-Ed-c9x" firstAttribute="top" secondItem="VEJ-dS-LTh" secondAttribute="centerY" multiplier="0.15" id="fvp-XH-LMJ"/>
                                     <constraint firstItem="ae5-H0-jF3" firstAttribute="centerX" secondItem="VEJ-dS-LTh" secondAttribute="centerX" id="g8t-k5-euW"/>
-                                    <constraint firstItem="Lto-oT-lsC" firstAttribute="height" secondItem="VEJ-dS-LTh" secondAttribute="height" multiplier="0.0415648" id="gz7-TI-esk"/>
+                                    <constraint firstItem="Lto-oT-lsC" firstAttribute="height" secondItem="VEJ-dS-LTh" secondAttribute="height" multiplier="0.05" id="gz7-TI-esk"/>
                                     <constraint firstItem="SS9-uZ-RbL" firstAttribute="centerX" secondItem="VEJ-dS-LTh" secondAttribute="centerX" id="hhJ-7p-HfD"/>
                                     <constraint firstItem="yXr-D3-t18" firstAttribute="top" secondItem="VEJ-dS-LTh" secondAttribute="centerY" multiplier="0.05" id="hly-Rt-3lA"/>
                                     <constraint firstItem="yXr-D3-t18" firstAttribute="width" relation="lessThanOrEqual" secondItem="VEJ-dS-LTh" secondAttribute="width" multiplier="0.8" id="jFd-Jp-BqI"/>
@@ -1931,13 +1931,13 @@
                                     <constraint firstItem="yXr-D3-t18" firstAttribute="centerX" secondItem="VEJ-dS-LTh" secondAttribute="centerX" id="n1W-Vw-loL"/>
                                     <constraint firstItem="lZ8-Ed-c9x" firstAttribute="width" secondItem="VEJ-dS-LTh" secondAttribute="width" multiplier="0.8" id="o00-aF-14E"/>
                                     <constraint firstItem="yXr-D3-t18" firstAttribute="height" secondItem="VEJ-dS-LTh" secondAttribute="height" multiplier="0.05" id="oKv-Je-dTU"/>
-                                    <constraint firstItem="Lto-oT-lsC" firstAttribute="width" secondItem="VEJ-dS-LTh" secondAttribute="width" multiplier="0.0772947" id="pla-KV-jAP"/>
+                                    <constraint firstItem="Lto-oT-lsC" firstAttribute="width" secondItem="VEJ-dS-LTh" secondAttribute="width" multiplier="0.8" id="pla-KV-jAP"/>
                                     <constraint firstItem="o8w-ua-xTQ" firstAttribute="centerX" secondItem="VEJ-dS-LTh" secondAttribute="centerX" id="r6L-H2-Ivu"/>
                                     <constraint firstItem="jCl-Jc-Kty" firstAttribute="top" secondItem="VEJ-dS-LTh" secondAttribute="top" constant="789" id="s5P-Ep-D11"/>
                                     <constraint firstItem="i63-pc-Iml" firstAttribute="height" secondItem="VEJ-dS-LTh" secondAttribute="height" multiplier="0.4" id="tfE-4G-oc0"/>
                                     <constraint firstItem="i63-pc-Iml" firstAttribute="width" secondItem="VEJ-dS-LTh" secondAttribute="width" multiplier="0.9" id="uHB-1E-AGV"/>
                                     <constraint firstItem="jCl-Jc-Kty" firstAttribute="centerX" secondItem="VEJ-dS-LTh" secondAttribute="centerX" id="urP-uu-TlQ"/>
-                                    <constraint firstItem="ccQ-SY-4Az" firstAttribute="width" secondItem="VEJ-dS-LTh" secondAttribute="width" multiplier="0.166667" id="vQN-pr-ccA"/>
+                                    <constraint firstItem="ccQ-SY-4Az" firstAttribute="width" relation="lessThanOrEqual" secondItem="VEJ-dS-LTh" secondAttribute="width" multiplier="0.8" id="vQN-pr-ccA"/>
                                     <constraint firstItem="4WP-X8-1Eu" firstAttribute="top" secondItem="VEJ-dS-LTh" secondAttribute="centerY" multiplier="0.55" id="wHh-aH-HGN"/>
                                     <constraint firstItem="Lto-oT-lsC" firstAttribute="centerX" secondItem="VEJ-dS-LTh" secondAttribute="centerX" id="xZL-3j-8J6"/>
                                     <constraint firstItem="o8w-ua-xTQ" firstAttribute="top" secondItem="VEJ-dS-LTh" secondAttribute="centerY" multiplier="0.35" id="ymp-wi-vX9"/>
