@@ -1916,21 +1916,21 @@
                                     <constraint firstItem="ccQ-SY-4Az" firstAttribute="centerX" secondItem="VEJ-dS-LTh" secondAttribute="centerX" id="JzA-Y7-1ly"/>
                                     <constraint firstItem="4WP-X8-1Eu" firstAttribute="centerX" secondItem="VEJ-dS-LTh" secondAttribute="centerX" id="Qee-S4-Q1T"/>
                                     <constraint firstItem="jCl-Jc-Kty" firstAttribute="height" secondItem="VEJ-dS-LTh" secondAttribute="height" multiplier="0.0256724" id="TTc-J3-4YR"/>
-                                    <constraint firstItem="lZ8-Ed-c9x" firstAttribute="height" secondItem="VEJ-dS-LTh" secondAttribute="height" multiplier="0.0415648" id="Thj-yQ-Z27"/>
+                                    <constraint firstItem="lZ8-Ed-c9x" firstAttribute="height" secondItem="VEJ-dS-LTh" secondAttribute="height" multiplier="0.05" id="Thj-yQ-Z27"/>
                                     <constraint firstItem="i63-pc-Iml" firstAttribute="centerX" secondItem="VEJ-dS-LTh" secondAttribute="centerX" id="W2I-ws-OBb"/>
                                     <constraint firstItem="4WP-X8-1Eu" firstAttribute="width" secondItem="VEJ-dS-LTh" secondAttribute="width" multiplier="0.178744" id="XDz-2d-d08"/>
                                     <constraint firstItem="o8w-ua-xTQ" firstAttribute="height" secondItem="VEJ-dS-LTh" secondAttribute="height" multiplier="0.0415648" id="drV-gI-wAM"/>
                                     <constraint firstItem="SS9-uZ-RbL" firstAttribute="height" secondItem="VEJ-dS-LTh" secondAttribute="height" multiplier="0.0256724" id="fDo-sx-j2N"/>
-                                    <constraint firstItem="lZ8-Ed-c9x" firstAttribute="top" secondItem="VEJ-dS-LTh" secondAttribute="top" constant="85" id="fvp-XH-LMJ"/>
+                                    <constraint firstItem="lZ8-Ed-c9x" firstAttribute="top" secondItem="VEJ-dS-LTh" secondAttribute="centerY" multiplier="0.15" id="fvp-XH-LMJ"/>
                                     <constraint firstItem="ae5-H0-jF3" firstAttribute="centerX" secondItem="VEJ-dS-LTh" secondAttribute="centerX" id="g8t-k5-euW"/>
                                     <constraint firstItem="Lto-oT-lsC" firstAttribute="height" secondItem="VEJ-dS-LTh" secondAttribute="height" multiplier="0.0415648" id="gz7-TI-esk"/>
                                     <constraint firstItem="SS9-uZ-RbL" firstAttribute="centerX" secondItem="VEJ-dS-LTh" secondAttribute="centerX" id="hhJ-7p-HfD"/>
-                                    <constraint firstItem="yXr-D3-t18" firstAttribute="top" secondItem="VEJ-dS-LTh" secondAttribute="top" constant="31" id="hly-Rt-3lA"/>
-                                    <constraint firstItem="yXr-D3-t18" firstAttribute="width" secondItem="VEJ-dS-LTh" secondAttribute="width" multiplier="0.0821256" id="jFd-Jp-BqI"/>
+                                    <constraint firstItem="yXr-D3-t18" firstAttribute="top" secondItem="VEJ-dS-LTh" secondAttribute="centerY" multiplier="0.05" id="hly-Rt-3lA"/>
+                                    <constraint firstItem="yXr-D3-t18" firstAttribute="width" relation="lessThanOrEqual" secondItem="VEJ-dS-LTh" secondAttribute="width" multiplier="0.8" id="jFd-Jp-BqI"/>
                                     <constraint firstItem="lZ8-Ed-c9x" firstAttribute="centerX" secondItem="VEJ-dS-LTh" secondAttribute="centerX" id="jvJ-Ah-3sH"/>
                                     <constraint firstItem="yXr-D3-t18" firstAttribute="centerX" secondItem="VEJ-dS-LTh" secondAttribute="centerX" id="n1W-Vw-loL"/>
-                                    <constraint firstItem="lZ8-Ed-c9x" firstAttribute="width" secondItem="VEJ-dS-LTh" secondAttribute="width" multiplier="0.2343" id="o00-aF-14E"/>
-                                    <constraint firstItem="yXr-D3-t18" firstAttribute="height" secondItem="VEJ-dS-LTh" secondAttribute="height" multiplier="0.0256724" id="oKv-Je-dTU"/>
+                                    <constraint firstItem="lZ8-Ed-c9x" firstAttribute="width" secondItem="VEJ-dS-LTh" secondAttribute="width" multiplier="0.8" id="o00-aF-14E"/>
+                                    <constraint firstItem="yXr-D3-t18" firstAttribute="height" secondItem="VEJ-dS-LTh" secondAttribute="height" multiplier="0.05" id="oKv-Je-dTU"/>
                                     <constraint firstItem="Lto-oT-lsC" firstAttribute="width" secondItem="VEJ-dS-LTh" secondAttribute="width" multiplier="0.0772947" id="pla-KV-jAP"/>
                                     <constraint firstItem="o8w-ua-xTQ" firstAttribute="centerX" secondItem="VEJ-dS-LTh" secondAttribute="centerX" id="r6L-H2-Ivu"/>
                                     <constraint firstItem="jCl-Jc-Kty" firstAttribute="top" secondItem="VEJ-dS-LTh" secondAttribute="top" constant="789" id="s5P-Ep-D11"/>
