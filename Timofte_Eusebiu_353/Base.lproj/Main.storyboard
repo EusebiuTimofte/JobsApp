@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JzM-hC-nBG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jHF-vn-xgB">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
@@ -1055,12 +1055,12 @@
             </objects>
             <point key="canvasLocation" x="2226" y="1102"/>
         </scene>
-        <!--Jobs-->
+        <!--employerJobs-->
         <scene sceneID="5PX-qr-bq7">
             <objects>
-                <tableViewController storyboardIdentifier="employerJobs" title="Jobs" id="GMV-6S-2IY" customClass="TableViewController" customModule="Timofte_Eusebiu_353" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="employerJobs" title="employerJobs" id="GMV-6S-2IY" customClass="TableViewController" customModule="Timofte_Eusebiu_353" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" contentInsetAdjustmentBehavior="always" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="qTN-Ly-D7X">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="z2x-Kg-bWY"/>
@@ -1154,17 +1154,17 @@
             <objects>
                 <viewController storyboardIdentifier="employerJobDescription" title="Job Description" id="FiK-Ej-AdI" customClass="JobDescriptionViewController" customModule="Timofte_Eusebiu_353" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dg3-nd-VCW">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="TopLeft" ambiguous="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Fw-d1-owI">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <subviews>
                                     <view contentMode="TopLeft" translatesAutoresizingMaskIntoConstraints="NO" id="wlJ-Kw-XgN">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="632"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="623.66666666666663"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Job" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fG5-Wb-zm6">
-                                                <rect key="frame" x="4.0000000000000018" y="177.33333333333334" width="28.666666666666671" height="21"/>
+                                                <rect key="frame" x="4.0000000000000018" y="177.33333333333331" width="28.666666666666671" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -1230,7 +1230,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZJU-89-f7B">
-                                                <rect key="frame" x="106" y="539" width="202" height="80.666666666666629"/>
+                                                <rect key="frame" x="116.33333333333333" y="538.66666666666663" width="181.33333333333337" height="72.666666666666629"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="ZJU-89-f7B" secondAttribute="height" multiplier="25:10" id="rNx-Gq-TEv"/>
@@ -1323,10 +1323,10 @@
             </objects>
             <point key="canvasLocation" x="3938" y="2023"/>
         </scene>
-        <!--Jobs-->
+        <!--employerJobsNav-->
         <scene sceneID="13y-2w-Ta4">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iRW-Be-ied" customClass="NavigationController" customModule="Timofte_Eusebiu_353" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController title="employerJobsNav" automaticallyAdjustsScrollViewInsets="NO" id="iRW-Be-ied" customClass="NavigationController" customModule="Timofte_Eusebiu_353" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Jobs" image="rectangle.grid.1x2" catalog="system" id="Ukp-Vu-pMC"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="QX9-sQ-vw5">
@@ -2005,7 +2005,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="VOn-Ir-6P6"/>
+        <segue reference="qZb-RP-KFx"/>
         <segue reference="Yss-i0-PRI"/>
     </inferredMetricsTieBreakers>
     <resources>

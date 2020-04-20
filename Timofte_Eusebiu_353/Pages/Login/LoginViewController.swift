@@ -20,12 +20,21 @@ class LoginViewController: UIViewController {
     @IBAction func login(_ sender: UIButton) {
         
         let loginResult = DataBase.login(username: usernameInput.text!, password: passwordInput.text!)
-        if loginResult != "Success" {
+        if loginResult != "Employer" && loginResult != "Employee" {
             Warning.text = loginResult
             Warning.isHidden = false
         }else {
+            
+            var controllerName: String = ""
+            if loginResult == "Employer" {
+                controllerName = "employerTabBarController"
+            }
+            if loginResult == "Employee" {
+                controllerName = "employeeTabBarController"
+            }
+            
             let tabBarController =
-                (storyboard!.instantiateViewController(withIdentifier: "employeeTabBarController") as? UITabBarController)!
+                (storyboard!.instantiateViewController(withIdentifier: controllerName) as? UITabBarController)!
             tabBarController.modalPresentationStyle = .fullScreen
             tabBarController.modalTransitionStyle = .crossDissolve
             self.present(tabBarController, animated: true, completion: nil)

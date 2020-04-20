@@ -26,6 +26,8 @@
 		60AB1034244CE02500721F47 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AB1033244CE02500721F47 /* LoginViewController.swift */; };
 		60E3DC432449F692006A750A /* AppliedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E3DC422449F692006A750A /* AppliedTableViewController.swift */; };
 		60E3DC462449F717006A750A /* AppliedJobDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E3DC452449F717006A750A /* AppliedJobDescriptionView.swift */; };
+		60EB40C7244DA4A100E51BE1 /* EmployerJobsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EB40C6244DA4A100E51BE1 /* EmployerJobsTableViewController.swift */; };
+		60EB40C9244DA82600E51BE1 /* Employer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EB40C8244DA82600E51BE1 /* Employer.swift */; };
 		610F21E024479B11002F6C40 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610F21DF24479B11002F6C40 /* NavigationController.swift */; };
 		6134F9592448FBD3004E4B1A /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6134F9582448FBD3004E4B1A /* Job.swift */; };
 /* End PBXBuildFile section */
@@ -53,6 +55,8 @@
 		60AB1033244CE02500721F47 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		60E3DC422449F692006A750A /* AppliedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppliedTableViewController.swift; sourceTree = "<group>"; };
 		60E3DC452449F717006A750A /* AppliedJobDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppliedJobDescriptionView.swift; sourceTree = "<group>"; };
+		60EB40C6244DA4A100E51BE1 /* EmployerJobsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployerJobsTableViewController.swift; sourceTree = "<group>"; };
+		60EB40C8244DA82600E51BE1 /* Employer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employer.swift; sourceTree = "<group>"; };
 		610F21DF24479B11002F6C40 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		6134F9582448FBD3004E4B1A /* Job.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,6 +92,7 @@
 		535F66B7244263C000C33355 /* Pages */ = {
 			isa = PBXGroup;
 			children = (
+				60EB40C5244DA46D00E51BE1 /* EmployerJobsController */,
 				60AB1032244CE00C00721F47 /* Login */,
 				608F5AE9244B91C60057835B /* EmployeeChangePassword */,
 				606BFF98244B11A900963DC0 /* EmployeeProfile */,
@@ -150,6 +155,7 @@
 				6134F9582448FBD3004E4B1A /* Job.swift */,
 				6065FFD12449A80E00892644 /* DataBase.swift */,
 				602EA7E0244B3D6900CA591E /* User.swift */,
+				60EB40C8244DA82600E51BE1 /* Employer.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -192,6 +198,14 @@
 				60E3DC452449F717006A750A /* AppliedJobDescriptionView.swift */,
 			);
 			path = AppliedJobDescriptionView;
+			sourceTree = "<group>";
+		};
+		60EB40C5244DA46D00E51BE1 /* EmployerJobsController */ = {
+			isa = PBXGroup;
+			children = (
+				60EB40C6244DA4A100E51BE1 /* EmployerJobsTableViewController.swift */,
+			);
+			path = EmployerJobsController;
 			sourceTree = "<group>";
 		};
 		610F21DE24479AE0002F6C40 /* Navigation */ = {
@@ -289,7 +303,9 @@
 				539A4925243BBA670011AEB4 /* SceneDelegate.swift in Sources */,
 				608F5AEB244B91F30057835B /* CahngePasswordViewController.swift in Sources */,
 				606BFF9A244B11F600963DC0 /* EmployeeProfileViewController.swift in Sources */,
+				60EB40C7244DA4A100E51BE1 /* EmployerJobsTableViewController.swift in Sources */,
 				6065FFD22449A80E00892644 /* DataBase.swift in Sources */,
+				60EB40C9244DA82600E51BE1 /* Employer.swift in Sources */,
 				535F66B92442641600C33355 /* JobDescriptionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
