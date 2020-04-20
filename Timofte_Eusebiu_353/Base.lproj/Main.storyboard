@@ -1871,7 +1871,6 @@
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="i63-pc-Iml">
                                         <rect key="frame" x="20.666666666666657" y="266" width="372.66666666666674" height="327"/>
-                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -1920,7 +1919,7 @@
                                     <constraint firstItem="jCl-Jc-Kty" firstAttribute="height" secondItem="VEJ-dS-LTh" secondAttribute="height" multiplier="0.04" id="TTc-J3-4YR"/>
                                     <constraint firstItem="lZ8-Ed-c9x" firstAttribute="height" secondItem="VEJ-dS-LTh" secondAttribute="height" multiplier="0.05" id="Thj-yQ-Z27"/>
                                     <constraint firstItem="i63-pc-Iml" firstAttribute="centerX" secondItem="VEJ-dS-LTh" secondAttribute="centerX" id="W2I-ws-OBb"/>
-                                    <constraint firstItem="4WP-X8-1Eu" firstAttribute="width" secondItem="VEJ-dS-LTh" secondAttribute="width" multiplier="0.178744" id="XDz-2d-d08"/>
+                                    <constraint firstItem="4WP-X8-1Eu" firstAttribute="width" relation="lessThanOrEqual" secondItem="VEJ-dS-LTh" secondAttribute="width" multiplier="0.8" id="XDz-2d-d08"/>
                                     <constraint firstItem="o8w-ua-xTQ" firstAttribute="height" secondItem="VEJ-dS-LTh" secondAttribute="height" multiplier="0.05" id="drV-gI-wAM"/>
                                     <constraint firstItem="SS9-uZ-RbL" firstAttribute="height" secondItem="VEJ-dS-LTh" secondAttribute="height" multiplier="0.05" id="fDo-sx-j2N"/>
                                     <constraint firstItem="lZ8-Ed-c9x" firstAttribute="top" secondItem="VEJ-dS-LTh" secondAttribute="centerY" multiplier="0.15" id="fvp-XH-LMJ"/>

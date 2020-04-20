@@ -26,12 +26,28 @@ class NewJobViewController: UIViewController {
     @IBOutlet weak var warning: FontHeightAdjustableLabel!
     
     @IBAction func createJob(_ sender: UIButton) {
+        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        jobTitleInput.font = jobTitle.fontToFitHeight(height: jobTitleInput.frame.height * CGFloat(2.0/3.0))
+        jobTitleInput.sizeToFit()
+        locationInput.font = jobTitle.fontToFitHeight(height: locationInput.frame.height * CGFloat(2.0/3.0))
+        locationInput.sizeToFit()
+        descriptionInput.font = jobTitle.fontToFitHeight(height: UIScreen.main.bounds.height * CGFloat(0.1/3.0))
+        //descriptionInput.sizeToFit()
+        domainInput.font  = jobTitle.fontToFitHeight(height: domainInput.frame.height * CGFloat(2.0/3.0))
+        descriptionInput.sizeToFit()
+        createButton.titleLabel?.font = createButton.titleLabel?.fontToFitHeight(height: createButton.frame.size.height)
+        descriptionInput.layer.borderWidth = CGFloat(UIScreen.main.bounds.height / CGFloat(300))
+        descriptionInput.layoutIfNeeded()
+        
+        
+        
     }
     
 
