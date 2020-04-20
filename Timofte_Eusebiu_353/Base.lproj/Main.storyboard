@@ -1060,7 +1060,7 @@
             <objects>
                 <tableViewController storyboardIdentifier="employerJobs" title="employerJobs" id="GMV-6S-2IY" customClass="EmployerJobsTableViewController" customModule="Timofte_Eusebiu_353" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" contentInsetAdjustmentBehavior="always" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="qTN-Ly-D7X">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="z2x-Kg-bWY"/>
@@ -1149,22 +1149,22 @@
             </objects>
             <point key="canvasLocation" x="2938" y="2023"/>
         </scene>
-        <!--Job Description-->
+        <!--Employer Job Description-->
         <scene sceneID="UvH-S5-WLh">
             <objects>
-                <viewController storyboardIdentifier="employerJobDescription" title="Job Description" id="FiK-Ej-AdI" customClass="JobDescriptionViewController" customModule="Timofte_Eusebiu_353" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="employerJobDescription" title="Employer Job Description" id="FiK-Ej-AdI" customClass="EmployerJobDescriptionViewController" customModule="Timofte_Eusebiu_353" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dg3-nd-VCW">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="TopLeft" ambiguous="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Fw-d1-owI">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <subviews>
                                     <view contentMode="TopLeft" translatesAutoresizingMaskIntoConstraints="NO" id="wlJ-Kw-XgN">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="623.66666666666663"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="632"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Job" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fG5-Wb-zm6">
-                                                <rect key="frame" x="4.0000000000000018" y="177.33333333333331" width="28.666666666666671" height="21"/>
+                                                <rect key="frame" x="4.0000000000000018" y="177.33333333333334" width="28.666666666666671" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -1230,12 +1230,12 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZJU-89-f7B">
-                                                <rect key="frame" x="116.33333333333333" y="538.66666666666663" width="181.33333333333337" height="72.666666666666629"/>
+                                                <rect key="frame" x="106" y="539" width="202" height="80.666666666666629"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="ZJU-89-f7B" secondAttribute="height" multiplier="25:10" id="rNx-Gq-TEv"/>
                                                 </constraints>
-                                                <state key="normal" title="Aplica">
+                                                <state key="normal" title="Sterge">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -1316,7 +1316,7 @@
                         <outlet property="publishDateLabel" destination="4FR-Ux-1I9" id="4jP-jZ-7Ba"/>
                         <outlet property="scrollViewContent" destination="wlJ-Kw-XgN" id="exE-Z2-uGj"/>
                         <outlet property="scrollViewElement" destination="3Fw-d1-owI" id="eow-Ib-sjV"/>
-                        <segue destination="GMV-6S-2IY" kind="show" identifier="apply" id="VOn-Ir-6P6"/>
+                        <segue destination="GMV-6S-2IY" kind="show" identifier="delete" id="VOn-Ir-6P6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZSJ-ZY-3Xi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -2005,7 +2005,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="qZb-RP-KFx"/>
+        <segue reference="VOn-Ir-6P6"/>
         <segue reference="Yss-i0-PRI"/>
     </inferredMetricsTieBreakers>
     <resources>

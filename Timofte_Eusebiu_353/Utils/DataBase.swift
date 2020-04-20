@@ -67,6 +67,15 @@ class DataBase {
         return employerJobs
     }
     
+    static func removeJob(identifier: Int) {
+        for i in 0..<jobs.count {
+            if jobs[i].id == identifier {
+                jobs.remove(at: i)
+                break
+            }
+        }
+    }
+    
     static func setLoggedUserPassword(newPassword: String) {
         users[getLoggedUserIndex()].password = newPassword
     }

@@ -24,7 +24,7 @@ class EmployerJobsTableViewController: UITableViewController {
         }
         
         override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-            let receiver = segue.destination as! JobDescriptionViewController
+            let receiver = segue.destination as! EmployerJobDescriptionViewController
             let senderLet = sender as! FirstTableViewCell
             if let text = senderLet.cellTitle.text {
                 receiver.jobTitleReceived = text
