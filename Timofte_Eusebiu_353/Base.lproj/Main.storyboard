@@ -1853,25 +1853,25 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Locatie" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SS9-uZ-RbL">
-                                        <rect key="frame" x="179" y="143" width="56" height="41"/>
+                                        <rect key="frame" x="179" y="102.33333333333334" width="56" height="40.666666666666657"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o8w-ua-xTQ">
-                                        <rect key="frame" x="41.333333333333343" y="184" width="331.33333333333326" height="41"/>
+                                        <rect key="frame" x="41.333333333333343" y="143" width="331.33333333333326" height="41"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descriere" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4WP-X8-1Eu">
-                                        <rect key="frame" x="170" y="266" width="74" height="21"/>
+                                        <rect key="frame" x="170" y="225" width="74" height="41"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="i63-pc-Iml">
-                                        <rect key="frame" x="87" y="386" width="240" height="128"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <rect key="frame" x="20.666666666666657" y="266" width="372.66666666666674" height="327"/>
+                                        <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -1907,12 +1907,12 @@
                                     <constraint firstItem="ccQ-SY-4Az" firstAttribute="top" secondItem="VEJ-dS-LTh" secondAttribute="top" constant="555" id="0ta-H2-Cfw"/>
                                     <constraint firstItem="Lto-oT-lsC" firstAttribute="top" secondItem="VEJ-dS-LTh" secondAttribute="top" constant="623" id="0wA-jd-sRT"/>
                                     <constraint firstItem="ccQ-SY-4Az" firstAttribute="height" secondItem="VEJ-dS-LTh" secondAttribute="height" multiplier="0.0256724" id="2On-su-SLO"/>
-                                    <constraint firstItem="i63-pc-Iml" firstAttribute="top" secondItem="VEJ-dS-LTh" secondAttribute="top" constant="386" id="6aG-kU-3e7"/>
+                                    <constraint firstItem="i63-pc-Iml" firstAttribute="top" secondItem="VEJ-dS-LTh" secondAttribute="centerY" multiplier="0.65" id="6aG-kU-3e7"/>
                                     <constraint firstItem="jCl-Jc-Kty" firstAttribute="width" secondItem="VEJ-dS-LTh" secondAttribute="width" multiplier="0.147343" id="6yJ-nb-j4F"/>
                                     <constraint firstItem="ae5-H0-jF3" firstAttribute="width" secondItem="VEJ-dS-LTh" secondAttribute="width" multiplier="0.111111" id="7xN-Qx-6Ye"/>
                                     <constraint firstItem="SS9-uZ-RbL" firstAttribute="width" relation="lessThanOrEqual" secondItem="VEJ-dS-LTh" secondAttribute="width" multiplier="0.8" id="88p-CV-asL"/>
                                     <constraint firstItem="o8w-ua-xTQ" firstAttribute="width" secondItem="VEJ-dS-LTh" secondAttribute="width" multiplier="0.8" id="BOl-Om-90A"/>
-                                    <constraint firstItem="4WP-X8-1Eu" firstAttribute="height" secondItem="VEJ-dS-LTh" secondAttribute="height" multiplier="0.0256724" id="D32-bY-saO"/>
+                                    <constraint firstItem="4WP-X8-1Eu" firstAttribute="height" secondItem="VEJ-dS-LTh" secondAttribute="height" multiplier="0.05" id="D32-bY-saO"/>
                                     <constraint firstItem="ccQ-SY-4Az" firstAttribute="centerX" secondItem="VEJ-dS-LTh" secondAttribute="centerX" id="JzA-Y7-1ly"/>
                                     <constraint firstItem="4WP-X8-1Eu" firstAttribute="centerX" secondItem="VEJ-dS-LTh" secondAttribute="centerX" id="Qee-S4-Q1T"/>
                                     <constraint firstItem="jCl-Jc-Kty" firstAttribute="height" secondItem="VEJ-dS-LTh" secondAttribute="height" multiplier="0.0256724" id="TTc-J3-4YR"/>
@@ -1934,15 +1934,15 @@
                                     <constraint firstItem="Lto-oT-lsC" firstAttribute="width" secondItem="VEJ-dS-LTh" secondAttribute="width" multiplier="0.0772947" id="pla-KV-jAP"/>
                                     <constraint firstItem="o8w-ua-xTQ" firstAttribute="centerX" secondItem="VEJ-dS-LTh" secondAttribute="centerX" id="r6L-H2-Ivu"/>
                                     <constraint firstItem="jCl-Jc-Kty" firstAttribute="top" secondItem="VEJ-dS-LTh" secondAttribute="top" constant="789" id="s5P-Ep-D11"/>
-                                    <constraint firstItem="i63-pc-Iml" firstAttribute="height" secondItem="VEJ-dS-LTh" secondAttribute="height" multiplier="0.156479" id="tfE-4G-oc0"/>
-                                    <constraint firstItem="i63-pc-Iml" firstAttribute="width" secondItem="VEJ-dS-LTh" secondAttribute="width" multiplier="0.57971" id="uHB-1E-AGV"/>
+                                    <constraint firstItem="i63-pc-Iml" firstAttribute="height" secondItem="VEJ-dS-LTh" secondAttribute="height" multiplier="0.4" id="tfE-4G-oc0"/>
+                                    <constraint firstItem="i63-pc-Iml" firstAttribute="width" secondItem="VEJ-dS-LTh" secondAttribute="width" multiplier="0.9" id="uHB-1E-AGV"/>
                                     <constraint firstItem="jCl-Jc-Kty" firstAttribute="centerX" secondItem="VEJ-dS-LTh" secondAttribute="centerX" id="urP-uu-TlQ"/>
                                     <constraint firstItem="ccQ-SY-4Az" firstAttribute="width" secondItem="VEJ-dS-LTh" secondAttribute="width" multiplier="0.166667" id="vQN-pr-ccA"/>
-                                    <constraint firstItem="4WP-X8-1Eu" firstAttribute="top" secondItem="VEJ-dS-LTh" secondAttribute="centerY" multiplier="0.65" id="wHh-aH-HGN"/>
+                                    <constraint firstItem="4WP-X8-1Eu" firstAttribute="top" secondItem="VEJ-dS-LTh" secondAttribute="centerY" multiplier="0.55" id="wHh-aH-HGN"/>
                                     <constraint firstItem="Lto-oT-lsC" firstAttribute="centerX" secondItem="VEJ-dS-LTh" secondAttribute="centerX" id="xZL-3j-8J6"/>
-                                    <constraint firstItem="o8w-ua-xTQ" firstAttribute="top" secondItem="VEJ-dS-LTh" secondAttribute="centerY" multiplier="0.45" id="ymp-wi-vX9"/>
+                                    <constraint firstItem="o8w-ua-xTQ" firstAttribute="top" secondItem="VEJ-dS-LTh" secondAttribute="centerY" multiplier="0.35" id="ymp-wi-vX9"/>
                                     <constraint firstItem="ae5-H0-jF3" firstAttribute="top" secondItem="VEJ-dS-LTh" secondAttribute="top" constant="727" id="ywh-Nv-GBl"/>
-                                    <constraint firstItem="SS9-uZ-RbL" firstAttribute="top" secondItem="VEJ-dS-LTh" secondAttribute="centerY" multiplier="0.35" id="zgH-bb-wRZ"/>
+                                    <constraint firstItem="SS9-uZ-RbL" firstAttribute="top" secondItem="VEJ-dS-LTh" secondAttribute="centerY" multiplier="0.25" id="zgH-bb-wRZ"/>
                                 </constraints>
                             </view>
                         </subviews>
