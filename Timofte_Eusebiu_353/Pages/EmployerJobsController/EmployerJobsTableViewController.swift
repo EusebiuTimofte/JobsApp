@@ -10,7 +10,7 @@ import UIKit
 
 class EmployerJobsTableViewController: UITableViewController {
 
-    var jobs: [Job] = DataBase.getJobsWithoutAppliance()
+    var jobs: [Job] = DataBase.getEmployerLoggedUserJobs()
         
         override func viewDidLoad() {
             super.viewDidLoad()

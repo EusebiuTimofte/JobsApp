@@ -56,7 +56,7 @@ class DataBase {
         return -1
     }
     
-    private static func getEmployerLoggedUserJobs() -> [Job] {
+    public static func getEmployerLoggedUserJobs() -> [Job] {
         let employer = getLoggedUser() as! Employer
         var employerJobs: [Job] = []
         for i in 0..<jobs.count {
@@ -82,13 +82,13 @@ class DataBase {
                         return "Employee"
                     }
                 }else {
-                    return "Parola gresita!"
+                    continue
                 }
             }else {
-                return "Username gresit!"
+                continue
             }
         }
-        return "App Error!"
+        return "Date de logare gresite!"
     }
     
     static func getLoggedUser() -> User {
