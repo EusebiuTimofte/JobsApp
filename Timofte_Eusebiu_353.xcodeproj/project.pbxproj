@@ -30,6 +30,7 @@
 		606BFF9A244B11F600963DC0 /* EmployeeProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606BFF99244B11F600963DC0 /* EmployeeProfileViewController.swift */; };
 		608F5AEB244B91F30057835B /* CahngePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608F5AEA244B91F30057835B /* CahngePasswordViewController.swift */; };
 		60AB1034244CE02500721F47 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AB1033244CE02500721F47 /* LoginViewController.swift */; };
+		60AF14B7244EE5780011642E /* EmployeeTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AF14B6244EE5780011642E /* EmployeeTabBarViewController.swift */; };
 		60E3DC432449F692006A750A /* AppliedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E3DC422449F692006A750A /* AppliedTableViewController.swift */; };
 		60E3DC462449F717006A750A /* AppliedJobDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E3DC452449F717006A750A /* AppliedJobDescriptionView.swift */; };
 		60EB40C7244DA4A100E51BE1 /* EmployerJobsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EB40C6244DA4A100E51BE1 /* EmployerJobsTableViewController.swift */; };
@@ -66,6 +67,7 @@
 		608F5AE8244B82CE0057835B /* Timofte_Eusebiu_353.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Timofte_Eusebiu_353.entitlements; sourceTree = "<group>"; };
 		608F5AEA244B91F30057835B /* CahngePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CahngePasswordViewController.swift; sourceTree = "<group>"; };
 		60AB1033244CE02500721F47 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		60AF14B6244EE5780011642E /* EmployeeTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeTabBarViewController.swift; sourceTree = "<group>"; };
 		60E3DC422449F692006A750A /* AppliedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppliedTableViewController.swift; sourceTree = "<group>"; };
 		60E3DC452449F717006A750A /* AppliedJobDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppliedJobDescriptionView.swift; sourceTree = "<group>"; };
 		60EB40C6244DA4A100E51BE1 /* EmployerJobsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployerJobsTableViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 		535F66B7244263C000C33355 /* Pages */ = {
 			isa = PBXGroup;
 			children = (
+				60AF14B5244EE5500011642E /* EmployeeTabBar */,
 				605A21E9244E51AD00B202B3 /* NotificationsScene */,
 				6050E292244E267600F2D802 /* Employer Profile Scene */,
 				6050E28F244E11CC00F2D802 /* UserThatAppliedDescription */,
@@ -245,6 +248,14 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		60AF14B5244EE5500011642E /* EmployeeTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				60AF14B6244EE5780011642E /* EmployeeTabBarViewController.swift */,
+			);
+			path = EmployeeTabBar;
+			sourceTree = "<group>";
+		};
 		60E3DC412449F654006A750A /* AppliedJobsTableView */ = {
 			isa = PBXGroup;
 			children = (
@@ -356,6 +367,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60AF14B7244EE5780011642E /* EmployeeTabBarViewController.swift in Sources */,
 				60AB1034244CE02500721F47 /* LoginViewController.swift in Sources */,
 				60E3DC432449F692006A750A /* AppliedTableViewController.swift in Sources */,
 				60E3DC462449F717006A750A /* AppliedJobDescriptionView.swift in Sources */,

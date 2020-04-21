@@ -63,6 +63,15 @@ class DataBase {
     
     static var appliances: [Int] = []
     
+    static func numberOfUnopenedNotifications() -> Int {
+        var nr = 0
+        for i in 0..<notifications.count {
+            if notifications[i].1 == true {
+                nr += 1
+            }
+        }
+        return nr
+    }
     
     static func addJob(title: String, employer: String, location: String, publishDate: String, description: String, domain: String) -> Job {
         jobs.append(Job(id: nextJobId, title: title, employer: employer, location: location, publishDate: publishDate, description: description, domain: domain))

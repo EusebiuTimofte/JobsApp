@@ -90,7 +90,7 @@ class NotificationsTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         DataBase.notificationSeen(notification: notifications[indexPath.row])
-        
+        (tabBarController as! EmployeeTabBarViewController).updateBadge()
     }
     
     override func viewWillAppear(_ animated: Bool) {

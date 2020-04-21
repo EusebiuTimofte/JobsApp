@@ -1018,7 +1018,7 @@
         <!--employeeTabBar-->
         <scene sceneID="FrV-N8-ojT">
             <objects>
-                <tabBarController storyboardIdentifier="employeeTabBarController" title="employeeTabBar" automaticallyAdjustsScrollViewInsets="NO" id="JgB-36-OEu" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="employeeTabBarController" title="employeeTabBar" automaticallyAdjustsScrollViewInsets="NO" id="JgB-36-OEu" customClass="EmployeeTabBarViewController" customModule="Timofte_Eusebiu_353" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="sOi-b1-G5u"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vya-3y-PnZ">
