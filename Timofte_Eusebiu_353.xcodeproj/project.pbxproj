@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		062220DCCD8742D54A94B478 /* Pods_Timofte_Eusebiu_353.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 538E317F6F7B3ED02465243F /* Pods_Timofte_Eusebiu_353.framework */; };
 		53117582243FD082005BB73D /* FontHeightAdjustableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53117581243FD082005BB73D /* FontHeightAdjustableLabel.swift */; };
 		53117585243FD35A005BB73D /* StrExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53117584243FD35A005BB73D /* StrExt.swift */; };
 		535F66B92442641600C33355 /* JobDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535F66B82442641600C33355 /* JobDescriptionViewController.swift */; };
@@ -31,6 +32,7 @@
 		608F5AEB244B91F30057835B /* CahngePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608F5AEA244B91F30057835B /* CahngePasswordViewController.swift */; };
 		60AB1034244CE02500721F47 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AB1033244CE02500721F47 /* LoginViewController.swift */; };
 		60AF14B7244EE5780011642E /* EmployeeTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AF14B6244EE5780011642E /* EmployeeTabBarViewController.swift */; };
+		60DD39FF2473188900EAB435 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 60DD39FE2473188900EAB435 /* GoogleService-Info.plist */; };
 		60E3DC432449F692006A750A /* AppliedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E3DC422449F692006A750A /* AppliedTableViewController.swift */; };
 		60E3DC462449F717006A750A /* AppliedJobDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E3DC452449F717006A750A /* AppliedJobDescriptionView.swift */; };
 		60EB40C7244DA4A100E51BE1 /* EmployerJobsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EB40C6244DA4A100E51BE1 /* EmployerJobsTableViewController.swift */; };
@@ -41,9 +43,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		090AAAA52065DF3B278881FE /* Pods-Timofte_Eusebiu_353.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Timofte_Eusebiu_353.release.xcconfig"; path = "Target Support Files/Pods-Timofte_Eusebiu_353/Pods-Timofte_Eusebiu_353.release.xcconfig"; sourceTree = "<group>"; };
 		53117581243FD082005BB73D /* FontHeightAdjustableLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontHeightAdjustableLabel.swift; sourceTree = "<group>"; };
 		53117584243FD35A005BB73D /* StrExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrExt.swift; sourceTree = "<group>"; };
 		535F66B82442641600C33355 /* JobDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobDescriptionViewController.swift; sourceTree = "<group>"; };
+		538E317F6F7B3ED02465243F /* Pods_Timofte_Eusebiu_353.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Timofte_Eusebiu_353.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		539A491F243BBA670011AEB4 /* Timofte_Eusebiu_353.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Timofte_Eusebiu_353.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		539A4922243BBA670011AEB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		539A4924243BBA670011AEB4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +72,7 @@
 		608F5AEA244B91F30057835B /* CahngePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CahngePasswordViewController.swift; sourceTree = "<group>"; };
 		60AB1033244CE02500721F47 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		60AF14B6244EE5780011642E /* EmployeeTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeTabBarViewController.swift; sourceTree = "<group>"; };
+		60DD39FE2473188900EAB435 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		60E3DC422449F692006A750A /* AppliedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppliedTableViewController.swift; sourceTree = "<group>"; };
 		60E3DC452449F717006A750A /* AppliedJobDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppliedJobDescriptionView.swift; sourceTree = "<group>"; };
 		60EB40C6244DA4A100E51BE1 /* EmployerJobsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployerJobsTableViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +80,7 @@
 		60EB40CB244DB26000E51BE1 /* EmployerJobDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployerJobDescriptionViewController.swift; sourceTree = "<group>"; };
 		610F21DF24479B11002F6C40 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		6134F9582448FBD3004E4B1A /* Job.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
+		C60179E4132F52F28070C9B5 /* Pods-Timofte_Eusebiu_353.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Timofte_Eusebiu_353.debug.xcconfig"; path = "Target Support Files/Pods-Timofte_Eusebiu_353/Pods-Timofte_Eusebiu_353.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,12 +88,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				062220DCCD8742D54A94B478 /* Pods_Timofte_Eusebiu_353.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		37335707DEF6A444171C3621 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C60179E4132F52F28070C9B5 /* Pods-Timofte_Eusebiu_353.debug.xcconfig */,
+				090AAAA52065DF3B278881FE /* Pods-Timofte_Eusebiu_353.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		53117583243FD345005BB73D /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +150,8 @@
 			children = (
 				539A4921243BBA670011AEB4 /* Timofte_Eusebiu_353 */,
 				539A4920243BBA670011AEB4 /* Products */,
+				37335707DEF6A444171C3621 /* Pods */,
+				BA0D002B8F2E95F33BB32BD9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -157,6 +176,7 @@
 				539A492B243BBA680011AEB4 /* Assets.xcassets */,
 				539A492D243BBA680011AEB4 /* LaunchScreen.storyboard */,
 				539A4930243BBA680011AEB4 /* Info.plist */,
+				60DD39FE2473188900EAB435 /* GoogleService-Info.plist */,
 			);
 			path = Timofte_Eusebiu_353;
 			sourceTree = "<group>";
@@ -296,6 +316,14 @@
 			path = Navigation;
 			sourceTree = "<group>";
 		};
+		BA0D002B8F2E95F33BB32BD9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				538E317F6F7B3ED02465243F /* Pods_Timofte_Eusebiu_353.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -303,9 +331,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 539A4933243BBA680011AEB4 /* Build configuration list for PBXNativeTarget "Timofte_Eusebiu_353" */;
 			buildPhases = (
+				E040F59736596CAB3AD94055 /* [CP] Check Pods Manifest.lock */,
 				539A491B243BBA670011AEB4 /* Sources */,
 				539A491C243BBA670011AEB4 /* Frameworks */,
 				539A491D243BBA670011AEB4 /* Resources */,
+				402A4D046A5FC6F793F04FB5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -355,12 +385,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				539A492F243BBA680011AEB4 /* LaunchScreen.storyboard in Resources */,
+				60DD39FF2473188900EAB435 /* GoogleService-Info.plist in Resources */,
 				539A492C243BBA680011AEB4 /* Assets.xcassets in Resources */,
 				539A492A243BBA670011AEB4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		402A4D046A5FC6F793F04FB5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Timofte_Eusebiu_353/Pods-Timofte_Eusebiu_353-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Timofte_Eusebiu_353/Pods-Timofte_Eusebiu_353-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Timofte_Eusebiu_353/Pods-Timofte_Eusebiu_353-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E040F59736596CAB3AD94055 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Timofte_Eusebiu_353-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		539A491B243BBA670011AEB4 /* Sources */ = {
@@ -536,6 +609,7 @@
 		};
 		539A4934243BBA680011AEB4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C60179E4132F52F28070C9B5 /* Pods-Timofte_Eusebiu_353.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Timofte_Eusebiu_353/Timofte_Eusebiu_353.entitlements;
@@ -554,6 +628,7 @@
 		};
 		539A4935243BBA680011AEB4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 090AAAA52065DF3B278881FE /* Pods-Timofte_Eusebiu_353.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Timofte_Eusebiu_353/Timofte_Eusebiu_353.entitlements;

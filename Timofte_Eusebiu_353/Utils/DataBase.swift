@@ -7,8 +7,14 @@
 //
 
 import Foundation
+import Firebase
 
 class DataBase {
+    
+    //var ref : DatabaseReference!
+    var ref: DatabaseReference = Database.database().reference()
+    
+    
     static var jobs: [Job] = [
         Job(id: 1, title: "IT Specialist", employer: "Rezolv IT", location: "Remote", publishDate: "15/04/2020", description: "Asiguri suport IT specializat utilizatorilor pentru rezolvarea incidentelor cauzate de software/calculatoare/retea si pregătești documentarea și raportarea activitați către clienți în sistemul de ticketing", domain: "IT"),
         Job(id: 2, title: "Full Stack Developer", employer: "SC Boxador Labs SRL", location: "Iasi", publishDate: "12/04/2020", description: "We are looking for a talented full-stack developer with strong understanding of web technologies.You will work closely with our dedicated team of engineers and designers to help us improve our industry leading software used by thousands of people every day.", domain: "IT"),
@@ -140,6 +146,8 @@ class DataBase {
     }
     
     static func login(username: String, password: String) -> String {
+        
+        
         for i in 0..<users.count {
             if users[i].username == username {
                 if users[i].password == password {
