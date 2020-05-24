@@ -7,14 +7,31 @@
 //
 
 import UIKit
+import Firebase
 
 class TableViewController: UITableViewController {
     
     var jobs: [Job] = DataBase.getJobsWithoutAppliance()
     
+    var jobsRef = Database.database().reference().child("jobs")
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        //query db
+//        jobsRef.observeSingleEvent(of: .value, with: {
+//            (snapshot) in
+//            let jobsDict = snapshot.value as? [String : AnyObject] ?? [:]
+//            for key in jobsDict.keys {
+//                let jobDict = jobsDict[key] as? [String: AnyObject] ?? [:]
+//                var job = Job(id: jobDict["id"] as! Int, title: jobDict["title"], employer: <#T##String#>, location: <#T##String#>, publishDate: <#T##String#>, description: <#T##String#>, domain: <#T##String#>)
+//            }
+//        })
+        
+        
 //        self.tableView.separatorColor = UIColor(cgColor: CGColor(srgbRed: 0.0, green: 0.0, blue: 0.0, alpha: 1.0))
         tableView.separatorStyle = .none
         //self.tableView.separatorInset = .init(top: 1.0, left: 0.0, bottom: 1.0, right: 1.0)
