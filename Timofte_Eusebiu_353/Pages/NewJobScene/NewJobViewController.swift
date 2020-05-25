@@ -27,15 +27,15 @@ class NewJobViewController: UIViewController {
     
     @IBAction func createJob(_ sender: UIButton) {
         if jobTitleInput.text != "" && locationInput.text != "" && descriptionInput.text != "" && domainInput.text != "" {
-            let jobAdded : Job = DataBase.addJob(title: jobTitleInput.text!, employer: (DataBase.getLoggedUser() as! Employer).name, location: locationInput.text!, publishDate: "15/04/2020", description: descriptionInput.text, domain: domainInput.text!)
-            
-            for i in 0..<DataBase.users[0].keywords.count {
-                let loopKeyword = DataBase.users[0].keywords[i]
-                if jobAdded.description.lowercased().contains(loopKeyword.lowercased()) || jobAdded.domain.lowercased().contains(loopKeyword.lowercased()) || jobAdded.location.lowercased().contains(loopKeyword.lowercased()) || jobAdded.title.lowercased().contains(loopKeyword.lowercased()) || jobAdded.employer.lowercased().contains(loopKeyword.lowercased()) {
-                    DataBase.notifications.append((jobAdded,true))
-                    break
-                }
-            }
+//            let jobAdded : Job = DataBase.addJob(title: jobTitleInput.text!, employer: (DataBase.getLoggedUser() as! Employer).name, location: locationInput.text!, publishDate: "15/04/2020", description: descriptionInput.text, domain: domainInput.text!)
+//            
+//            for i in 0..<DataBase.users[0].keywords.count {
+//                let loopKeyword = DataBase.users[0].keywords[i]
+//                if jobAdded.description.lowercased().contains(loopKeyword.lowercased()) || jobAdded.domain.lowercased().contains(loopKeyword.lowercased()) || jobAdded.location.lowercased().contains(loopKeyword.lowercased()) || jobAdded.title.lowercased().contains(loopKeyword.lowercased()) || jobAdded.employer.lowercased().contains(loopKeyword.lowercased()) {
+//                    DataBase.notifications.append((jobAdded,true))
+//                    break
+//                }
+//            }
             
             warning.text = "Job creat cu succes!"
             warning.textColor = .green

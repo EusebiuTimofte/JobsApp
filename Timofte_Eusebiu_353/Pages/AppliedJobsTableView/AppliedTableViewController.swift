@@ -7,14 +7,16 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseFirestoreSwift
 
 class AppliedTableViewController: UITableViewController {
 
     var jobs: [Job] = []
-        
+    let db = Firestore.firestore()
         override func viewDidLoad() {
             super.viewDidLoad()
-            jobs = DataBase.getJobsWithAppliance()
+            jobs = []
             // Do any additional setup after loading the view.
     //        self.tableView.separatorColor = UIColor(cgColor: CGColor(srgbRed: 0.0, green: 0.0, blue: 0.0, alpha: 1.0))
             tableView.separatorStyle = .none
@@ -89,8 +91,61 @@ class AppliedTableViewController: UITableViewController {
     //    }
     
     override func viewWillAppear(_ animated: Bool) {
-        jobs = DataBase.getJobsWithAppliance()
+        getJobsAppliedFromFirestore()
         tableView.reloadData()
+    }
+    
+    func getJobsCurrentUserApplied(completion: @escaping ([String], Error?) -> Void) {
+        var jobsArray: [String] = []
+        db.collection("users").document(Auth.auth().currentUser!.uid).getDocument { (document, error) in
+            if let error = error {
+              print(error)
+              completion(jobsArray, error)
+              return
+            }
+            
+            if let document = document, document.exists {
+                let dataDescription = document.data().map(String.init(describing:)) ?? "nil"
+                print("Document data: \(dataDescription)")
+                let data = document.data()!
+                jobsArray = data["jobsApplied"] as! [String]
+                completion(jobsArray, nil)
+            } else {
+                print("Document does not exist")
+                completion(jobsArray, nil)
+            }
+        }
+      }
+    
+    func getJobsAppliedFromFirestore() {
+        
+        // trb sa fac o functie care sa ceara joburile la care a aplicat userul curent
+        //functia trb sa aiba completion handler
+        //dupa cand fac query la documente, mai intai apelez completion handlerul
+        
+        jobs = []
+        
+        db.collection("jobs").getDocuments() { (querySnapshot, err) in
+            if let err = err {
+                print("Error getting documents: \(err)")
+            } else {
+                self.getJobsCurrentUserApplied(completion: { appliedJobs, error in
+                    for document in querySnapshot!.documents {
+                        var job: [String: Any] = [:]
+                        //print("\(document.documentID) => \(document.data())")
+                        job = document.data()
+                        if !appliedJobs.contains(document.documentID) {
+                            continue
+                        }
+                        let jobObject = Job(id: document.documentID, title: job["title"] as! String, employer: job["employer"] as! String, location: job["location"] as! String, publishDate: job["publishDate"] as! String, description: job["description"] as! String, domain: job["domain"] as! String, employerId: job["employerId"] as! String)
+                        self.jobs.append(jobObject)
+                        
+                    }
+                    self.tableView.reloadData()
+                })
+                
+            }
+        }
     }
 
 }

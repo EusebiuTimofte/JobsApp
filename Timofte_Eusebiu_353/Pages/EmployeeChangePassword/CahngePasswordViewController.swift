@@ -22,7 +22,7 @@ class CahngePasswordViewController: UIViewController {
     
     @IBAction func changePassword(_ sender: UIButton) {
         
-        if oldPasswordTextField.text! != DataBase.getLoggedUser().password {
+        if oldPasswordTextField.text! != "asd" {
             warningLabel.text = "Parola gresita!"
             warningLabel.isHidden = false
         }else {
@@ -30,7 +30,7 @@ class CahngePasswordViewController: UIViewController {
                 warningLabel.text = "Noua parola nu a fost confirmata!"
                 warningLabel.isHidden = false
             } else {
-                DataBase.setLoggedUserPassword(newPassword: newPasswordTextField.text!)
+                //DataBase.setLoggedUserPassword(newPassword: newPasswordTextField.text!)
                 let pc = (storyboard!.instantiateViewController(withIdentifier: "employeeProfile") as? EmployeeProfileViewController)!
                 self.navigationController!.pushViewController( pc, animated: true)
                 //delete last two views from navigation history

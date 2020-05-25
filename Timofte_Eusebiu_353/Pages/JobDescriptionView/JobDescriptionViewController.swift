@@ -8,8 +8,12 @@
 
 import Foundation
 import UIKit
+import FirebaseFirestoreSwift
+import Firebase
 
 class JobDescriptionViewController : UIViewController {
+    
+    let db = Firestore.firestore()
     
     var jobTitleReceived: String?
     var employerImageReceived: UIImage?
@@ -17,7 +21,7 @@ class JobDescriptionViewController : UIViewController {
     var locationReceived: String?
     var publishDateReceived: String?
     var descriptionValueReceived: String?
-    var idReceived: Int?
+    var idReceived: String?
     
     
     @IBOutlet weak var scrollViewElement: UIScrollView!
@@ -34,12 +38,15 @@ class JobDescriptionViewController : UIViewController {
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var descriptionValue: UILabel!
     @IBOutlet weak var apply: UIButton!
-    var id: Int?
+    var id: String?
     
     @IBAction func applyAction(_ sender: UIButton) {
-        if id != nil {
-            DataBase.appliances.append(id!)
-        }
+        
+        //add job id to users's array
+        
+        db.collection("users").document(Auth.auth().currentUser!.uid).updateData([
+            "jobsApplied": FieldValue.arrayUnion([id!])
+        ])
         performSegue(withIdentifier: "apply", sender: self)
         var viewControllersVar = navigationController?.viewControllers
         var indexToRemove = viewControllersVar!.count - 2
@@ -53,7 +60,6 @@ class JobDescriptionViewController : UIViewController {
 //
 //        navigationController?.pushViewController(tableViewController, animated: true)
     }
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()

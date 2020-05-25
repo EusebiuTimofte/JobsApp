@@ -14,7 +14,7 @@ class UsersThatAppliedTableTableViewController: UITableViewController {
        
        override func viewDidLoad() {
            super.viewDidLoad()
-        jobs = DataBase.getJobsUser0AppliedTo()
+        jobs = []
            // Do any additional setup after loading the view.
    //        self.tableView.separatorColor = UIColor(cgColor: CGColor(srgbRed: 0.0, green: 0.0, blue: 0.0, alpha: 1.0))
            tableView.separatorStyle = .none
@@ -69,7 +69,7 @@ class UsersThatAppliedTableTableViewController: UITableViewController {
            
            let cell = tableView.dequeueReusableCell(withIdentifier: "JobOfferCell") as! UserTableViewCell
         
-        cell.user = DataBase.users[0]
+        cell.user = nil
         cell.job = jobs[indexPath.row]
            
         cell.cellTitle.text = cell.user?.username
@@ -83,7 +83,7 @@ class UsersThatAppliedTableTableViewController: UITableViewController {
    //    }
    
    override func viewWillAppear(_ animated: Bool) {
-       jobs = DataBase.getJobsUser0AppliedTo()
+       jobs = []
        tableView.reloadData()
    }
 

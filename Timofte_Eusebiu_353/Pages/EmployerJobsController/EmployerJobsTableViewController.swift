@@ -10,7 +10,7 @@ import UIKit
 
 class EmployerJobsTableViewController: UITableViewController {
 
-    var jobs: [Job] = DataBase.getEmployerLoggedUserJobs()
+    var jobs: [Job] = []
         
         override func viewDidLoad() {
             super.viewDidLoad()
@@ -85,7 +85,7 @@ class EmployerJobsTableViewController: UITableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        jobs = DataBase.getEmployerLoggedUserJobs()
+        jobs = []
         tableView.reloadData()
     }
 

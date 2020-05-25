@@ -59,7 +59,7 @@ class EmployeeProfileViewController: UIViewController, UIDocumentPickerDelegate,
         // 3. Grab the value from the text field, and print it when the user clicks OK.
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { [weak alert] (_) in
             let textField = alert?.textFields![0] // Force unwrapping because we know it exists.
-            DataBase.addLoggedUserKeyword(keyword: textField!.text!)
+            //DataBase.addLoggedUserKeyword(keyword: textField!.text!)
             self.viewWillAppear(true)
         }))
         
@@ -69,22 +69,22 @@ class EmployeeProfileViewController: UIViewController, UIDocumentPickerDelegate,
         self.present(alert, animated: true, completion: nil)
     }
     @IBAction func firstKeywordDelete(_ sender: UIButton) {
-        DataBase.removeLoggedUserKeyword(at: 0)
+        //DataBase.removeLoggedUserKeyword(at: 0)
         viewWillAppear(true)
     }
     
     @IBAction func secondKeywordDelete(_ sender: UIButton) {
-        DataBase.removeLoggedUserKeyword(at: 1)
+        //DataBase.removeLoggedUserKeyword(at: 1)
         viewWillAppear(true)
     }
     @IBAction func thirdKeywordDelete(_ sender: UIButton) {
-        DataBase.removeLoggedUserKeyword(at: 2)
+        //DataBase.removeLoggedUserKeyword(at: 2)
         viewWillAppear(true)
     }
     
     @IBOutlet weak var newKeywordButton: UIButton!
     @IBAction func fourthKeywordDelete(_ sender: UIButton) {
-        DataBase.removeLoggedUserKeyword(at: 3)
+        //DataBase.removeLoggedUserKeyword(at: 3)
         viewWillAppear(true)
     }
     
@@ -165,10 +165,10 @@ class EmployeeProfileViewController: UIViewController, UIDocumentPickerDelegate,
     */
     
     override func viewWillAppear(_ animated: Bool) {
-         let loggedUser = DataBase.getLoggedUser()
-        usernameValue.text = loggedUser.username
-        emailValue.text = loggedUser.mail
-        userKeywords = DataBase.getLoggedUserKeywords()
+         //let loggedUser = DataBase.getLoggedUser()
+        usernameValue.text = "asd"
+        emailValue.text = "asd"
+        userKeywords = []
         
         if userKeywords.count >= 4 {
             newKeywordButton.isEnabled = false

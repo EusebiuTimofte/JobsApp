@@ -17,7 +17,7 @@ class EmployeeTabBarViewController: UITabBarController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        let nr = DataBase.numberOfUnopenedNotifications()
+        let nr = 0
         if nr > 0 {
             tabBar.items![3].badgeValue = String(nr)
         }else {
@@ -27,7 +27,7 @@ class EmployeeTabBarViewController: UITabBarController {
     }
     
     func updateBadge() {
-        let nr = DataBase.numberOfUnopenedNotifications()
+        let nr = 0
         if nr > 0 {
             tabBar.items![3].badgeValue = String(nr)
         }else {

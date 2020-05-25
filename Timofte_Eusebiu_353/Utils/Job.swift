@@ -9,15 +9,16 @@
 import Foundation
 
 class Job {
-    let id: Int
+    let id: String
     let title: String
     let employer: String
     let location: String
     let publishDate: String
     let description: String
     let domain: String
+    let employerId: String
     
-    init(id: Int, title: String, employer: String, location: String, publishDate: String, description: String, domain: String) {
+    init(id: String, title: String, employer: String, location: String, publishDate: String, description: String, domain: String, employerId: String) {
         self.id = id
         self.title = title
         self.employer = employer
@@ -25,5 +26,6 @@ class Job {
         self.publishDate = publishDate
         self.description = description
         self.domain = domain
+        self.employerId = employerId
     }
 }

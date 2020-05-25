@@ -16,7 +16,7 @@ class AppliedJobDescriptionViewController: UIViewController {
         var locationReceived: String?
         var publishDateReceived: String?
         var descriptionValueReceived: String?
-        var idReceived: Int?
+        var idReceived: String?
         
         
         @IBOutlet weak var scrollViewElement: UIScrollView!
@@ -33,7 +33,7 @@ class AppliedJobDescriptionViewController: UIViewController {
         @IBOutlet weak var descriptionLabel: UILabel!
         @IBOutlet weak var descriptionValue: UILabel!
         
-        var id: Int?
+        var id: String?
         
         
         

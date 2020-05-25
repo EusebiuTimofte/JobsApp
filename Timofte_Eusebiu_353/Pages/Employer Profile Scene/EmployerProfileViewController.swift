@@ -24,7 +24,7 @@ class EmployerProfileViewController: UIViewController {
         @IBOutlet weak var emailLabel: UILabel!
         @IBOutlet weak var emailValue: UILabel!
     
-    var loggedUser = DataBase.getLoggedUser()
+    
         
         @IBAction func logout(_ sender: UIButton) {
             
@@ -93,9 +93,7 @@ class EmployerProfileViewController: UIViewController {
         */
         
         override func viewWillAppear(_ animated: Bool) {
-            usernameValue.text = loggedUser.username
-            emailValue.text = loggedUser.mail
-            employerNameLabel.text = (loggedUser as! Employer).name
+            
         }
         
 

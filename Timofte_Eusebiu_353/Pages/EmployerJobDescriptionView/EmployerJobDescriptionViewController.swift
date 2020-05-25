@@ -16,7 +16,7 @@ class EmployerJobDescriptionViewController: UIViewController {
         var locationReceived: String?
         var publishDateReceived: String?
         var descriptionValueReceived: String?
-        var idReceived: Int?
+        var idReceived: String?
         
         
         @IBOutlet weak var scrollViewElement: UIScrollView!
@@ -33,12 +33,9 @@ class EmployerJobDescriptionViewController: UIViewController {
         @IBOutlet weak var descriptionLabel: UILabel!
         @IBOutlet weak var descriptionValue: UILabel!
         @IBOutlet weak var apply: UIButton!
-        var id: Int?
+        var id: String?
         
         @IBAction func applyAction(_ sender: UIButton) {
-            if id != nil {
-                DataBase.removeJob(identifier: id!)
-            }
             performSegue(withIdentifier: "delete", sender: self)
             var viewControllersVar = navigationController?.viewControllers
             var indexToRemove = viewControllersVar!.count - 2

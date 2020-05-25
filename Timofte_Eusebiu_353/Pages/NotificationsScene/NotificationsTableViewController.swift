@@ -10,8 +10,7 @@ import UIKit
 
 class NotificationsTableViewController: UITableViewController {
 
-    var notifications: [(Job, Bool)] = DataBase.getNotifications()
-        
+    var notifications: [(Job, Bool)] = []
         override func viewDidLoad() {
             super.viewDidLoad()
             // Do any additional setup after loading the view.
@@ -89,12 +88,12 @@ class NotificationsTableViewController: UITableViewController {
         }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        DataBase.notificationSeen(notification: notifications[indexPath.row])
+        //DataBase.notificationSeen(notification: notifications[indexPath.row])
         (tabBarController as! EmployeeTabBarViewController).updateBadge()
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        notifications = DataBase.getNotifications()
+        //notifications = DataBase.getNotifications()
         tableView.reloadData()
     }
 
