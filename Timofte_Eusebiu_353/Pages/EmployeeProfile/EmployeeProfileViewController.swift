@@ -8,9 +8,13 @@
 
 import UIKit
 import MobileCoreServices
+import FirebaseFirestoreSwift
+import Firebase
 
 
 class EmployeeProfileViewController: UIViewController, UIDocumentPickerDelegate, UIDocumentMenuDelegate {
+    
+    let db = Firestore.firestore()
 
     @IBOutlet var deleteKeyword: [UIButton]!
     @IBOutlet var keywordLabels: [UILabel]!
@@ -38,7 +42,7 @@ class EmployeeProfileViewController: UIViewController, UIDocumentPickerDelegate,
     @IBOutlet weak var emailValue: UILabel!
     
     @IBAction func logout(_ sender: UIButton) {
-        
+        try! Auth.auth().signOut()
         let loginController =
             (storyboard!.instantiateViewController(withIdentifier: "loginController") as? LoginViewController)!
         loginController.modalPresentationStyle = .fullScreen
@@ -60,6 +64,9 @@ class EmployeeProfileViewController: UIViewController, UIDocumentPickerDelegate,
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { [weak alert] (_) in
             let textField = alert?.textFields![0] // Force unwrapping because we know it exists.
             //DataBase.addLoggedUserKeyword(keyword: textField!.text!)
+            self.db.collection("users").document(Auth.auth().currentUser!.uid).updateData([
+                "keywords": FieldValue.arrayUnion([textField!.text!])
+            ])
             self.viewWillAppear(true)
         }))
         
@@ -70,21 +77,33 @@ class EmployeeProfileViewController: UIViewController, UIDocumentPickerDelegate,
     }
     @IBAction func firstKeywordDelete(_ sender: UIButton) {
         //DataBase.removeLoggedUserKeyword(at: 0)
+        self.db.collection("users").document(Auth.auth().currentUser!.uid).updateData([
+            "keywords": FieldValue.arrayRemove([keywordLabels[0].text!])
+        ])
         viewWillAppear(true)
     }
     
     @IBAction func secondKeywordDelete(_ sender: UIButton) {
         //DataBase.removeLoggedUserKeyword(at: 1)
+        self.db.collection("users").document(Auth.auth().currentUser!.uid).updateData([
+            "keywords": FieldValue.arrayRemove([keywordLabels[1].text!])
+        ])
         viewWillAppear(true)
     }
     @IBAction func thirdKeywordDelete(_ sender: UIButton) {
         //DataBase.removeLoggedUserKeyword(at: 2)
+        self.db.collection("users").document(Auth.auth().currentUser!.uid).updateData([
+            "keywords": FieldValue.arrayRemove([keywordLabels[2].text!])
+        ])
         viewWillAppear(true)
     }
     
     @IBOutlet weak var newKeywordButton: UIButton!
     @IBAction func fourthKeywordDelete(_ sender: UIButton) {
         //DataBase.removeLoggedUserKeyword(at: 3)
+        self.db.collection("users").document(Auth.auth().currentUser!.uid).updateData([
+            "keywords": FieldValue.arrayRemove([keywordLabels[3].text!])
+        ])
         viewWillAppear(true)
     }
     
@@ -164,28 +183,71 @@ class EmployeeProfileViewController: UIViewController, UIDocumentPickerDelegate,
     }
     */
     
+    func getLoggedUser(completion: @escaping (User?, Error?) ->Void){
+        db.collection("users").document(Auth.auth().currentUser!.uid).getDocument(completion: {
+            (document, error) in
+            if let error = error {
+              print(error)
+              completion(nil, error)
+              return
+            }
+            
+            if let document = document, document.exists {
+                let dataDescription = document.data().map(String.init(describing:)) ?? "nil"
+                print("Document data: \(dataDescription)")
+                let data = document.data()!
+                
+                
+                if data["type"] as! String == "employee" {
+                    let user = User(id: document.documentID, username: data["username"] as! String, password: data["password"] as! String, mail: data["mail"] as! String, keywords: data["keywords"] as! [String], cv: 0, userType: .employee)
+                    completion(user, nil)
+                }else {
+                    let user = User(id: document.documentID, username: data["username"] as! String, password: data["password"] as! String, mail: data["mail"] as! String, keywords: data["keywords"] as! [String], cv: 0, userType: .employer)
+                    completion(user, nil)
+                }
+                
+            } else {
+                print("Document does not exist")
+                completion(nil, nil)
+            }
+        })
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
          //let loggedUser = DataBase.getLoggedUser()
-        usernameValue.text = "asd"
-        emailValue.text = "asd"
-        userKeywords = []
-        
-        if userKeywords.count >= 4 {
-            newKeywordButton.isEnabled = false
-        }else {
-            newKeywordButton.isEnabled = true
-        }
-        
-        for i in 0..<min(userKeywords.count, keywordLabels.count) {
-            keywordLabels[i].text = userKeywords[i]
-            keywordLabels[i].isHidden = false
-            deleteKeyword[i].isHidden = false
-        }
-        
-        for i in userKeywords.count..<keywordLabels.count {
-            keywordLabels[i].isHidden = true
-            deleteKeyword[i].isHidden = true
-        }
+        getLoggedUser(completion: {
+            (user, error) in
+            if let error = error{
+                print(error)
+                return
+            }else{
+                if let user = user{
+                    self.usernameValue.text = user.username
+                    self.emailValue.text = user.mail
+                    self.userKeywords = user.keywords
+                    
+                    if self.userKeywords.count >= 4 {
+                        self.newKeywordButton.isEnabled = false
+                    }else {
+                        self.newKeywordButton.isEnabled = true
+                    }
+                    
+                    for i in 0..<min(self.userKeywords.count, self.keywordLabels.count) {
+                        self.keywordLabels[i].text = self.userKeywords[i]
+                        self.keywordLabels[i].isHidden = false
+                        self.deleteKeyword[i].isHidden = false
+                    }
+                    
+                    for i in self.userKeywords.count..<self.keywordLabels.count {
+                        self.keywordLabels[i].isHidden = true
+                        self.deleteKeyword[i].isHidden = true
+                    }
+                }else{
+                    print("Userul nu a fost gasit")
+                    return
+                }
+            }
+        })
     }
     
     

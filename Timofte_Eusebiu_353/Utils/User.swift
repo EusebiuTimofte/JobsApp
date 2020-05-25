@@ -15,7 +15,7 @@ enum type {
 
 class User {
     
-    let id: Int
+    let id: String
     let username: String
     var password: String
     let mail: String
@@ -23,7 +23,7 @@ class User {
     var cv: Int
     let userType: type
     
-    init(id: Int, username: String, password: String, mail: String, keywords: [String], cv: Int , userType: type ) {
+    init(id: String, username: String, password: String, mail: String, keywords: [String], cv: Int , userType: type ) {
         self.id = id
         self.username = username
         self.password = password

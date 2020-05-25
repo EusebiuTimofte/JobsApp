@@ -12,7 +12,7 @@ class Employer: User {
     
     var name: String
     
-    init(id: Int, username: String, password: String, mail: String, keywords: [String], cv: Int, name: String){
+    init(id: String, username: String, password: String, mail: String, keywords: [String], cv: Int, name: String){
         self.name = name
         super.init(id: id, username: username, password: password, mail: mail, keywords: keywords, cv: cv, userType: .employer)
     }
