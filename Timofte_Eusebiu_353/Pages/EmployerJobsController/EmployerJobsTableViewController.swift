@@ -7,11 +7,15 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseFirestoreSwift
 
 class EmployerJobsTableViewController: UITableViewController {
 
     var jobs: [Job] = []
         
+    let db = Firestore.firestore()
+    
         override func viewDidLoad() {
             super.viewDidLoad()
             // Do any additional setup after loading the view.
@@ -86,7 +90,21 @@ class EmployerJobsTableViewController: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         jobs = []
-        tableView.reloadData()
+        db.collection("jobs").whereField("employerId", isEqualTo: Auth.auth().currentUser!.uid).getDocuments(completion: {
+            (snapshot, error) in
+            if let error = error{
+                print("error when querying jobs" + error.localizedDescription)
+                return
+            }else{
+                for document in snapshot!.documents {
+                    let data = document.data()
+                    let jobLocal = Job(id: document.documentID, title: data["title"] as! String, employer: data["employer"] as! String, location: data["location"] as! String, publishDate: data["publishDate"] as! String, description: data["description"] as! String, domain: data["domain"] as! String, employerId: data["employerId"] as! String)
+                    self.jobs.append(jobLocal)
+                }
+                self.tableView.reloadData()
+            }
+        })
+        
     }
 
 }
