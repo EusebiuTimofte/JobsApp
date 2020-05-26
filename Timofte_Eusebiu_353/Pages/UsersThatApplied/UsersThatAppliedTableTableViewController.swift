@@ -7,10 +7,15 @@
 //
 
 import UIKit
+import FirebaseFirestoreSwift
+import Firebase
 
 class UsersThatAppliedTableTableViewController: UITableViewController {
 
+    let db = Firestore.firestore()
+    
    var jobs: [Job] = []
+    var userJob: [(User,Job)] = []
        
        override func viewDidLoad() {
            super.viewDidLoad()
@@ -48,7 +53,7 @@ class UsersThatAppliedTableTableViewController: UITableViewController {
        }
        
        override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-           return jobs.count
+           return userJob.count
        }
        
        override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -69,8 +74,8 @@ class UsersThatAppliedTableTableViewController: UITableViewController {
            
            let cell = tableView.dequeueReusableCell(withIdentifier: "JobOfferCell") as! UserTableViewCell
         
-        cell.user = nil
-        cell.job = jobs[indexPath.row]
+        cell.user = userJob[indexPath.row].0
+        cell.job = userJob[indexPath.row].1
            
         cell.cellTitle.text = cell.user?.username
            cell.employer.text = "16/04/2020"
@@ -83,8 +88,56 @@ class UsersThatAppliedTableTableViewController: UITableViewController {
    //    }
    
    override func viewWillAppear(_ animated: Bool) {
-       jobs = []
-       tableView.reloadData()
+       userJob = []
+    getEmployerJobs(completion: {
+        (localJobs, error) in
+        if let error = error{
+            print(error.localizedDescription)
+        }else{
+            self.db.collection("users").whereField("type", isEqualTo: "employee").getDocuments(completion: {
+                (snapshot, error) in
+                if let error = error{
+                    print(error.localizedDescription)
+                    return
+                }else{
+                    for document in snapshot!.documents{
+                        let data = document.data()
+                        let localUser = User(id: document.documentID, username: data["username"] as! String, password: data["password"] as! String, mail: data["mail"] as! String, keywords: data["keywords"] as! [String], cv: 0, userType: .employee)
+                        
+                        if let jobsAppliedData = data["jobsApplied"] {
+                            let jobsApplied = jobsAppliedData as! [String]
+                            for job in localJobs {
+                                if jobsApplied.contains(job.id){
+                                    self.userJob.append((localUser, job))
+                                }
+                            }
+                        }
+                    }
+                    self.tableView.reloadData()
+                }
+                
+            })
+        }
+    })
+       //tableView.reloadData()
    }
+    
+    func getEmployerJobs(completion: @escaping([Job], Error?) -> Void){
+        var localJobs:[Job] = []
+        db.collection("jobs").whereField("employerId", isEqualTo: Auth.auth().currentUser!.uid).getDocuments(completion: {
+            (snapshot, error) in
+            if let error = error{
+                print("error when querying jobs" + error.localizedDescription)
+                completion(localJobs, error)
+            }else{
+                for document in snapshot!.documents {
+                    let data = document.data()
+                    let jobLocal = Job(id: document.documentID, title: data["title"] as! String, employer: data["employer"] as! String, location: data["location"] as! String, publishDate: data["publishDate"] as! String, description: data["description"] as! String, domain: data["domain"] as! String, employerId: data["employerId"] as! String)
+                    localJobs.append(jobLocal)
+                }
+                completion(localJobs, nil)
+            }
+        })
+    }
 
 }

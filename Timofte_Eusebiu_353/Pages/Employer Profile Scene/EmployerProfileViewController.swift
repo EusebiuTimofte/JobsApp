@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseFirestoreSwift
 
 class EmployerProfileViewController: UIViewController {
-
+        let db = Firestore.firestore()
     
         var userKeywords: [String] = []
         @IBOutlet var rootView: UIView!
@@ -27,6 +29,8 @@ class EmployerProfileViewController: UIViewController {
     
         
         @IBAction func logout(_ sender: UIButton) {
+            
+            try! Auth.auth().signOut()
             
             let loginController =
                 (storyboard!.instantiateViewController(withIdentifier: "loginController") as? LoginViewController)!
@@ -93,8 +97,48 @@ class EmployerProfileViewController: UIViewController {
         */
         
         override func viewWillAppear(_ animated: Bool) {
-            
+            getLoggedUser(completion: {
+                (user, error) in
+                if let error = error{
+                    print(error)
+                    return
+                }else{
+                    if let user = user{
+                        self.usernameValue.text = user.username
+                        self.emailValue.text = user.mail
+                        self.employerNameLabel.text = user.name
+                    }else{
+                        print("Userul nu a fost gasit")
+                        return
+                    }
+                }
+            })
         }
+    
+    func getLoggedUser(completion: @escaping (Employer?, Error?) ->Void){
+        db.collection("users").document(Auth.auth().currentUser!.uid).getDocument(completion: {
+            (document, error) in
+            if let error = error {
+              print(error)
+              completion(nil, error)
+              return
+            }
+            
+            if let document = document, document.exists {
+                let dataDescription = document.data().map(String.init(describing:)) ?? "nil"
+                print("Document data: \(dataDescription)")
+                let data = document.data()!
+                
+                let employer = Employer(id: document.documentID, username: data["username"] as! String, password: data["password"] as! String, mail: data["mail"] as! String, keywords: [], cv: 0, name: data["name"] as! String)
+                
+                completion(employer, nil)
+                
+            } else {
+                print("Document does not exist")
+                completion(nil, nil)
+            }
+        })
+    }
         
 
 }

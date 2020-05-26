@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import FirebaseFirestoreSwift
+import Firebase
 
 class EmployerJobDescriptionViewController: UIViewController {
 
@@ -34,8 +36,14 @@ class EmployerJobDescriptionViewController: UIViewController {
         @IBOutlet weak var descriptionValue: UILabel!
         @IBOutlet weak var apply: UIButton!
         var id: String?
+    
+    let db = Firestore.firestore()
         
         @IBAction func applyAction(_ sender: UIButton) {
+            
+            //delete job
+            db.collection("jobs").document(id!).delete()
+            
             performSegue(withIdentifier: "delete", sender: self)
             var viewControllersVar = navigationController?.viewControllers
             var indexToRemove = viewControllersVar!.count - 2
