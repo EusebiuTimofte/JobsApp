@@ -219,33 +219,33 @@ extension TableViewController: UISearchBarDelegate{
         }
     }
     
-    public func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
-        jobs = []
-        
-        db.collection("jobs").getDocuments() { (querySnapshot, err) in
-            if let err = err {
-                print("Error getting documents: \(err)")
-            } else {
-                self.getJobsCurrentUserApplied(completion: { appliedJobs, error in
-                    for document in querySnapshot!.documents {
-                        var job: [String: Any] = [:]
-                        //print("\(document.documentID) => \(document.data())")
-                        job = document.data()
-                        if appliedJobs.contains(document.documentID) {
-                            continue
-                        }
-                        let jobObject = Job(id: document.documentID, title: job["title"] as! String, employer: job["employer"] as! String, location: job["location"] as! String, publishDate: job["publishDate"] as! String, description: job["description"] as! String, domain: job["domain"] as! String, employerId: job["employerId"] as! String)
-                        if jobObject.description.lowercased().contains(searchBar.text!.lowercased()) || jobObject.title.lowercased().contains(searchBar.text!.lowercased())  || searchBar.text! == ""{
-                            self.jobs.append(jobObject)
-                        }
-                        
-                        
-                    }
-                    self.tableView.reloadData()
-                })
-                
-            }
-        }
-    }
+//    public func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+//        jobs = []
+//
+//        db.collection("jobs").getDocuments() { (querySnapshot, err) in
+//            if let err = err {
+//                print("Error getting documents: \(err)")
+//            } else {
+//                self.getJobsCurrentUserApplied(completion: { appliedJobs, error in
+//                    for document in querySnapshot!.documents {
+//                        var job: [String: Any] = [:]
+//                        //print("\(document.documentID) => \(document.data())")
+//                        job = document.data()
+//                        if appliedJobs.contains(document.documentID) {
+//                            continue
+//                        }
+//                        let jobObject = Job(id: document.documentID, title: job["title"] as! String, employer: job["employer"] as! String, location: job["location"] as! String, publishDate: job["publishDate"] as! String, description: job["description"] as! String, domain: job["domain"] as! String, employerId: job["employerId"] as! String)
+//                        if jobObject.description.lowercased().contains(searchBar.text!.lowercased()) || jobObject.title.lowercased().contains(searchBar.text!.lowercased())  || searchBar.text! == ""{
+//                            self.jobs.append(jobObject)
+//                        }
+//
+//
+//                    }
+//                    self.tableView.reloadData()
+//                })
+//
+//            }
+//        }
+//    }
 }
 
