@@ -7,9 +7,12 @@
 //
 
 import UIKit
+import FirebaseFirestoreSwift
+import Firebase
 
 class NewJobViewController: UIViewController {
 
+    let db = Firestore.firestore()
     
     @IBOutlet weak var jobTitle: UILabel!
     
@@ -27,7 +30,56 @@ class NewJobViewController: UIViewController {
     
     @IBAction func createJob(_ sender: UIButton) {
         if jobTitleInput.text != "" && locationInput.text != "" && descriptionInput.text != "" && domainInput.text != "" {
-//            let jobAdded : Job = DataBase.addJob(title: jobTitleInput.text!, employer: (DataBase.getLoggedUser() as! Employer).name, location: locationInput.text!, publishDate: "15/04/2020", description: descriptionInput.text, domain: domainInput.text!)
+            
+            // am datele si trb sa fac jobul. trb sa iau employer name si employer id ca sa pot crea jobul. pt asta e nevoie sa cer userul curent logat si in completion handler trb sa fac database.update
+            // dupa iau toti userii si pt fiecare user verific daca descrierea jobului contine un keyword , caz in care adaug in database o notificare cu id ul userului si id ul jobului si seen : false
+            var job: [String: Any] = [:]
+            job["title"] = jobTitleInput.text
+            job["location"] = locationInput.text
+            job["description"] = descriptionInput.text!
+            job["domain"] = domainInput.text!
+            job["publishDate"] = "12/06/2020"
+            
+            getLoggedUser(completion: {
+                (employer, error) in
+                job["employer"] = employer!.name
+                job["employerId"] = employer!.id
+                let jobDocument = self.db.collection("jobs").document()
+                jobDocument.setData(job)
+                
+                //creem notificatiunile
+                //mai intai trecem prin toti userii
+                self.db.collection("users").whereField("type", isEqualTo: "employee").getDocuments(completion: {
+                    (snapshot, error) in
+                    if let error = error{
+                        print(error.localizedDescription)
+                        return
+                    }else{
+                        for document in snapshot!.documents{
+                            // documentul reprezinta userul emplyee
+                            //trb sa ma plimb prin keywords si sa vad daca descrierea contine vreunul. daca da, creez notificare si break, nyeez
+                            let data = document.data()
+                            let keywords: [String] = data["keywords"] as! [String]
+                            for keyword in keywords{
+                                if (job["description"] as! String).lowercased().contains(keyword.lowercased()) {
+                                    //add notification
+                                    var notificationData: [String:Any] = [:]
+                                    notificationData["jobId"] = jobDocument.documentID
+                                    notificationData["userId"] = document.documentID
+                                    notificationData["seen"] = false
+                                    self.db.collection("notifications").addDocument(data: notificationData)
+                                    break
+                                }
+                            }
+                        }
+                    }
+                })
+            })
+            
+            //mai bagam employer si employer id, trb sa luam logged user din db
+            
+            
+            
 //            
 //            for i in 0..<DataBase.users[0].keywords.count {
 //                let loopKeyword = DataBase.users[0].keywords[i]
@@ -36,6 +88,8 @@ class NewJobViewController: UIViewController {
 //                    break
 //                }
 //            }
+            
+            
             
             warning.text = "Job creat cu succes!"
             warning.textColor = .green
@@ -77,5 +131,30 @@ class NewJobViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    func getLoggedUser(completion: @escaping (Employer?, Error?) ->Void){
+        db.collection("users").document(Auth.auth().currentUser!.uid).getDocument(completion: {
+            (document, error) in
+            if let error = error {
+              print(error)
+              completion(nil, error)
+              return
+            }
+            
+            if let document = document, document.exists {
+                let dataDescription = document.data().map(String.init(describing:)) ?? "nil"
+                print("Document data: \(dataDescription)")
+                let data = document.data()!
+                
+                let employer = Employer(id: document.documentID, username: data["username"] as! String, password: data["password"] as! String, mail: data["mail"] as! String, keywords: [], cv: 0, name: data["name"] as! String)
+                
+                completion(employer, nil)
+                
+            } else {
+                print("Document does not exist")
+                completion(nil, nil)
+            }
+        })
+    }
 
 }

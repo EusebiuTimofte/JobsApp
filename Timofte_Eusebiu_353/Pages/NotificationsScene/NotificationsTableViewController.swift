@@ -7,9 +7,13 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseFirestoreSwift
 
 class NotificationsTableViewController: UITableViewController {
 
+    let db = Firestore.firestore()
+    
     var notifications: [(Job, Bool)] = []
         override func viewDidLoad() {
             super.viewDidLoad()
@@ -79,7 +83,7 @@ class NotificationsTableViewController: UITableViewController {
             cell.city.text = notifications[indexPath.row].0.location
             cell.descriptionValue = notifications[indexPath.row].0.description
             cell.id = notifications[indexPath.row].0.id
-            if notifications[indexPath.row].1 == true {
+            if notifications[indexPath.row].1 == false {
                 cell.backgroundColor = .orange
             }else {
                 cell.backgroundColor = .white
@@ -89,12 +93,57 @@ class NotificationsTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         //DataBase.notificationSeen(notification: notifications[indexPath.row])
-        (tabBarController as! EmployeeTabBarViewController).updateBadge()
+        db.collection("notifications").whereField("userId", isEqualTo: Auth.auth().currentUser!.uid).whereField("jobId", isEqualTo: notifications[indexPath.row].0.id).getDocuments(completion: {
+            (snapshot, error) in
+            if let error = error{
+                print(error.localizedDescription)
+            }else{
+                for document in snapshot!.documents{
+                    self.db.collection("notifications").document(document.documentID).updateData(["seen": true])
+                }
+                (self.tabBarController as! EmployeeTabBarViewController).updateBadge()
+            }
+        })
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         //notifications = DataBase.getNotifications()
-        tableView.reloadData()
+        getNotifications {
+            self.tableView.reloadData()
+        }
+    }
+    
+    // am user id, pot lua toate docomentele care reprezinta notificari ale userului si le pot stoca undeva
+    //chestia asta o bag intr-o functie care sa returneze documentele
+    //iau si query snapshot ul cu toate joburile
+    
+    func getNotifications(completion: @escaping()->Void){
+        notifications = []
+        self.db.collection("notifications").whereField("userId", isEqualTo: Auth.auth().currentUser!.uid).getDocuments(completion: {
+            (snapshot, error) in
+            if let error = error{
+                print(error.localizedDescription)
+                completion()
+            }else{
+                //iterate through notifications
+                for document in snapshot!.documents {
+                    let data = document.data()
+                    self.db.collection("jobs").document(data["jobId"] as! String).getDocument(completion: {
+                        (localJob, error) in
+                        if let error = error{
+                            print(error.localizedDescription)
+                            return
+                        }
+                        let localJobData = localJob!.data()!
+                        let jobObject = Job(id: localJob!.documentID, title: localJobData["title"] as! String, employer: localJobData["employer"] as! String, location: localJobData["location"] as! String, publishDate: localJobData["publishDate"] as! String, description: localJobData["description"] as! String, domain: localJobData["domain"] as! String, employerId: localJobData["employerId"] as! String)
+                        self.notifications.append((jobObject, data["seen"] as! Bool))
+                        self.tableView.reloadData()
+                    })
+                }
+                completion()
+            }
+        })
     }
 
 }

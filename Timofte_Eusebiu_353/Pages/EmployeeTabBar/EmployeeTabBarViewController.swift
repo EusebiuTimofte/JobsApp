@@ -7,8 +7,12 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseFirestoreSwift
 
 class EmployeeTabBarViewController: UITabBarController {
+    
+    let db = Firestore.firestore()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,22 +21,42 @@ class EmployeeTabBarViewController: UITabBarController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        let nr = 0
-        if nr > 0 {
-            tabBar.items![3].badgeValue = String(nr)
-        }else {
-            tabBar.items![3].badgeValue = nil
-        }
+        
+        db.collection("notifications").whereField("userId", isEqualTo: Auth.auth().currentUser!.uid).whereField("seen", isEqualTo: false).getDocuments(completion: {
+            (snapshot, error) in
+            if let error = error{
+                print(error.localizedDescription)
+                self.tabBar.items![3].badgeValue = nil
+            }else{
+                let nr = snapshot!.documents.count
+                if nr > 0 {
+                    self.tabBar.items![3].badgeValue = String(nr)
+                }else {
+                    self.tabBar.items![3].badgeValue = nil
+                }
+            }
+        })
         
     }
     
     func updateBadge() {
-        let nr = 0
-        if nr > 0 {
-            tabBar.items![3].badgeValue = String(nr)
-        }else {
-            tabBar.items![3].badgeValue = nil
-        }
+        
+        db.collection("notifications").whereField("userId", isEqualTo: Auth.auth().currentUser!.uid).whereField("seen", isEqualTo: false).getDocuments(completion: {
+            (snapshot, error) in
+            if let error = error{
+                print(error.localizedDescription)
+                self.tabBar.items![3].badgeValue = nil
+            }else{
+                let nr = snapshot!.documents.count
+                if nr > 0 {
+                    self.tabBar.items![3].badgeValue = String(nr)
+                }else {
+                    self.tabBar.items![3].badgeValue = nil
+                }
+            }
+        })
+        
+        
     }
 
     /*
