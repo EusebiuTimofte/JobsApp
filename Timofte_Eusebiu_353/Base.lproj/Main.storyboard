@@ -17,9 +17,17 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="AT4-eO-2q8"/>
                         <inset key="scrollIndicatorInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="30"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="vb2-Pc-3Su">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="kcv-wJ-5C9" id="bf9-QA-Axy"/>
+                            </connections>
+                        </searchBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="JobOfferCell" rowHeight="70" id="SuQ-kr-Dx3" customClass="FirstTableViewCell" customModule="Timofte_Eusebiu_353" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="70"/>
+                                <rect key="frame" x="0.0" y="72" width="414" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SuQ-kr-Dx3" id="99H-TU-Vs4">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
@@ -96,6 +104,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Jobs" id="A1a-UY-OSE"/>
+                    <connections>
+                        <outlet property="searchBar" destination="vb2-Pc-3Su" id="7ft-Re-w8p"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D0Y-hu-JAQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
